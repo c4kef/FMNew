@@ -1,0 +1,82 @@
+﻿<UserControl
+    x:Class="FootballManager.NavigationRootPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ui="http://schemas.modernwpf.com/2019"
+    xmlns:common="clr-namespace:FootballManager.Common"
+    xmlns:local="clr-namespace:FootballManager"
+    xmlns:fm="clr-namespace:FootballManager"
+    xmlns:sc="clr-namespace:SamplesCommon;assembly=SamplesCommon"
+    mc:Ignorable="d"
+    xmlns:fa="http://schemas.fontawesome.io/icons/"
+    d:DesignWidth="1200"
+    d:DesignHeight="900"
+    Background="{DynamicResource SystemControlPageBackgroundAltHighBrush}">
+
+    <UserControl.Resources>
+        <common:EqualsConverter
+            x:Key="IsDefaultConverter"
+            Value="{x:Null}" />
+        <common:EqualsConverter
+            x:Key="IsLightConverter"
+            Value="{x:Static ui:ApplicationTheme.Light}" />
+        <common:EqualsConverter
+            x:Key="IsDarkConverter"
+            Value="{x:Static ui:ApplicationTheme.Dark}" />
+        <DataTemplate x:Key="Template">
+            <StackPanel Orientation="Horizontal">
+                <fa:FontAwesome Icon="{Binding FontIcon.Icon}" FontSize="24" Margin="0,0,10,0"/>
+                <TextBlock Text="{Binding Title}" VerticalAlignment="Center"/>
+            </StackPanel>
+        </DataTemplate>
+    </UserControl.Resources>
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <DockPanel
+            Grid.Row="1"
+            Background="{DynamicResource NavigationViewExpandedPaneBackground}">
+
+            <StackPanel DockPanel.Dock="Top" VerticalAlignment="Top" Margin="10" Orientation="Vertical">
+                <fa:FontAwesome Icon="UserCircle" FontSize="100" HorizontalAlignment="Center"/>
+                <Label Content="{Binding Path=(fm:Globals.UserLogin)}" HorizontalAlignment="Center" FontSize="20" Margin="0,10,0,10"/>
+            </StackPanel>
+            
+            <ui:ListView
+                x:Name="PagesList"
+                DockPanel.Dock="Top"
+                SelectedValuePath="PageType"
+                SelectedIndex="0"
+                ItemTemplate="{StaticResource Template}"
+                SelectionChanged="PagesList_SelectionChanged">
+                <ui:ListView.ItemsSource>
+                    <local:ControlPagesData/>
+                </ui:ListView.ItemsSource>
+            </ui:ListView>
+            <StackPanel VerticalAlignment="Bottom" Margin="10" Orientation="Vertical">
+                <WrapPanel x:Name="BalancePanel">
+                    <TextBlock Text="Бюджет клуба (USD): " FontSize="18" FontFamily="Bahnschrift Condensed" />
+                    <TextBlock Text="{Binding Path=(fm:Globals.Balance)}" FontSize="18" FontFamily="Bahnschrift Condensed" Height="21" />
+                </WrapPanel>
+                <Button Margin="0,10,0,0" Content="Выйти" Width="182" Click="Leave"/>
+            </StackPanel>
+        </DockPanel>
+
+        <sc:SampleFrame
+            x:Name="rootFrame"
+            Grid.Row="1"
+            Grid.Column="1"
+            Navigating="RootFrame_Navigating"
+            Navigated="RootFrame_Navigated" />
+    </Grid>
+</UserControl>

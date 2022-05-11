@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="About.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Window1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="About.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesAdmin\Contracts.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesAdmin\ContractsDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesAdmin\Operations.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesAdmin\Orders.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesAdmin\TrainingScheduleDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesAdmin\TicketsDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesAdmin\PlayerListDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesAdmin\OrdersSEDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesAdmin\OrderSOEDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesAdmin\MarketDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesAdmin\GamesScheduleDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesAdmin\EmployeesDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesAdmin\Employees.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesAdmin\Tickets.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesAdmin\Market.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesAdmin\GamesSchedule.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesAdmin\PlayerList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesAdmin\TrainingSchedule.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\TrainingSchedule.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\PlayerList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\GamesSchedule.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Window1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

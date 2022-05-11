@@ -1,0 +1,23 @@
+﻿<ui:ContentDialog
+    x:Class="FootballManager.PagesAdmin.PlayerListDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ui="http://schemas.modernwpf.com/2019" 
+    xmlns:pagesadmin="clr-namespace:FootballManager.PagesAdmin"
+    Title="Добавление игрока"
+    PrimaryButtonText="Применить"
+    CloseButtonText="Отмена"
+    DefaultButton="Primary">
+
+    <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <!-- Content body -->
+        <TextBox PreviewTextInput="CheckLetters" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Фамилия" Margin="0,5,0,0" Text="{Binding Surname}"/>
+        <TextBox PreviewTextInput="CheckLetters" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Имя" Margin="0,5,0,0" Text="{Binding MName}"/>
+        <TextBox PreviewTextInput="CheckLetters" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Отчество" Margin="0,5,0,0" Text="{Binding Patronymic}"/>
+        <TextBox PreviewTextInput="CheckDigits" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Возраст" Margin="0,5,0,0" Text="{Binding Age}"/>
+        <TextBox PreviewTextInput="CheckLetters" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Национальность" Margin="0,5,0,0" Text="{Binding Nationality}"/>
+        <TextBox PreviewTextInput="CheckDigits" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Номер телефона" Margin="0,5,0,0" Text="{Binding Phone}"/>
+        <TextBox PreviewTextInput="CheckLetters" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Позиция" Margin="0,5,0,0" Text="{Binding Position}"/>
+    </StackPanel>
+
+</ui:ContentDialog>

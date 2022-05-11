@@ -1,0 +1,155 @@
+﻿<ui:Page
+    x:Class="FootballManager.Pages.PlayerList"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ui="http://schemas.modernwpf.com/2019"
+    xmlns:sc="clr-namespace:SamplesCommon;assembly=SamplesCommon"
+    xmlns:common="clr-namespace:FootballManager.Common"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <CollectionViewSource
+            x:Key="cvs"
+            Source="{Binding}" />
+
+        <common:ItemCountConverter x:Key="ItemCountConverter" />
+
+        <DataTemplate x:Key="RowGroupHeaderTemplate">
+            <StackPanel
+                Orientation="Horizontal"
+                VerticalAlignment="Center">
+                <TextBlock
+                    Margin="4,0,0,0"
+                    Text="{Binding Name}"
+                    Style="{StaticResource BodyTextBlockStyle}" />
+                <TextBlock
+                    Margin="4,0,0,0"
+                    Text="{Binding ItemCount, Converter={StaticResource ItemCountConverter}}"
+                    Style="{StaticResource BodyTextBlockStyle}" />
+            </StackPanel>
+        </DataTemplate>
+
+        <DataTemplate x:Key="RowDetailsTemplate">
+            <StackPanel>
+                <TextBlock
+                    Margin="20"
+                    Text="Here are the details for the selected mountain:" />
+                <Grid Margin="25,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock
+                        Text="Coordinates: "
+                        FontWeight="SemiBold"
+                        FontSize="13" />
+                    <TextBlock
+                        Grid.Row="1"
+                        Text="Prominence (m): "
+                        FontWeight="SemiBold"
+                        FontSize="13" />
+                    <TextBlock
+                        Grid.Row="2"
+                        Text="First Ascent (year): "
+                        FontWeight="SemiBold"
+                        FontSize="13" />
+                    <TextBlock
+                        Grid.Row="3"
+                        Text="No. of ascents: "
+                        FontWeight="SemiBold"
+                        FontSize="13" />
+                    <TextBlock
+                        Grid.Column="1"
+                        FontSize="13"
+                        Text="{Binding Coordinates}"
+                        HorizontalAlignment="Right" />
+                    <TextBlock
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        FontSize="13"
+                        Text="{Binding Prominence}"
+                        HorizontalAlignment="Right" />
+                    <TextBlock
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        FontSize="13"
+                        Text="{Binding First_ascent}"
+                        HorizontalAlignment="Right" />
+                    <TextBlock
+                        Grid.Row="3"
+                        Grid.Column="1"
+                        FontSize="13"
+                        Text="{Binding Ascents}"
+                        HorizontalAlignment="Right" />
+                </Grid>
+            </StackPanel>
+        </DataTemplate>
+    </Page.Resources>
+
+    <Grid
+        x:Name="LayoutRoot"
+        Margin="{StaticResource ControlPageContentMargin}">
+        <sc:ControlExample
+            HeaderText="Список игроков"
+            Style="{StaticResource ControlExampleFullStyle}">
+
+            <DataGrid
+                CanUserAddRows="False"
+                CanUserDeleteRows="False"
+                x:Name="dataGrid"
+                IsReadOnly="True"
+                AutoGenerateColumns="False"
+                HeadersVisibility="Column"
+                GridLinesVisibility="Horizontal"
+                RowDetailsTemplate="{StaticResource RowDetailsTemplate}"
+                RowDetailsVisibilityMode="Collapsed"
+                VirtualizingPanel.VirtualizationMode="Recycling"
+                VirtualizingPanel.IsVirtualizingWhenGrouping="True">
+                <DataGrid.Columns>
+                    <DataGridTextColumn
+                        Header="Фамилия"
+                        Width="115"
+                        Binding="{Binding surname}" />
+                    <DataGridTextColumn
+                        Header="Имя"
+                        Width="105"
+                        Binding="{Binding name}" />
+                    <DataGridTextColumn
+                        Header="Отчество"
+                        Width="115"
+                        Binding="{Binding patronymic}" />
+                    <DataGridTextColumn
+                        Header="Возраст"
+                        Width="68"
+                        Binding="{Binding age}" />
+                    <DataGridTextColumn
+                        Header="Национальность"
+                        Width="120"
+                        Binding="{Binding nationality}"/>
+                    <DataGridTextColumn
+                        Header="Номер телефона"
+                        Width="130"
+                        Binding="{Binding phone}"/>
+                    <DataGridTextColumn
+                        Header="Позиция"
+                        Width="150"
+                        Binding="{Binding position}"/>
+                </DataGrid.Columns>
+                <DataGrid.GroupStyle>
+                    <GroupStyle
+                        ContainerStyle="{StaticResource DataGridRowGroupContainerStyle}"
+                        HeaderTemplate="{StaticResource RowGroupHeaderTemplate}" />
+                </DataGrid.GroupStyle>
+            </DataGrid>
+
+        </sc:ControlExample>
+    </Grid>
+</ui:Page>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net48' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)system.runtime.windowsruntime\4.6.0\buildTransitive\net461\System.Runtime.WindowsRuntime.targets" Condition="Exists('$(NuGetPackageRoot)system.runtime.windowsruntime\4.6.0\buildTransitive\net461\System.Runtime.WindowsRuntime.targets')" />
+    <Import Project="$(NuGetPackageRoot)materialdesignthemes\4.2.1\build\MaterialDesignThemes.targets" Condition="Exists('$(NuGetPackageRoot)materialdesignthemes\4.2.1\build\MaterialDesignThemes.targets')" />
+  </ImportGroup>
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net5.0-windows10.0.18362.0' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)materialdesignthemes\4.2.1\build\MaterialDesignThemes.targets" Condition="Exists('$(NuGetPackageRoot)materialdesignthemes\4.2.1\build\MaterialDesignThemes.targets')" />
+  </ImportGroup>
+  <ImportGroup Condition=" '$(TargetFramework)' == 'netcoreapp3.1' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)materialdesignthemes\4.2.1\build\MaterialDesignThemes.targets" Condition="Exists('$(NuGetPackageRoot)materialdesignthemes\4.2.1\build\MaterialDesignThemes.targets')" />
+  </ImportGroup>
+</Project>

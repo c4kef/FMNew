@@ -1,0 +1,20 @@
+﻿<ui:ContentDialog
+    x:Class="FootballManager.PagesAdmin.TicketsDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ui="http://schemas.modernwpf.com/2019" 
+    xmlns:pagesadmin="clr-namespace:FootballManager.PagesAdmin"
+    Title="Добавление билетов" 
+    PrimaryButtonText="Применить"
+    CloseButtonText="Отмена"
+    DefaultButton="Primary">
+
+    <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <!-- Content body -->
+        <ComboBox Width="270" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Выберите дату" Margin="0,5,0,0" ItemsSource="{Binding DateList}" SelectedItem="{Binding Date}"/>
+        <TextBox PreviewTextInput="CheckDigits" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Стоимость одного билета (USD)" Margin="0,5,0,0" Text="{Binding Price}"/>
+        <TextBox PreviewTextInput="CheckDigits" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Всего продано" Margin="0,5,0,0" Text="{Binding Count}"/>
+        <Label x:Name="Balance" ui:ControlHelper.CornerRadius="10" Margin="0,10,0,0" Content="Доход: "/>
+    </StackPanel>
+
+</ui:ContentDialog>

@@ -1,0 +1,184 @@
+﻿<ui:Page
+    x:Class="FootballManager.PagesAdmin.PlayerList"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ui="http://schemas.modernwpf.com/2019"
+    xmlns:sc="clr-namespace:SamplesCommon;assembly=SamplesCommon"
+    xmlns:common="clr-namespace:FootballManager.Common"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <CollectionViewSource
+            x:Key="cvs"
+            Source="{Binding}" />
+
+        <common:ItemCountConverter x:Key="ItemCountConverter" />
+
+        <DataTemplate x:Key="RowGroupHeaderTemplate">
+            <StackPanel
+                Orientation="Horizontal"
+                VerticalAlignment="Center">
+                <TextBlock
+                    Margin="4,0,0,0"
+                    Text="{Binding Name}"
+                    Style="{StaticResource BodyTextBlockStyle}" />
+                <TextBlock
+                    Margin="4,0,0,0"
+                    Text="{Binding ItemCount, Converter={StaticResource ItemCountConverter}}"
+                    Style="{StaticResource BodyTextBlockStyle}" />
+            </StackPanel>
+        </DataTemplate>
+
+        <DataTemplate x:Key="RowDetailsTemplate">
+            <StackPanel>
+                <TextBlock
+                    Margin="20"
+                    Text="Here are the details for the selected mountain:" />
+                <Grid Margin="25,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock
+                        Text="Coordinates: "
+                        FontWeight="SemiBold"
+                        FontSize="13" />
+                    <TextBlock
+                        Grid.Row="1"
+                        Text="Prominence (m): "
+                        FontWeight="SemiBold"
+                        FontSize="13" />
+                    <TextBlock
+                        Grid.Row="2"
+                        Text="First Ascent (year): "
+                        FontWeight="SemiBold"
+                        FontSize="13" />
+                    <TextBlock
+                        Grid.Row="3"
+                        Text="No. of ascents: "
+                        FontWeight="SemiBold"
+                        FontSize="13" />
+                    <TextBlock
+                        Grid.Column="1"
+                        FontSize="13"
+                        Text="{Binding Coordinates}"
+                        HorizontalAlignment="Right" />
+                    <TextBlock
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        FontSize="13"
+                        Text="{Binding Prominence}"
+                        HorizontalAlignment="Right" />
+                    <TextBlock
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        FontSize="13"
+                        Text="{Binding First_ascent}"
+                        HorizontalAlignment="Right" />
+                    <TextBlock
+                        Grid.Row="3"
+                        Grid.Column="1"
+                        FontSize="13"
+                        Text="{Binding Ascents}"
+                        HorizontalAlignment="Right" />
+                </Grid>
+            </StackPanel>
+        </DataTemplate>
+    </Page.Resources>
+
+    <Grid
+        x:Name="LayoutRoot"
+        Margin="{StaticResource ControlPageContentMargin}">
+        <sc:ControlExample
+            HeaderText="Список игроков футбольного клуба"
+            Style="{StaticResource ControlExampleFullStyle}">
+            <DataGrid
+                x:Name="dataGrid"
+                CanUserAddRows="False"
+                CanUserDeleteRows="False"
+                IsReadOnly="True"
+                AutoGenerateColumns="False"
+                HeadersVisibility="Column"
+                IsTextSearchEnabled="True"
+                GridLinesVisibility="Horizontal"
+                RowDetailsTemplate="{StaticResource RowDetailsTemplate}"
+                RowDetailsVisibilityMode="Collapsed"
+                ScrollViewer.CanContentScroll="True"
+                ScrollViewer.VerticalScrollBarVisibility="Auto"
+                ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                VirtualizingPanel.VirtualizationMode="Recycling"
+                VirtualizingPanel.IsVirtualizingWhenGrouping="True">
+                <DataGrid.Columns>
+                    <DataGridTextColumn
+                        Header="id"
+                        Width="105"
+                        Binding="{Binding id}" Visibility="Hidden"/>
+                    <DataGridTextColumn
+                        Header="Фамилия"
+                        Width="115"
+                        Binding="{Binding surname}" />
+                    <DataGridTextColumn
+                        Header="Имя"
+                        Width="105"
+                        Binding="{Binding name}" />
+                    <DataGridTextColumn
+                        Header="Отчество"
+                        Width="115"
+                        Binding="{Binding patronymic}" />
+                    <DataGridTextColumn
+                        Header="Возраст"
+                        Width="68"
+                        Binding="{Binding age}" />
+                    <DataGridTextColumn
+                        Header="Национальность"
+                        Width="120"
+                        Binding="{Binding nationality}"/>
+                    <DataGridTextColumn
+                        Header="Номер телефона"
+                        Width="130"
+                        Binding="{Binding phone}"/>
+                    <DataGridTextColumn
+                        Header="Позиция"
+                        Width="150"
+                        Binding="{Binding position}"/>
+                </DataGrid.Columns>
+                <DataGrid.GroupStyle>
+                    <GroupStyle
+                        ContainerStyle="{StaticResource DataGridRowGroupContainerStyle}"
+                        HeaderTemplate="{StaticResource RowGroupHeaderTemplate}" />
+                </DataGrid.GroupStyle>
+            </DataGrid>
+            <sc:ControlExample.Options>
+                <ScrollViewer
+                    Margin="-16"
+                    Width="300">
+                    <ui:SimpleStackPanel
+                        Margin="15" 
+                        HorizontalAlignment="Center"
+                        Orientation="Vertical"
+                        Style="{StaticResource OptionsPanelStyle}">
+                        <TextBox x:Name="SearchUI" ui:ControlHelper.PlaceholderText="Поиск по ФИО" Height="22" KeyUp="Search" />
+                        <StackPanel Orientation="Horizontal">
+                            <Button VerticalAlignment="Top" Content="Добавить" Click="Add" Margin="0,0,0,0"/>
+                            <Button VerticalAlignment="Top" Content="Удалить" Click="Remove" Margin="10,0,0,0"/>
+                            <Button VerticalAlignment="Top" Content="Изменить" Click="Edit" Margin="10,0,0,0"/>
+                        </StackPanel>
+                        <Button HorizontalAlignment="Center" Content="Отчёт" Click="Export"/>
+                        <Label Content="Продажа игрока" HorizontalAlignment="Center"/>
+                        <TextBox x:Name="Price" PreviewTextInput="CheckDigits" ui:ControlHelper.Header="Введите стоимость (USD)" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="0" />
+                        <Button VerticalAlignment="Top" HorizontalAlignment="Center" Content="Продать игрока" Click="SellPlayer" Margin="10"/>
+                    </ui:SimpleStackPanel>
+                </ScrollViewer>
+            </sc:ControlExample.Options>
+        </sc:ControlExample>
+
+    </Grid>
+</ui:Page>
