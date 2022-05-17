@@ -41,7 +41,7 @@ namespace FootballManager.PagesAdmin
                 {
                     (dataGrid.ItemContainerGenerator.ContainerFromItem(dr) as DataGridRow).Visibility = Visibility.Visible;
 
-                    if (value != "Без фильтра" && !dr[1].ToString().ToLower().Contains(value.ToLower()))
+                    if (value != "Без фильтра" && !dr[1].ToString().ToLower().Contains(value.ToLower()) && int.Parse(dteSelectedMonth.DisplayDate.ToString("dd/MM/yyyy").Split('/')[1]) > int.Parse(dr[1].ToString().Split('/')[1]))
                         (dataGrid.ItemContainerGenerator.ContainerFromItem(dr) as DataGridRow).Visibility = Visibility.Collapsed;
                 }
             }
@@ -91,6 +91,11 @@ namespace FootballManager.PagesAdmin
         {
             Loaded -= OnLoaded;
             FillGrid();
+        }
+        
+        private void Calendar_OnSelectedDatesChanged(object sender, CalendarModeChangedEventArgs calendarModeChangedEventArgs)
+        {
+            dteSelectedMonth.DisplayMode = CalendarMode.Year;
         }
     }
 }

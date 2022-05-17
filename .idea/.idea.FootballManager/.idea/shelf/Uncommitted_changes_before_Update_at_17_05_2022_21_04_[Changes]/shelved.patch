@@ -1,0 +1,32 @@
+Index: SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon_MarkupCompile.lref
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>C:\\Users\\artem\\source\\repos\\PRG\\SamplesCommon\\obj\\Debug\\net5.0-windows10.0.18362.0\\GeneratedInternalTypeHelper.g.cs\r\n\r\nFC:\\Users\\artem\\source\\repos\\PRG\\SamplesCommon\\AccentColorPicker.xaml;;\r\nFC:\\Users\\artem\\source\\repos\\PRG\\SamplesCommon\\SamplePages\\SamplePage3.xaml;;\r\nFC:\\Users\\artem\\source\\repos\\PRG\\SamplesCommon\\SamplePages\\SamplePage4.xaml;;\r\nFC:\\Users\\artem\\source\\repos\\PRG\\SamplesCommon\\SamplePages\\SamplePage5.xaml;;\r\nFC:\\Users\\artem\\source\\repos\\PRG\\SamplesCommon\\SamplePages\\SamplePage6.xaml;;\r\nFC:\\Users\\artem\\source\\repos\\PRG\\SamplesCommon\\Themes\\Generic.xaml;;\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon_MarkupCompile.lref b/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon_MarkupCompile.lref
+--- a/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon_MarkupCompile.lref	
++++ b/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon_MarkupCompile.lref	
+@@ -1,4 +1,4 @@
+-C:\Users\artem\source\repos\PRG\SamplesCommon\obj\Debug\net5.0-windows10.0.18362.0\GeneratedInternalTypeHelper.g.cs
++
+ 
+ FC:\Users\artem\source\repos\PRG\SamplesCommon\AccentColorPicker.xaml;;
+ FC:\Users\artem\source\repos\PRG\SamplesCommon\SamplePages\SamplePage3.xaml;;
+Index: SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon_MarkupCompile.lref
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>C:\\Users\\artem\\source\\repos\\PRG\\SamplesCommon\\obj\\Debug\\netcoreapp3.1\\GeneratedInternalTypeHelper.g.cs\r\n\r\nFC:\\Users\\artem\\source\\repos\\PRG\\SamplesCommon\\AccentColorPicker.xaml;;\r\nFC:\\Users\\artem\\source\\repos\\PRG\\SamplesCommon\\SamplePages\\SamplePage3.xaml;;\r\nFC:\\Users\\artem\\source\\repos\\PRG\\SamplesCommon\\SamplePages\\SamplePage4.xaml;;\r\nFC:\\Users\\artem\\source\\repos\\PRG\\SamplesCommon\\SamplePages\\SamplePage5.xaml;;\r\nFC:\\Users\\artem\\source\\repos\\PRG\\SamplesCommon\\SamplePages\\SamplePage6.xaml;;\r\nFC:\\Users\\artem\\source\\repos\\PRG\\SamplesCommon\\Themes\\Generic.xaml;;\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon_MarkupCompile.lref b/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon_MarkupCompile.lref
+--- a/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon_MarkupCompile.lref	
++++ b/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon_MarkupCompile.lref	
+@@ -1,4 +1,4 @@
+-C:\Users\artem\source\repos\PRG\SamplesCommon\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
++
+ 
+ FC:\Users\artem\source\repos\PRG\SamplesCommon\AccentColorPicker.xaml;;
+ FC:\Users\artem\source\repos\PRG\SamplesCommon\SamplePages\SamplePage3.xaml;;
