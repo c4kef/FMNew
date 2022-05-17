@@ -62,14 +62,17 @@ namespace FootballManager
                 var login = reader.GetString(1);
                 var password = reader.GetString(2);
                 if (login == Login.Text && password == Password.Password)
-                    throw new Exception("F");
+                {
+                    new MainWindow().Show();
+                    this.Close();
+                }
                 else MessageBox.Show("логин или пароль не корректен");
             }
             else 
             {
                 check_not_valid.ExecuteNonQuery();
-                throw new Exception("ff");
-
+                new MainWindow().Show();
+                this.Close();
             }
 
         }
