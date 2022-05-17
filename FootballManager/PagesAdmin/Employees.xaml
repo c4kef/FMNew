@@ -116,7 +116,7 @@
                 RowDetailsVisibilityMode="Collapsed"
                 ItemsSource="{Binding Source={StaticResource cvs}}"
                 VirtualizingPanel.VirtualizationMode="Recycling"
-                VirtualizingPanel.IsVirtualizingWhenGrouping="True">
+                VirtualizingPanel.IsVirtualizingWhenGrouping="True" SelectionChanged="dataGrid_SelectionChanged">
                 <DataGrid.Columns>
                     <DataGridTextColumn
                         Header="id"
@@ -135,9 +135,9 @@
                         Width="125"
                         Binding="{Binding patronymic}" />
                     <DataGridTextColumn
-                        Header="Возраст"
+                        Header="дата рождения"
                         Width="68"
-                        Binding="{Binding age}" />
+                        Binding="{Binding dateofbirth}" />
                     <DataGridTextColumn
                         Header="Должность"
                         Width="130"

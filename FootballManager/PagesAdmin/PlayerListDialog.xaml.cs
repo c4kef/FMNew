@@ -135,8 +135,8 @@ namespace FootballManager.PagesAdmin
                 Check();
             }
         }
-        private string? dateofbirth;
-        public string? Dateofbirth
+        private string dateofbirth;
+        public string Dateofbirth
         {
             get
             {

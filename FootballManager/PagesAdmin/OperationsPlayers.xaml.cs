@@ -125,7 +125,7 @@ namespace FootballManager.PagesAdmin
         }
 
         public static async Task AddP(string pid, decimal sum) => await new SqlCommand($@"INSERT INTO playersAdd (ID_Player, date, sum) VALUES ((select ID_Player from PlayerList where surname = N'{pid}'), N'{DateTime.Now.Date.ToString()}', {sum})", Globals.connection).ExecuteNonQueryAsync();
-        public static async Task AddO(string pid, decimal sum) => await new SqlCommand($@"INSERT INTO playersOrder (ID_Player, date, sum) VALUES ((select ID_Player from playerlist_orders where surname = N'{pid}'), N'{DateTime.Now.Date.ToString()}', {sum})", Globals.connection).ExecuteNonQueryAsync();
+        public static async Task AddO(string pid, decimal sum) => await new SqlCommand($@"INSERT INTO playersOrder (ID_Player, date, sum) VALUES ((select ID_Player from playerlist_orders where surname = N'{pid}'), N'{DateTime.Now.Date.ToString("MM/dd/yyyy")}', {sum})", Globals.connection).ExecuteNonQueryAsync();
 
         private void SearchO(object sender, KeyEventArgs e)
         {

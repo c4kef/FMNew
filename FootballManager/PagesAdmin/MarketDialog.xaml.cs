@@ -183,6 +183,14 @@ namespace FootballManager.PagesAdmin
             }
             catch { }
         }
+        private void CheckPhone(object sender, System.Windows.Input.TextCompositionEventArgs e)
+        {
+            try
+            {
+                e.Handled = System.Text.RegularExpressions.Regex.IsMatch(e.Text, @"[^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$]");
+            }
+            catch { }
+        }
         public void Check() => this.IsPrimaryButtonEnabled = !(string.IsNullOrEmpty(MName) || string.IsNullOrEmpty(Surname) || string.IsNullOrEmpty(Patronymic) || string.IsNullOrEmpty(Dateofbirth) || string.IsNullOrEmpty(Team)|| string.IsNullOrEmpty(Nationality) ||  string.IsNullOrEmpty(Phone) || string.IsNullOrEmpty(Position) || Price == null);
     }
 }

@@ -139,9 +139,9 @@
                         Width="120"
                         Binding="{Binding price}"/>
                     <DataGridTextColumn
-                        Header="Возраст"
+                        Header="дата рождения"
                         Width="68"
-                        Binding="{Binding age}" />
+                        Binding="{Binding dateofbrith}" />
                     <DataGridTextColumn
                         Header="Национальность"
                         Width="120"

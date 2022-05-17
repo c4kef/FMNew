@@ -168,5 +168,10 @@ namespace FootballManager.PagesAdmin
                 }
             }
         }
+
+        private void dataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

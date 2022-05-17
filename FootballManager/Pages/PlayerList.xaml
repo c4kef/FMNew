@@ -127,9 +127,9 @@
                         Width="115"
                         Binding="{Binding patronymic}" />
                     <DataGridTextColumn
-                        Header="Возраст"
+                        Header="дата рождения"
                         Width="68"
-                        Binding="{Binding age}" />
+                        Binding="{Binding Dateofbirth}" />
                     <DataGridTextColumn
                         Header="Национальность"
                         Width="120"

@@ -140,6 +140,7 @@ namespace FootballManager.PagesAdmin
             {
                 try
                 {
+                    var r = dialog;
                   await new SqlCommand($@"INSERT INTO playerlist (surname, name, patronymic, dateofbirth, nationality, position, phone, team) VALUES (N'{dialog.Surname}', N'{dialog.MName}', N'{dialog.Patronymic}', N'{dialog.Dateofbirth}', N'{dialog.Nationality}', N'{dialog.Position}', N'{dialog.Phone}',N'{dialog.Team}')", Globals.connection).ExecuteNonQueryAsync();
                     FillGrid();
                     
