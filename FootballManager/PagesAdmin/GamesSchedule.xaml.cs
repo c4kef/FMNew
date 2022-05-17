@@ -304,5 +304,24 @@ namespace FootballManager.PagesAdmin
                 }
             }
         }
+
+        private void See(object sender, RoutedEventArgs e)
+        {
+            if (dataGrid.SelectedItem is null)
+            {
+                MessageBox.Show("Выберите что посмотреть", "Ошибка!");
+                return;
+            }
+
+            object[] cells = dt.Rows[dataGrid.SelectedIndex].ItemArray;
+
+            if ((string) cells[6] == "Не играли")
+            {
+                MessageBox.Show("Игра еще не проводилась");
+                return;
+            }
+            
+            MessageBox.Show($"{DateTime.Parse(cells[1].ToString())}\n{(string)cells[3]}\n{(string)cells[4]}");
+        }
     }
 }

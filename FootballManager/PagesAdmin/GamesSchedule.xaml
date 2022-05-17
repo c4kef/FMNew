@@ -166,6 +166,7 @@
                                 <Button VerticalAlignment="Top" Content="Изменить" Click="Edit" Margin="10,0,0,0"/>
                             </StackPanel>
                             <Button HorizontalAlignment="Center" Content="Отчёт" Click="Export" Margin="-5,0,0,0"/>
+                            <Button HorizontalAlignment="Center" Content="Просмотр" Click="See" Margin="-5,0,0,0"/>
                             <Label Content="Фильтрация" HorizontalAlignment="Center"/>
                             <ComboBox Width="270" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Турнир" Margin="0,5,0,0" ItemsSource="{Binding TList}" SelectedItem="{Binding TVal}"/>
                             <ComboBox Width="270" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Результат игры" Margin="0,5,0,0" ItemsSource="{Binding RList}" SelectedItem="{Binding RVal}"/>
