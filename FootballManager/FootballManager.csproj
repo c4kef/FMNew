@@ -83,6 +83,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="obj\Debug\netcoreapp3.1\FootballManager_0xy4xiwu_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\netcoreapp3.1\FootballManager_52kvkfco_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\netcoreapp3.1\FootballManager_c0n4oemk_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\netcoreapp3.1\FootballManager_ej4rd0n0_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\netcoreapp3.1\FootballManager_eriuj4fg_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\netcoreapp3.1\FootballManager_oy3hgv21_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\netcoreapp3.1\FootballManager_qzfnfgk3_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\netcoreapp3.1\FootballManager_rwwfvr2l_wpftmp.AssemblyInfo.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -184,6 +192,33 @@
     <Page Update="PagesAdmin\GamesScheduleTrnDialog.xaml">
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="obj\Debug\netcoreapp3.1\FootballManager_0xy4xiwu_wpftmp.AssemblyInfoInputs.cache" />
+    <Content Include="obj\Debug\netcoreapp3.1\FootballManager_0xy4xiwu_wpftmp.assets.cache" />
+    <Content Include="obj\Debug\netcoreapp3.1\FootballManager_0xy4xiwu_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <Content Include="obj\Debug\netcoreapp3.1\FootballManager_52kvkfco_wpftmp.AssemblyInfoInputs.cache" />
+    <Content Include="obj\Debug\netcoreapp3.1\FootballManager_52kvkfco_wpftmp.assets.cache" />
+    <Content Include="obj\Debug\netcoreapp3.1\FootballManager_52kvkfco_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <Content Include="obj\Debug\netcoreapp3.1\FootballManager_c0n4oemk_wpftmp.AssemblyInfoInputs.cache" />
+    <Content Include="obj\Debug\netcoreapp3.1\FootballManager_c0n4oemk_wpftmp.assets.cache" />
+    <Content Include="obj\Debug\netcoreapp3.1\FootballManager_c0n4oemk_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <Content Include="obj\Debug\netcoreapp3.1\FootballManager_ej4rd0n0_wpftmp.AssemblyInfoInputs.cache" />
+    <Content Include="obj\Debug\netcoreapp3.1\FootballManager_ej4rd0n0_wpftmp.assets.cache" />
+    <Content Include="obj\Debug\netcoreapp3.1\FootballManager_ej4rd0n0_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <Content Include="obj\Debug\netcoreapp3.1\FootballManager_eriuj4fg_wpftmp.AssemblyInfoInputs.cache" />
+    <Content Include="obj\Debug\netcoreapp3.1\FootballManager_eriuj4fg_wpftmp.assets.cache" />
+    <Content Include="obj\Debug\netcoreapp3.1\FootballManager_eriuj4fg_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <Content Include="obj\Debug\netcoreapp3.1\FootballManager_oy3hgv21_wpftmp.AssemblyInfoInputs.cache" />
+    <Content Include="obj\Debug\netcoreapp3.1\FootballManager_oy3hgv21_wpftmp.assets.cache" />
+    <Content Include="obj\Debug\netcoreapp3.1\FootballManager_oy3hgv21_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <Content Include="obj\Debug\netcoreapp3.1\FootballManager_qzfnfgk3_wpftmp.AssemblyInfoInputs.cache" />
+    <Content Include="obj\Debug\netcoreapp3.1\FootballManager_qzfnfgk3_wpftmp.assets.cache" />
+    <Content Include="obj\Debug\netcoreapp3.1\FootballManager_qzfnfgk3_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <Content Include="obj\Debug\netcoreapp3.1\FootballManager_rwwfvr2l_wpftmp.AssemblyInfoInputs.cache" />
+    <Content Include="obj\Debug\netcoreapp3.1\FootballManager_rwwfvr2l_wpftmp.assets.cache" />
+    <Content Include="obj\Debug\netcoreapp3.1\FootballManager_rwwfvr2l_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
   </ItemGroup>
 
 </Project>
