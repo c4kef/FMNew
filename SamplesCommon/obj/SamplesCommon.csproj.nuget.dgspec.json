@@ -1,21 +1,22 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\artem\\source\\repos\\PRG\\SamplesCommon\\SamplesCommon.csproj": {}
+    "C:\\Users\\FELIX-PC\\Source\\Repos\\FMNew.git\\SamplesCommon\\SamplesCommon.csproj": {}
   },
   "projects": {
-    "C:\\Users\\artem\\source\\repos\\PRG\\SamplesCommon\\SamplesCommon.csproj": {
+    "C:\\Users\\FELIX-PC\\Source\\Repos\\FMNew.git\\SamplesCommon\\SamplesCommon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\artem\\source\\repos\\PRG\\SamplesCommon\\SamplesCommon.csproj",
+        "projectUniqueName": "C:\\Users\\FELIX-PC\\Source\\Repos\\FMNew.git\\SamplesCommon\\SamplesCommon.csproj",
         "projectName": "SamplesCommon",
-        "projectPath": "C:\\Users\\artem\\source\\repos\\PRG\\SamplesCommon\\SamplesCommon.csproj",
-        "packagesPath": "C:\\Users\\artem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\artem\\source\\repos\\PRG\\SamplesCommon\\obj\\",
+        "projectPath": "C:\\Users\\FELIX-PC\\Source\\Repos\\FMNew.git\\SamplesCommon\\SamplesCommon.csproj",
+        "packagesPath": "C:\\Users\\FELIX-PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\FELIX-PC\\Source\\Repos\\FMNew.git\\SamplesCommon\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
-          "C:\\Users\\artem\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\FELIX-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net48",
@@ -23,6 +24,7 @@
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -72,20 +74,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -94,7 +82,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\artem\\.dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         },
         "net5.0-windows10.0.18362": {
           "targetAlias": "net5.0-windows10.0.18362.0",
@@ -124,20 +112,8 @@
           "warn": true,
           "downloadDependencies": [
             {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
               "name": "Microsoft.Windows.SDK.NET.Ref",
-              "version": "[10.0.18362.22, 10.0.18362.22]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
+              "version": "[10.0.18362.23, 10.0.18362.23]"
             }
           ],
           "frameworkReferences": {
@@ -151,7 +127,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\artem\\.dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         },
         "net48": {
           "targetAlias": "net48",
@@ -165,7 +141,7 @@
               "version": "[0.9.4, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\artem\\.dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

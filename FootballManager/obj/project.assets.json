@@ -7122,32 +7122,34 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\artem\\.nuget\\packages\\": {}
+    "C:\\Users\\FELIX-PC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\artem\\source\\repos\\PRG\\FootballManager\\FootballManager.csproj",
+      "projectUniqueName": "C:\\Users\\FELIX-PC\\Source\\Repos\\FMNew.git\\FootballManager\\FootballManager.csproj",
       "projectName": "FootballManager",
-      "projectPath": "C:\\Users\\artem\\source\\repos\\PRG\\FootballManager\\FootballManager.csproj",
-      "packagesPath": "C:\\Users\\artem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\artem\\source\\repos\\PRG\\FootballManager\\obj\\",
+      "projectPath": "C:\\Users\\FELIX-PC\\Source\\Repos\\FMNew.git\\FootballManager\\FootballManager.csproj",
+      "packagesPath": "C:\\Users\\FELIX-PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\FELIX-PC\\Source\\Repos\\FMNew.git\\FootballManager\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\artem\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\FELIX-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\artem\\source\\repos\\PRG\\SamplesCommon\\SamplesCommon.csproj": {
-              "projectPath": "C:\\Users\\artem\\source\\repos\\PRG\\SamplesCommon\\SamplesCommon.csproj"
+            "C:\\Users\\FELIX-PC\\Source\\Repos\\FMNew.git\\SamplesCommon\\SamplesCommon.csproj": {
+              "projectPath": "C:\\Users\\FELIX-PC\\Source\\Repos\\FMNew.git\\SamplesCommon\\SamplesCommon.csproj"
             }
           }
         }
@@ -7205,24 +7207,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.10, 3.1.10]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[3.1.22, 3.1.22]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[3.1.0, 3.1.0]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[3.1.0, 3.1.0]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -7231,7 +7215,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\artem\\.dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   },
@@ -7240,7 +7224,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'FontAwesome.WPF 4.7.0.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Пакет \"FontAwesome.WPF 4.7.0.9\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \".NETCoreApp,Version=v3.1\". Этот пакет может быть не полностью совместим с вашим проектом.",
       "libraryId": "FontAwesome.WPF",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -7250,7 +7234,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.Office.Interop.Excel 15.0.4795.1000' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Пакет \"Microsoft.Office.Interop.Excel 15.0.4795.1000\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \".NETCoreApp,Version=v3.1\". Этот пакет может быть не полностью совместим с вашим проектом.",
       "libraryId": "Microsoft.Office.Interop.Excel",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"

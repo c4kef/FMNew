@@ -65,22 +65,7 @@ namespace FootballManager.PagesAdmin
             }
         }
 
-        private int? age;
-        public int? Age
-        {
-            get
-            {
-                return age;
-            }
-            set
-            {
-                if (age == value)
-                    return;
-
-                age = value;
-                Check();
-            }
-        }
+      
 
         private string nationality;
         public string Nationality
@@ -133,6 +118,38 @@ namespace FootballManager.PagesAdmin
             }
         }
 
+        private string dateofbirth;
+        public string Dateofbirth
+        {
+            get
+            {
+                return dateofbirth;
+            }
+            set
+            {
+                if (dateofbirth == value)
+                    return;
+
+                dateofbirth = value;
+                Check();
+            }
+        }
+          private string team ;
+        public string Team
+        {
+            get
+            {
+                return team;
+            }
+            set
+            {
+                if (team == value)
+                    return;
+
+                team = value;
+                Check();
+            }
+        }
         private decimal? price;
         public decimal? Price
         {
@@ -166,6 +183,6 @@ namespace FootballManager.PagesAdmin
             }
             catch { }
         }
-        public void Check() => this.IsPrimaryButtonEnabled = !(string.IsNullOrEmpty(MName) || string.IsNullOrEmpty(Surname) || string.IsNullOrEmpty(Patronymic) || string.IsNullOrEmpty(Nationality) || (Age == null) || string.IsNullOrEmpty(Phone) || string.IsNullOrEmpty(Position) || Price == null);
+        public void Check() => this.IsPrimaryButtonEnabled = !(string.IsNullOrEmpty(MName) || string.IsNullOrEmpty(Surname) || string.IsNullOrEmpty(Patronymic) || string.IsNullOrEmpty(Dateofbirth) || string.IsNullOrEmpty(Team)|| string.IsNullOrEmpty(Nationality) ||  string.IsNullOrEmpty(Phone) || string.IsNullOrEmpty(Position) || Price == null);
     }
 }

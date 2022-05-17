@@ -66,22 +66,7 @@ namespace FootballManager.PagesAdmin
             }
         }
 
-        private int? age;
-        public int? Age
-        {
-            get
-            {
-                return age;
-            }
-            set
-            {
-                if (age == value)
-                    return;
-
-                age = value;
-                Check();
-            }
-        }
+        
 
         private string nationality;
         public string Nationality
@@ -134,6 +119,38 @@ namespace FootballManager.PagesAdmin
             }
         }
 
+        private string team;
+        public string Team
+        {
+            get
+            {
+                return team;
+            }
+            set
+            {
+                if (team == value)
+                    return;
+
+                team = value;
+                Check();
+            }
+        }
+        private string? dateofbirth;
+        public string? Dateofbirth
+        {
+            get
+            {
+                return dateofbirth;
+            }
+            set
+            {
+                if (dateofbirth == value)
+                    return;
+
+                dateofbirth = value;
+                Check();
+            }
+        }
         private void CheckLetters(object sender, System.Windows.Input.TextCompositionEventArgs e)
         {
             try
@@ -145,10 +162,10 @@ namespace FootballManager.PagesAdmin
         {
             try
             {
-                e.Handled = System.Text.RegularExpressions.Regex.IsMatch(e.Text, "[^0-9]");;
+                e.Handled = System.Text.RegularExpressions.Regex.IsMatch(e.Text, "[^0-9]");
             }
             catch { }
         }
-        public void Check() => this.IsPrimaryButtonEnabled = !(string.IsNullOrEmpty(Patronymic) || Patronymic.Any(char.IsDigit) || string.IsNullOrEmpty(Surname) || Surname.Any(char.IsDigit) || string.IsNullOrEmpty(MName) || MName.Any(char.IsDigit) || string.IsNullOrEmpty(Nationality) || (Age == null) || string.IsNullOrEmpty(Phone) || string.IsNullOrEmpty(Position));
+        public void Check() => this.IsPrimaryButtonEnabled = !(string.IsNullOrEmpty(Patronymic) || Patronymic.Any(char.IsDigit) || string.IsNullOrEmpty(Surname) || Surname.Any(char.IsDigit) || string.IsNullOrEmpty(MName) || MName.Any(char.IsDigit) || string.IsNullOrEmpty(Nationality) ||  string.IsNullOrEmpty(Phone) || string.IsNullOrEmpty(Position)) || string.IsNullOrEmpty(Team) || string.IsNullOrEmpty(Dateofbirth);
     }
 }

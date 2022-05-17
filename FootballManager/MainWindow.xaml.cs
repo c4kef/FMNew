@@ -33,8 +33,7 @@ namespace FootballManager
                 var rootFrame = NavigationRootPage.RootFrame;
                 SetBinding(TitleBar.IsBackButtonVisibleProperty, new Binding { Path = new PropertyPath(System.Windows.Controls.Frame.CanGoBackProperty), Source = rootFrame });
                 
-                Globals.connection = new SqlConnection(@"Data Source=DESKTOP-B4OPU5P\SQLEXPRESS;Initial Catalog=footballclub; Integrated Security = True; MultipleActiveResultSets=True");
-                Globals.connection.Open();
+                
                 SubscribeToResourcesChanged();
                 PageGrid.Children.Add(new NavigationRootPage());
             }

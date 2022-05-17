@@ -111,7 +111,7 @@ namespace FootballManager.PagesAdmin
                     {
                         name = ((DataRowView)selectedPlayers[i]).Row.ItemArray[1].ToString();
 
-                        await new SqlCommand($"INSERT INTO playerlist(surname, name, patronymic, age, nationality, position, phone) VALUES (N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[1]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[2]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[3]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[4]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[5]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[7]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[8]}')", Globals.connection).ExecuteNonQueryAsync();
+                        await new SqlCommand($"INSERT INTO playerlist(surname, name, patronymic, dateofbirth, position,  nationality,  phone, team) VALUES (N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[1]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[2]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[3]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[4]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[5]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[6]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[7]}' , N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[8]}')", Globals.connection).ExecuteNonQueryAsync();
                         await new SqlCommand($"DELETE FROM market WHERE ID_Market = '{((DataRowView)selectedPlayers[i]).Row.ItemArray[0]}'", Globals.connection).ExecuteNonQueryAsync();
                         FillGrid();
                     }
@@ -138,7 +138,7 @@ namespace FootballManager.PagesAdmin
             {
                 try
                 {
-                    await new SqlCommand($@"INSERT INTO market (surname, name, patronymic, age, nationality, price, phone, position) VALUES (N'{dialog.Surname}', N'{dialog.MName}', N'{dialog.Patronymic}', N'{dialog.Age}', N'{dialog.Nationality}', N'{dialog.Price}', N'{dialog.Phone}', N'{dialog.Position}')", Globals.connection).ExecuteNonQueryAsync();
+                    await new SqlCommand($@"INSERT INTO market (surname, name, patronymic, dateofbirth , team, nationality, price, phone, position) VALUES (N'{dialog.Surname}', N'{dialog.MName}', N'{dialog.Patronymic}', N'{dialog.Dateofbirth}',N'{dialog.Team}', N'{dialog.Nationality}', N'{dialog.Price}', N'{dialog.Phone}', N'{dialog.Position}')", Globals.connection).ExecuteNonQueryAsync();
                     FillGrid();
                     
                 }
@@ -174,18 +174,19 @@ namespace FootballManager.PagesAdmin
             dialog.Surname = (string)cells[1];
             dialog.MName = (string)cells[2];
             dialog.Patronymic = (string)cells[3];
-            dialog.Age = (int)cells[4];
+            dialog.Team = (string)cells[4];
             dialog.Nationality = (string)cells[5];
             dialog.Price = (decimal)cells[6];
             dialog.Phone = (string)cells[7];
             dialog.Position = (string)cells[8];
+            dialog.Dateofbirth = (string)cells[9];
 
             var result = await dialog.ShowAsync();
 
             if (result == ContentDialogResult.Primary)
             {
                 await new SqlCommand(
-                    $@"UPDATE market SET name = N'{dialog.MName}', surname = N'{dialog.Surname}', patronymic = N'{dialog.Patronymic}', age = '{dialog.Age}', nationality = N'{dialog.Nationality}', phone = N'{dialog.Phone}', position = N'{dialog.Position}', price = '{dialog.Price}' WHERE ID_Market = '{cells[0]}'",
+                    $@"UPDATE market SET name = N'{dialog.MName}', surname = N'{dialog.Surname}', patronymic = N'{dialog.Patronymic}',  nationality = N'{dialog.Nationality}', phone = N'{dialog.Phone}', position = N'{dialog.Position}', price = '{dialog.Price}', dateofbirth= '{dialog.Dateofbirth}', team = '{dialog.Team}' WHERE ID_Market = '{cells[0]}'",
                     Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
             }

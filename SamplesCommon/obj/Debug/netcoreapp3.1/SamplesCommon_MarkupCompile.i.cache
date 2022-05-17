@@ -4,7 +4,7 @@
 library
 C#
 .cs
-C:\Users\User\Desktop\Курсовое проектирование 2.0\PRG\SamplesCommon\obj\Debug\netcoreapp3.1\
+C:\Users\FELIX-PC\Source\Repos\FMNew.git\SamplesCommon\obj\Debug\netcoreapp3.1\
 SamplesCommon
 none
 false
@@ -13,7 +13,7 @@ TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 13-727864181
 
 32722609609
-287-1601937950
+2871428235978
 AccentColorPicker.xaml;LayoutDensitySelector.xaml;SamplePages\SampleCompactSizingPage.xaml;SamplePages\SamplePage1.xaml;SamplePages\SamplePage2.xaml;SamplePages\SamplePage3.xaml;SamplePages\SamplePage4.xaml;SamplePages\SamplePage5.xaml;SamplePages\SamplePage6.xaml;SamplePages\SamplePage7.xaml;SamplePages\SampleSettingsPage.xaml;SamplePages\SampleStandardSizingPage.xaml;Themes\Generic.xaml;
 
 False

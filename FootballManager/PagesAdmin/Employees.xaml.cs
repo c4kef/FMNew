@@ -96,7 +96,7 @@ namespace FootballManager.PagesAdmin
             {
                 //To-Do возможно ошибка в  N'{dialog.Age}', замени на  {dialog.Age}
                 await new SqlCommand(
-                    $@"INSERT INTO employees (name, surname, patronymic, position, phone, age) VALUES (N'{dialog.EName}', N'{dialog.Surname}', N'{dialog.Patronymic}', N'{dialog.Position}', N'{dialog.Phone}', N'{dialog.Age}')",
+                    $@"INSERT INTO employees (name, surname, patronymic, position, phone, team, dateofbirth, nationality ) VALUES (N'{dialog.EName}', N'{dialog.Surname}', N'{dialog.Patronymic}', N'{dialog.Position}', N'{dialog.Phone}', N'{dialog.Team}',N'{dialog.Dateofbirth}')",
                     Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
             }
@@ -145,9 +145,12 @@ namespace FootballManager.PagesAdmin
             dialog.EName = (string)cells[1];
             dialog.Surname = (string)cells[2];
             dialog.Patronymic = (string)cells[3];
-            dialog.Position = (string)cells[4];
-            dialog.Phone = (string)cells[5];
-            dialog.Age = (int)cells[6];
+            dialog.Dateofbirth = (string)cells[4];
+            dialog.Position = (string)cells[5];
+            dialog.Phone = (string)cells[6];
+            dialog.Nationality = (string)cells[7];
+            dialog.Team = (string)cells[8];
+          
 
             var result = await dialog.ShowAsync();
 
@@ -155,7 +158,7 @@ namespace FootballManager.PagesAdmin
             {
                 try
                 {
-                    await new SqlCommand($@"UPDATE employees SET name = N'{dialog.EName}', surname = N'{dialog.Surname}', patronymic = N'{dialog.Patronymic}', position = N'{dialog.Position}', phone = N'{dialog.Phone}', age = N'{dialog.Age}' WHERE ID_Employee = '{cells[0]}'", Globals.connection).ExecuteNonQueryAsync();
+                    await new SqlCommand($@"UPDATE employees SET name = N'{dialog.EName}', surname = N'{dialog.Surname}', patronymic = N'{dialog.Patronymic}', position = N'{dialog.Position}', phone = N'{dialog.Phone}', team = N'{dialog.Team}', nationality = N'{dialog.Nationality}' , dateofbirth = N'{dialog.Dateofbirth}', WHERE ID_Employee = '{cells[0]}'", Globals.connection).ExecuteNonQueryAsync();
                     FillGrid();
                     
                 }

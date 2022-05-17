@@ -1,22 +1,13 @@
-﻿using FootballManager;
-using System.Data.SqlClient;
+﻿using ClosedXML.Excel;
+using Microsoft.Win32;
+using ModernWpf.Controls;
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Data;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Input;
-using System.Windows.Threading;
-using ModernWpf.Controls;
-using System.Reflection;
-using System.ComponentModel;
-using ClosedXML.Excel;
-using Microsoft.Win32;
 
 namespace FootballManager.PagesAdmin
 {
@@ -127,8 +118,8 @@ namespace FootballManager.PagesAdmin
                         Globals.connection).ExecuteNonQueryAsync();
                     
                     await new SqlCommand(
-                        $"INSERT INTO market(name, surname, patronymic, age, nationality, price, phone, position) VALUES " +
-                        $"(N'{selectedPlayer.Row.ItemArray[2]}',N'{selectedPlayer.Row.ItemArray[1]}',N'{selectedPlayer.Row.ItemArray[3]}',N'{selectedPlayer.Row.ItemArray[4]}',N'{selectedPlayer.Row.ItemArray[5]}','{price}',N'{selectedPlayer.Row.ItemArray[7]}',N'{selectedPlayer.Row.ItemArray[6]}')",
+                        $"INSERT INTO market(name, surname, patronymic, dateofbirth, nationality, position,phone,team) VALUES " +
+                        $"(N'{selectedPlayer.Row.ItemArray[2]}',N'{selectedPlayer.Row.ItemArray[1]}',N'{selectedPlayer.Row.ItemArray[3]}',N'{selectedPlayer.Row.ItemArray[4]}',N'{selectedPlayer.Row.ItemArray[5]}','{price}',N'{selectedPlayer.Row.ItemArray[7]}',N'{selectedPlayer.Row.ItemArray[6]}',N'{selectedPlayer.Row.ItemArray[8]}')",
                         Globals.connection).ExecuteNonQueryAsync();
                     
                     Globals.AddOperation(DateTime.Now, "Продажа игрока", Globals.Balance + price, price);
@@ -149,7 +140,7 @@ namespace FootballManager.PagesAdmin
             {
                 try
                 {
-                    await new SqlCommand($@"INSERT INTO playerlist (surname, name, patronymic, age, nationality, position, phone) VALUES (N'{dialog.Surname}', N'{dialog.MName}', N'{dialog.Patronymic}', N'{dialog.Age}', N'{dialog.Nationality}', N'{dialog.Position}', N'{dialog.Phone}')", Globals.connection).ExecuteNonQueryAsync();
+                  await new SqlCommand($@"INSERT INTO playerlist (surname, name, patronymic, dateofbirth, nationality, position, phone, team) VALUES (N'{dialog.Surname}', N'{dialog.MName}', N'{dialog.Patronymic}', N'{dialog.Dateofbirth}', N'{dialog.Nationality}', N'{dialog.Position}', N'{dialog.Phone}',N'{dialog.Team}')", Globals.connection).ExecuteNonQueryAsync();
                     FillGrid();
                     
                 }
@@ -184,16 +175,16 @@ namespace FootballManager.PagesAdmin
             dialog.Surname = (string)cells[1];
             dialog.MName = (string)cells[2];
             dialog.Patronymic = (string)cells[3];
-            dialog.Age = (int)cells[4];
+            dialog.Dateofbirth = (string)cells[4];
             dialog.Nationality = (string)cells[5];
             dialog.Position = (string)cells[6];
             dialog.Phone = (string)cells[7];
-
+            dialog.Team = (string)cells[8];
             var result = await dialog.ShowAsync();
 
             if (result == ContentDialogResult.Primary)
             {
-                await new SqlCommand($@"UPDATE playerlist SET surname = N'{dialog.Surname}', name = N'{dialog.MName}', patronymic =  N'{dialog.Patronymic}', age = N'{dialog.Age}', nationality = N'{dialog.Nationality}', position = N'{dialog.Position}', phone = N'{dialog.Phone}' WHERE ID_Player = '{cells[0]}'", Globals.connection).ExecuteNonQueryAsync();
+                await new SqlCommand($@"UPDATE playerlist SET surname = N'{dialog.Surname}', name = N'{dialog.MName}', patronymic =  N'{dialog.Patronymic}', dateofbirth = N'{dialog.Dateofbirth}', nationality = N'{dialog.Nationality}', position = N'{dialog.Position}', phone = N'{dialog.Phone}', team = N'{dialog.Team}', WHERE ID_Player = '{cells[0]}'", Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
             }
         }
