@@ -113,14 +113,13 @@ namespace FootballManager.PagesAdmin
             object[] cells = dt.Rows[dataGrid.SelectedIndex].ItemArray;
 
             dialog.Date = DateTime.Parse(cells[1].ToString());
-            dialog.Time = DateTime.Parse(cells[2].ToString());
-            dialog.Location = (string)cells[3];
+            dialog.Location = (string)cells[2];
 
             var result = await dialog.ShowAsync();
 
             if (result == ContentDialogResult.Primary)
             {
-                await new SqlCommand($@"UPDATE trainingschedule SET date = N'{dialog.Date}', time = N'{dialog.Time}', location = N'{dialog.Location}' WHERE ID_training_schedule = '{cells[0]}'", Globals.connection).ExecuteNonQueryAsync();
+                await new SqlCommand($@"UPDATE trainingschedule SET date = N'{dialog.Date}', location = N'{dialog.Location}' WHERE ID_training_schedule = '{cells[0]}'", Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
                 
             }

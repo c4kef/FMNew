@@ -219,11 +219,10 @@ namespace FootballManager.PagesAdmin
             object[] cells = dt.Rows[dataGrid.SelectedIndex].ItemArray;
 
             dialog.Date = DateTime.Parse(cells[1].ToString());
-            dialog.Time = DateTime.Parse(cells[2].ToString());
-            dialog.Team = (string)cells[3];
-            dialog.Stadium = (string)cells[4];
-            dialog.Tournaments = (string) cells[5];
-            dialog.ResultVal = (string) cells[6];
+            dialog.Team = (string)cells[2];
+            dialog.Stadium = (string)cells[3];
+            dialog.Tournaments = (string) cells[4];
+            dialog.ResultVal = (string) cells[5];
 
             var dt_t = new DataTable();
             new SqlDataAdapter(new SqlCommand("SELECT * FROM tournaments", Globals.connection)).Fill(dt_t);
@@ -234,7 +233,7 @@ namespace FootballManager.PagesAdmin
 
             if (result == ContentDialogResult.Primary)
             {
-                await new SqlCommand($@"UPDATE gamesschedule SET date = N'{dialog.Date}', time = N'{dialog.Time}', team = N'{dialog.Team}', stadium = N'{dialog.Stadium}', ID_tournament = (select ID_tournament from tournaments where name = N'{dialog.Tournaments}'), result = N'{dialog.ResultVal}' WHERE ID_game_shedule = '{cells[0]}'", Globals.connection).ExecuteNonQueryAsync();
+                await new SqlCommand($@"UPDATE gamesschedule SET date = N'{dialog.Date}', team = N'{dialog.Team}', stadium = N'{dialog.Stadium}', ID_tournament = (select ID_tournament from tournaments where name = N'{dialog.Tournaments}'), result = N'{dialog.ResultVal}' WHERE ID_game_shedule = '{cells[0]}'", Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
                 
             }

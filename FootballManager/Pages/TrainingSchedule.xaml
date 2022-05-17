@@ -118,7 +118,7 @@
                     <DataGridTextColumn
                         Header="Дата"
                         Width="83"
-                        Binding="{Binding date}" />
+                        Binding="{Binding date, StringFormat=dd/MM/yyyy}" />
                     <DataGridTextColumn
                         Header="Время"
                         Width="170"

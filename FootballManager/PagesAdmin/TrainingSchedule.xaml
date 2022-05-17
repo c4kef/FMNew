@@ -124,10 +124,6 @@
                         Width="83"
                         Binding="{Binding date, StringFormat=dd/MM/yyyy}" />
                     <DataGridTextColumn
-                        Header="Время"
-                        Width="170"
-                        Binding="{Binding time}" />
-                    <DataGridTextColumn
                         Header="Место проведения"
                         Width="170"
                         Binding="{Binding location}" />
