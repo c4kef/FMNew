@@ -26,8 +26,8 @@ namespace FootballManager.PagesAdmin
             InitializeComponent();
             this.DataContext = this;
             Status = new List<string>();
-            Status.Add("Выполнен");
             Status.Add("Не выполнен");
+            Status.Add("Выполнен");
             OnPropertyChanged("Status");
             Check();
         }

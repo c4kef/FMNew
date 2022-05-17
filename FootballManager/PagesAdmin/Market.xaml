@@ -141,7 +141,7 @@
                     <DataGridTextColumn
                         Header="дата рождения"
                         Width="68"
-                        Binding="{Binding dateofbrith}" />
+                        Binding="{Binding dateofbirth}" />
                     <DataGridTextColumn
                         Header="Национальность"
                         Width="120"
