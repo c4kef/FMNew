@@ -11,21 +11,21 @@
           "MaterialDesignThemes": "4.2.1",
           "ModernWpfUI": "0.9.4",
           "ModernWpfUI.MahApps": "0.9.4",
-          "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.18362.22"
+          "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.18362.25"
         },
         "runtime": {
           "SamplesCommon.dll": {}
         }
       },
-      "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.18362.22": {
+      "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.18362.25": {
         "runtime": {
           "Microsoft.Windows.SDK.NET.dll": {
-            "assemblyVersion": "10.0.18362.22",
-            "fileVersion": "10.0.18362.22"
+            "assemblyVersion": "10.0.18362.24",
+            "fileVersion": "10.0.18362.25"
           },
           "WinRT.Runtime.dll": {
-            "assemblyVersion": "1.4.0.0",
-            "fileVersion": "1.4.0.37231"
+            "assemblyVersion": "1.6.0.0",
+            "fileVersion": "1.6.2.38681"
           }
         }
       },
@@ -559,7 +559,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.18362.22": {
+    "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.18362.25": {
       "type": "runtimepack",
       "serviceable": false,
       "sha512": ""

@@ -7127,11 +7127,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Source\\Repos\\FMNew.git\\FootballManager\\FootballManager.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\FMNew\\FootballManager\\FootballManager.csproj",
       "projectName": "FootballManager",
-      "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\FMNew.git\\FootballManager\\FootballManager.csproj",
+      "projectPath": "C:\\Users\\Administrator\\source\\repos\\FMNew\\FootballManager\\FootballManager.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Source\\Repos\\FMNew.git\\FootballManager\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Source\\Repos\\FMNew\\FootballManager\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7148,8 +7148,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Administrator\\Source\\Repos\\FMNew.git\\SamplesCommon\\SamplesCommon.csproj": {
-              "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\FMNew.git\\SamplesCommon\\SamplesCommon.csproj"
+            "C:\\Users\\Administrator\\source\\repos\\FMNew\\SamplesCommon\\SamplesCommon.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\source\\repos\\FMNew\\SamplesCommon\\SamplesCommon.csproj"
             }
           }
         }

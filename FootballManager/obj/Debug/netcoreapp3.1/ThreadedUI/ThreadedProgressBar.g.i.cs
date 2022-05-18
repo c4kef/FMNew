@@ -68,7 +68,7 @@ namespace FootballManager.ThreadedUI {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FootballManager;V1.0.0.0;component/threadedui/threadedprogressbar.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FootballManager;component/threadedui/threadedprogressbar.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\ThreadedUI\ThreadedProgressBar.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

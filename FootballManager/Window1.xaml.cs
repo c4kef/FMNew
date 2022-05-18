@@ -22,7 +22,7 @@ namespace FootballManager
     {
         public Window1()
         {
-            Globals.connection = new SqlConnection(@"Data Source=C4ke;Initial Catalog=footballclub1; Integrated Security = True; MultipleActiveResultSets=True");
+            Globals.connection = new SqlConnection(@"Data Source=WIN-P1BOUU7ESNI\SQLEXPRESS;Initial Catalog=footballclub1; Integrated Security = True; MultipleActiveResultSets=True");
             Globals.connection.Open();
             InitializeComponent();
         }

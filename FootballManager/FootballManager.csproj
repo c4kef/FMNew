@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+	<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
@@ -36,61 +37,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Navigation\NavigationRootPagePlayer - Copy - Copy.xaml.cs">
-      <DependentUpon>NavigationRootPagePlayer - Copy.xaml.cs</DependentUpon>
-    </Compile>
-    <Compile Update="Navigation\NavigationRootPagePlayer - Copy.xaml.cs">
-      <DependentUpon>NavigationRootPagePlayer.xaml.cs</DependentUpon>
-    </Compile>
-    <Compile Update="Pages\GraphicPlayer - Copy %282%29 - Copy %282%29.xaml.cs">
-      <DependentUpon>GraphicPlayer - Copy (2).xaml.cs</DependentUpon>
-    </Compile>
-    <Compile Update="Pages\GraphicPlayer - Copy %282%29 - Copy - Copy.xaml.cs">
-      <DependentUpon>GraphicPlayer - Copy (2) - Copy.xaml.cs</DependentUpon>
-    </Compile>
-    <Compile Update="Pages\GraphicPlayer - Copy %282%29 - Copy.xaml.cs">
-      <DependentUpon>GraphicPlayer - Copy (2).xaml.cs</DependentUpon>
-    </Compile>
-    <Compile Update="Pages\GraphicPlayer - Copy %282%29.xaml.cs">
-      <DependentUpon>GraphicPlayer.xaml.cs</DependentUpon>
-    </Compile>
-    <Compile Update="Pages\GraphicPlayer - Copy - Copy %282%29 - Copy.xaml.cs">
-      <DependentUpon>GraphicPlayer - Copy - Copy (2).xaml.cs</DependentUpon>
-    </Compile>
-    <Compile Update="Pages\GraphicPlayer - Copy - Copy %282%29.xaml.cs">
-      <DependentUpon>GraphicPlayer - Copy.xaml.cs</DependentUpon>
-    </Compile>
-    <Compile Update="Pages\GraphicPlayer - Copy - Copy %283%29.xaml.cs">
-      <DependentUpon>GraphicPlayer - Copy.xaml.cs</DependentUpon>
-    </Compile>
-    <Compile Update="Pages\GraphicPlayer - Copy - Copy - Copy %282%29.xaml.cs">
-      <DependentUpon>GraphicPlayer - Copy - Copy.xaml.cs</DependentUpon>
-    </Compile>
-    <Compile Update="Pages\GraphicPlayer - Copy - Copy - Copy - Copy.xaml.cs">
-      <DependentUpon>GraphicPlayer - Copy - Copy - Copy.xaml.cs</DependentUpon>
-    </Compile>
-    <Compile Update="Pages\GraphicPlayer - Copy - Copy - Copy.xaml.cs">
-      <DependentUpon>GraphicPlayer - Copy - Copy.xaml.cs</DependentUpon>
-    </Compile>
-    <Compile Update="Pages\GraphicPlayer - Copy - Copy.xaml.cs">
-      <DependentUpon>GraphicPlayer - Copy.xaml.cs</DependentUpon>
-    </Compile>
-    <Compile Update="Pages\GraphicPlayer - Copy.xaml.cs">
-      <DependentUpon>GraphicPlayer.xaml.cs</DependentUpon>
-    </Compile>
     <Compile Update="Properties\Settings.Designer.cs">
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="obj\Debug\netcoreapp3.1\FootballManager_0xy4xiwu_wpftmp.AssemblyInfo.cs" />
-    <Compile Include="obj\Debug\netcoreapp3.1\FootballManager_52kvkfco_wpftmp.AssemblyInfo.cs" />
-    <Compile Include="obj\Debug\netcoreapp3.1\FootballManager_c0n4oemk_wpftmp.AssemblyInfo.cs" />
-    <Compile Include="obj\Debug\netcoreapp3.1\FootballManager_ej4rd0n0_wpftmp.AssemblyInfo.cs" />
-    <Compile Include="obj\Debug\netcoreapp3.1\FootballManager_eriuj4fg_wpftmp.AssemblyInfo.cs" />
-    <Compile Include="obj\Debug\netcoreapp3.1\FootballManager_oy3hgv21_wpftmp.AssemblyInfo.cs" />
-    <Compile Include="obj\Debug\netcoreapp3.1\FootballManager_qzfnfgk3_wpftmp.AssemblyInfo.cs" />
-    <Compile Include="obj\Debug\netcoreapp3.1\FootballManager_rwwfvr2l_wpftmp.AssemblyInfo.cs" />
   </ItemGroup>
 
   <ItemGroup>

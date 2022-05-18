@@ -3076,11 +3076,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Source\\Repos\\FMNew.git\\SamplesCommon\\SamplesCommon.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Source\\Repos\\FMNew\\SamplesCommon\\SamplesCommon.csproj",
       "projectName": "SamplesCommon",
-      "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\FMNew.git\\SamplesCommon\\SamplesCommon.csproj",
+      "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\FMNew\\SamplesCommon\\SamplesCommon.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Source\\Repos\\FMNew.git\\SamplesCommon\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Source\\Repos\\FMNew\\SamplesCommon\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "configFilePaths": [

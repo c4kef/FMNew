@@ -76,7 +76,7 @@ namespace SamplesCommon.SamplePages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SamplesCommon;V1.0.0.0;component/samplepages/samplepage2.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SamplesCommon;component/samplepages/samplepage2.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\SamplePages\SamplePage2.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

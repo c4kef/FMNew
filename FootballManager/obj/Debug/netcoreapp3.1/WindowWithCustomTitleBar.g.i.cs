@@ -86,7 +86,7 @@ namespace FootballManager {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FootballManager;V1.0.0.0;component/windowwithcustomtitlebar.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FootballManager;component/windowwithcustomtitlebar.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\WindowWithCustomTitleBar.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
