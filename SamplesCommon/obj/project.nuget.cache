@@ -1,23 +1,50 @@
 {
   "version": 2,
-  "dgSpecHash": "xsZKXKq/rwYgJhbgGB1iQEgNnMfg/zpztkyMPGY+WMDMEwP+K91whUuzpDFqFpXCdaSGg9wZyEvYxmSwwuwUvg==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\source\\repos\\FMNew\\SamplesCommon\\SamplesCommon.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Administrator\\.nuget\\packages\\controlzex\\4.4.0\\controlzex.4.4.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\mahapps.metro\\2.4.4\\mahapps.metro.2.4.4.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\materialdesigncolors\\2.0.3\\materialdesigncolors.2.0.3.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\materialdesignthemes\\4.2.1\\materialdesignthemes.4.2.1.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.platforms\\3.0.0\\microsoft.netcore.platforms.3.0.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.windows.sdk.contracts\\10.0.18362.2005\\microsoft.windows.sdk.contracts.10.0.18362.2005.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.19\\microsoft.xaml.behaviors.wpf.1.1.19.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\modernwpfui\\0.9.4\\modernwpfui.0.9.4.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\modernwpfui.mahapps\\0.9.4\\modernwpfui.mahapps.0.9.4.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\system.runtime.windowsruntime\\4.6.0\\system.runtime.windowsruntime.4.6.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\system.runtime.windowsruntime.ui.xaml\\4.6.0\\system.runtime.windowsruntime.ui.xaml.4.6.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.18362.25\\microsoft.windows.sdk.net.ref.10.0.18362.25.nupkg.sha512"
-  ],
-  "logs": []
+  "dgSpecHash": "ec8/0w/Gs2hIrqiQY3Euvr7DiDxUGGmWxNnRJVyJtOA/4eXyLHHNCZ9gTozqOnkEE/yL7YWsyDS5uUOJuOYHcg==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\Администратор\\source\\repos\\FMNew\\SamplesCommon\\SamplesCommon.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Не удалось найти пакет MaterialDesignThemes. Пакеты с таким идентификатором отсутствуют в следующих источниках пакетов: Microsoft Visual Studio Offline Packages",
+      "libraryId": "MaterialDesignThemes",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1",
+        ".NETFramework,Version=v4.8",
+        "net5.0-windows10.0.18362"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Не удалось найти пакет ModernWpfUI. Пакеты с таким идентификатором отсутствуют в следующих источниках пакетов: Microsoft Visual Studio Offline Packages",
+      "libraryId": "ModernWpfUI",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1",
+        ".NETFramework,Version=v4.8",
+        "net5.0-windows10.0.18362"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Не удалось найти пакет ModernWpfUI.MahApps. Пакеты с таким идентификатором отсутствуют в следующих источниках пакетов: Microsoft Visual Studio Offline Packages",
+      "libraryId": "ModernWpfUI.MahApps",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1",
+        "net5.0-windows10.0.18362"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Не удалось найти пакет Microsoft.Windows.SDK.NET.Ref. Пакеты с таким идентификатором отсутствуют в следующих источниках пакетов: Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.Windows.SDK.NET.Ref",
+      "targetGraphs": [
+        "net5.0-windows10.0.18362"
+      ]
+    }
+  ]
 }

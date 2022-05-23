@@ -1,7 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
@@ -37,6 +36,48 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Navigation\NavigationRootPagePlayer - Copy - Copy.xaml.cs">
+      <DependentUpon>NavigationRootPagePlayer - Copy.xaml.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Navigation\NavigationRootPagePlayer - Copy.xaml.cs">
+      <DependentUpon>NavigationRootPagePlayer.xaml.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\GraphicPlayer - Copy %282%29 - Copy %282%29.xaml.cs">
+      <DependentUpon>GraphicPlayer - Copy (2).xaml.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\GraphicPlayer - Copy %282%29 - Copy - Copy.xaml.cs">
+      <DependentUpon>GraphicPlayer - Copy (2) - Copy.xaml.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\GraphicPlayer - Copy %282%29 - Copy.xaml.cs">
+      <DependentUpon>GraphicPlayer - Copy (2).xaml.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\GraphicPlayer - Copy %282%29.xaml.cs">
+      <DependentUpon>GraphicPlayer.xaml.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\GraphicPlayer - Copy - Copy %282%29 - Copy.xaml.cs">
+      <DependentUpon>GraphicPlayer - Copy - Copy (2).xaml.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\GraphicPlayer - Copy - Copy %282%29.xaml.cs">
+      <DependentUpon>GraphicPlayer - Copy.xaml.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\GraphicPlayer - Copy - Copy %283%29.xaml.cs">
+      <DependentUpon>GraphicPlayer - Copy.xaml.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\GraphicPlayer - Copy - Copy - Copy %282%29.xaml.cs">
+      <DependentUpon>GraphicPlayer - Copy - Copy.xaml.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\GraphicPlayer - Copy - Copy - Copy - Copy.xaml.cs">
+      <DependentUpon>GraphicPlayer - Copy - Copy - Copy.xaml.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\GraphicPlayer - Copy - Copy - Copy.xaml.cs">
+      <DependentUpon>GraphicPlayer - Copy - Copy.xaml.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\GraphicPlayer - Copy - Copy.xaml.cs">
+      <DependentUpon>GraphicPlayer - Copy.xaml.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\GraphicPlayer - Copy.xaml.cs">
+      <DependentUpon>GraphicPlayer.xaml.cs</DependentUpon>
+    </Compile>
     <Compile Update="Properties\Settings.Designer.cs">
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <AutoGen>True</AutoGen>

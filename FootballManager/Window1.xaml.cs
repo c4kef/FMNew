@@ -22,7 +22,7 @@ namespace FootballManager
     {
         public Window1()
         {
-            Globals.connection = new SqlConnection(@"Data Source=WIN-P1BOUU7ESNI\SQLEXPRESS;Initial Catalog=footballclub1; Integrated Security = True; MultipleActiveResultSets=True");
+            Globals.connection = new SqlConnection(@"Data Source=C4ke;Initial Catalog=footballclub1; Integrated Security = True; MultipleActiveResultSets=True");
             Globals.connection.Open();
             InitializeComponent();
         }
@@ -52,17 +52,17 @@ namespace FootballManager
               else
                   MessageBox.Show("Неверный логин или пароль!");*/
 
-            SqlCommand bdsql = new SqlCommand($"SELECT * FROM manager WHERE login = N'{Login.Text}' AND password = N'{Password.Password}'", Globals.connection);
-
-            SqlCommand check_not_valid = new SqlCommand($"INSERT INTO manager(login, password) values (N'{Login.Text}', N'{Password.Password}')",Globals.connection);
-            SqlDataReader reader = bdsql.ExecuteReader();
+            SqlDataReader reader = new SqlCommand($"SELECT * FROM manager WHERE login = N'{Login.Text}'", Globals.connection).ExecuteReader();
             if (reader.HasRows)
             {
                 reader.Read();
                 var login = reader.GetString(1);
                 var password = reader.GetString(2);
                 if (login == Login.Text && password == Password.Password)
-                {
+                { 
+                    Auth.Visibility = Visibility.Hidden;
+                    Globals.UserLogin = "Менеджер";
+                    Globals.isManager = true;
                     new MainWindow().Show();
                     this.Close();
                 }
@@ -70,7 +70,10 @@ namespace FootballManager
             }
             else 
             {
-                check_not_valid.ExecuteNonQuery();
+                new SqlCommand($"INSERT INTO manager(login, password) values (N'{Login.Text}', N'{Password.Password}')",Globals.connection).ExecuteNonQuery();
+                Auth.Visibility = Visibility.Hidden;
+                Globals.UserLogin = "Менеджер";
+                Globals.isManager = true;
                 new MainWindow().Show();
                 this.Close();
             }

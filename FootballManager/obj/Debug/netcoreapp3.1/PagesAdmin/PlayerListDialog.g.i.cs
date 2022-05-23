@@ -61,7 +61,7 @@ namespace FootballManager.PagesAdmin {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FootballManager;component/pagesadmin/playerlistdialog.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FootballManager;V1.0.0.0;component/pagesadmin/playerlistdialog.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\PagesAdmin\PlayerListDialog.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
