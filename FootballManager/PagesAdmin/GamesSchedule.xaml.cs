@@ -59,7 +59,7 @@ namespace FootballManager.PagesAdmin
                 rval = value;
 
                 foreach (DataRowView dr in dataGrid.ItemsSource)
-                {
+                { 
                     (dataGrid.ItemContainerGenerator.ContainerFromItem(dr) as DataGridRow).Visibility = Visibility.Visible;
 
                     if (value != "Без фильтра" && dr[5].ToString().ToLower() != value.ToLower())
