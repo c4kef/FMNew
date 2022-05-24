@@ -17,7 +17,7 @@ namespace FootballManager.PagesAdmin
             Check();
         }
 
-        private DateTime time = DateTime.Now;
+        /*private DateTime time = DateTime.Now;
         public DateTime Time
         {
             get
@@ -32,7 +32,7 @@ namespace FootballManager.PagesAdmin
                 time = value;
                 Check();
             }
-        }
+        }*/
 
         private DateTime date = DateTime.Now;
         public DateTime Date
@@ -118,6 +118,23 @@ namespace FootballManager.PagesAdmin
                 Check();
             }
         }
+        
+        private decimal? revenue;
+        public decimal? Revenue
+        {
+            get
+            {
+                return revenue;
+            }
+            set
+            {
+                if (revenue == value)
+                    return;
+
+                revenue = value;
+                Check();
+            }
+        }
 
         public List<string> ListTours { get; set; }
         public List<string> Result { get; set; }
@@ -128,7 +145,16 @@ namespace FootballManager.PagesAdmin
                 e.Handled = !Char.IsLetter(Convert.ToChar(e.Text));
             }
             catch { }
-        }
-        public void Check() => this.IsPrimaryButtonEnabled = !(Time.Date.Year < 2000 || (Date.Date.Year < 2000) || string.IsNullOrEmpty(Stadium) || string.IsNullOrEmpty(Team) || string.IsNullOrEmpty(Tournaments) || string.IsNullOrEmpty(ResultVal));
+        }//revenue
+        
+        private void CheckDigits(object sender, System.Windows.Input.TextCompositionEventArgs e)
+        {
+            try
+            {
+                e.Handled = Char.IsLetter(Convert.ToChar(e.Text));
+            }
+            catch { }
+        }//revenue
+        public void Check() => this.IsPrimaryButtonEnabled = !(/*Time.Date.Year < 2000 || */(Date.Date.Year < 2000) || Revenue is null || string.IsNullOrEmpty(Stadium) || string.IsNullOrEmpty(Team) || string.IsNullOrEmpty(Tournaments) || string.IsNullOrEmpty(ResultVal));
     }
 }

@@ -1,6 +1,7 @@
 ﻿using ModernWpf.Controls;
 using System;
 using System.ComponentModel;
+using System.Text.RegularExpressions;
 
 namespace FootballManager.PagesAdmin
 {
@@ -183,14 +184,7 @@ namespace FootballManager.PagesAdmin
             }
             catch { }
         }
-        private void CheckPhone(object sender, System.Windows.Input.TextCompositionEventArgs e)
-        {
-            try
-            {
-                e.Handled = System.Text.RegularExpressions.Regex.IsMatch(e.Text, @"[^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$]");
-            }
-            catch { }
-        }
-        public void Check() => this.IsPrimaryButtonEnabled = !(string.IsNullOrEmpty(MName) || string.IsNullOrEmpty(Surname) || string.IsNullOrEmpty(Patronymic) || string.IsNullOrEmpty(Dateofbirth) || string.IsNullOrEmpty(Team)|| string.IsNullOrEmpty(Nationality) ||  string.IsNullOrEmpty(Phone) || string.IsNullOrEmpty(Position) || Price == null);
+        
+        public void Check() => this.IsPrimaryButtonEnabled = !(string.IsNullOrEmpty(MName) || string.IsNullOrEmpty(Surname) || string.IsNullOrEmpty(Patronymic) || string.IsNullOrEmpty(Dateofbirth) || string.IsNullOrEmpty(Team) || string.IsNullOrEmpty(Nationality) || !Regex.IsMatch(Phone ?? string.Empty, @"^\+375 (17|29|33|44) [0-9]{3}-[0-9]{2}-[0-9]{2}$") || string.IsNullOrEmpty(Position) || Price == null);
     }
 }

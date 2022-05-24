@@ -126,7 +126,7 @@
                     <DataGridTextColumn
                         Header="Дата"
                         Width="83"
-                        Binding="{Binding date, StringFormat=dd/MM/yyyy}" />
+                        Binding="{Binding date}" />
                     <DataGridTextColumn
                         Header="Команда соперников"
                         Width="145"
@@ -143,6 +143,10 @@
                         Header="Результат игры"
                         Width="150"
                         Binding="{Binding result}" />
+                    <DataGridTextColumn
+                        Header="Доход"
+                        Width="150"
+                        Binding="{Binding revenue}" />
                 </DataGrid.Columns>
                 <DataGrid.GroupStyle>
                     <GroupStyle

@@ -36,10 +36,10 @@ namespace FootballManager.PagesAdmin
             dt_p = new DataTable();
             dt_o = new DataTable();
 //
-            adapter_oe = new SqlDataAdapter(new SqlCommand("SELECT ID_Buy, PlayerList.surname, date, sum FROM playersAdd join playerList ON (playersAdd.ID_Player = playerlist.ID_Player)", Globals.connection));
+            adapter_oe = new SqlDataAdapter(new SqlCommand("SELECT ID_BuyPlayer, PlayerList.surname, datebuy, sumbuy FROM buyplayer join playerList ON (buyplayer.ID_Player = playerlist.ID_Player)", Globals.connection));
             adapter_oe.Fill(dt_p);
 
-            adapter_se = new SqlDataAdapter(new SqlCommand("SELECT ID_Sell, playerlist_orders.surname, date, sum FROM playersOrder join playerlist_orders ON (playersOrder.ID_Player = playerlist_orders.ID_Player)", Globals.connection));
+            adapter_se = new SqlDataAdapter(new SqlCommand("SELECT ID_SellPlayer, market.surname, datesell, sumsell FROM sellplayer join market ON (sellplayer.ID_Market = market.ID_Market)", Globals.connection));
             adapter_se.Fill(dt_o);
 
             dataGridOrderP.ItemsSource = dt_p.DefaultView;
@@ -124,8 +124,10 @@ namespace FootballManager.PagesAdmin
             }
         }
 
-        public static async Task AddP(string pid, decimal sum) => await new SqlCommand($@"INSERT INTO playersAdd (ID_Player, date, sum) VALUES ((select ID_Player from PlayerList where surname = N'{pid}'), N'{DateTime.Now.Date.ToString()}', {sum})", Globals.connection).ExecuteNonQueryAsync();
-        public static async Task AddO(string pid, decimal sum) => await new SqlCommand($@"INSERT INTO playersOrder (ID_Player, date, sum) VALUES ((select ID_Player from playerlist_orders where surname = N'{pid}'), N'{DateTime.Now.Date.ToString("MM/dd/yyyy")}', {sum})", Globals.connection).ExecuteNonQueryAsync();
+        //PlayersAdd
+        public static async Task AddP(string pid, decimal sum) => await new SqlCommand($@"INSERT INTO buyplayer (ID_Player, datebuy, sumbuy) VALUES ((select ID_Player from playerlist where surname = N'{pid}'), N'{DateTime.Now.Date}', '{sum}')",Globals.connection).ExecuteNonQueryAsync();
+        public static async Task AddO(string pid, decimal sum) => await new SqlCommand($"INSERT INTO SellPlayer (ID_Market, datesell, sumsell) VALUES ((select ID_Market from market where surname = N'{pid}'), N'{DateTime.Now.Date}', '{sum}')",Globals.connection).ExecuteNonQueryAsync();
+            //await new SqlCommand($@"INSERT INTO playersOrder (ID_Player, date, sum) VALUES ((select ID_Player from playerlist_orders where surname = N'{pid}'), N'{DateTime.Now.Date.ToString("MM/dd/yyyy")}', {sum})", Globals.connection).ExecuteNonQueryAsync();
 
         private void SearchO(object sender, KeyEventArgs e)
         {

@@ -43,7 +43,7 @@ namespace FootballManager.PagesAdmin
                 {
                     (dataGrid.ItemContainerGenerator.ContainerFromItem(dr) as DataGridRow).Visibility = Visibility.Visible;
 
-                    if (value != "Без фильтра" && !dr[5].ToString().ToLower().Contains(value.ToLower()))
+                    if (value != "Без фильтра" && !dr[4].ToString().ToLower().Contains(value.ToLower()))
                         (dataGrid.ItemContainerGenerator.ContainerFromItem(dr) as DataGridRow).Visibility = Visibility.Collapsed;
                 }
             }
@@ -62,7 +62,7 @@ namespace FootballManager.PagesAdmin
                 {
                     (dataGrid.ItemContainerGenerator.ContainerFromItem(dr) as DataGridRow).Visibility = Visibility.Visible;
 
-                    if (value != "Без фильтра" && dr[6].ToString().ToLower() != value.ToLower())
+                    if (value != "Без фильтра" && dr[5].ToString().ToLower() != value.ToLower())
                         (dataGrid.ItemContainerGenerator.ContainerFromItem(dr) as DataGridRow).Visibility = Visibility.Collapsed;
                 }
             }
@@ -88,7 +88,7 @@ namespace FootballManager.PagesAdmin
 
         public void FillGrid()
         {
-            SqlCommand cmdSel = new SqlCommand("SELECT ID_game_shedule, date, time, team, stadium, Tournaments.name, result, ticket_price, ticket_count FROM Gamesschedule join Tournaments ON (Gamesschedule.ID_tournament = Tournaments.ID_tournament)", Globals.connection);
+            SqlCommand cmdSel = new SqlCommand("SELECT ID_game_shedule, date, team, stadium, Tournaments.name, result, ticket_count, revenue FROM Gamesschedule join Tournaments ON (Gamesschedule.ID_tournament = Tournaments.ID_tournament)", Globals.connection);
             adapter = new SqlDataAdapter(cmdSel);
             dt = new DataTable();
             adapter.Fill(dt);
@@ -191,7 +191,7 @@ namespace FootballManager.PagesAdmin
 
             if (result == ContentDialogResult.Primary)
             {
-                await new SqlCommand($@"INSERT INTO gamesschedule (date, time, team, stadium, ID_tournament, result, ticket_price, ticket_count) VALUES (N'{dialog.Date}', N'{dialog.Time}', N'{dialog.Team}', N'{dialog.Stadium}', (select ID_tournament from tournaments where name = N'{dialog.Tournaments}'), N'{dialog.ResultVal}', '0', '0')", Globals.connection).ExecuteNonQueryAsync();
+                await new SqlCommand($@"INSERT INTO gamesschedule (date, team, stadium, ID_tournament, result, ticket_count, revenue) VALUES (N'{dialog.Date}', N'{dialog.Team}', N'{dialog.Stadium}', (select ID_tournament from tournaments where name = N'{dialog.Tournaments}'), N'{dialog.ResultVal}', '0', '{dialog.Revenue}')", Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
             }
         }
@@ -223,6 +223,7 @@ namespace FootballManager.PagesAdmin
             dialog.Stadium = (string)cells[3];
             dialog.Tournaments = (string) cells[4];
             dialog.ResultVal = (string) cells[5];
+            dialog.Revenue = decimal.Parse(cells[7].ToString());
 
             var dt_t = new DataTable();
             new SqlDataAdapter(new SqlCommand("SELECT * FROM tournaments", Globals.connection)).Fill(dt_t);
@@ -233,9 +234,8 @@ namespace FootballManager.PagesAdmin
 
             if (result == ContentDialogResult.Primary)
             {
-                await new SqlCommand($@"UPDATE gamesschedule SET date = N'{dialog.Date}', team = N'{dialog.Team}', stadium = N'{dialog.Stadium}', ID_tournament = (select ID_tournament from tournaments where name = N'{dialog.Tournaments}'), result = N'{dialog.ResultVal}' WHERE ID_game_shedule = '{cells[0]}'", Globals.connection).ExecuteNonQueryAsync();
+                await new SqlCommand($@"UPDATE gamesschedule SET date = N'{dialog.Date}', team = N'{dialog.Team}', stadium = N'{dialog.Stadium}', ID_tournament = (select ID_tournament from tournaments where name = N'{dialog.Tournaments}'), result = N'{dialog.ResultVal}', revenue = '{dialog.Revenue}' WHERE ID_game_shedule = '{cells[0]}'", Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
-                
             }
         }
         
@@ -315,7 +315,7 @@ namespace FootballManager.PagesAdmin
 
             object[] cells = dt.Rows[dataGrid.SelectedIndex].ItemArray;
 
-            if ((string) cells[6] == "Не играли")
+            if ((string) cells[5] == "Не играли")
             {
                 MessageBox.Show("Игра еще не проводилась");
                 return;

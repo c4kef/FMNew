@@ -106,27 +106,28 @@ namespace FootballManager.PagesAdmin
 
                 var selectedPlayer = (DataRowView)dataGrid.SelectedItem;
                 {
+                    /*await new SqlCommand(
+                        $"INSERT INTO market(name, surname, patronymic, dateofbirth, nationality, position,phone,team) VALUES " +
+                        $"(N'{selectedPlayer.Row.ItemArray[2]}',N'{selectedPlayer.Row.ItemArray[1]}',N'{selectedPlayer.Row.ItemArray[3]}',N'{selectedPlayer.Row.ItemArray[4]}',N'{selectedPlayer.Row.ItemArray[5]}','{price}',N'{selectedPlayer.Row.ItemArray[7]}',N'{selectedPlayer.Row.ItemArray[6]}',N'{selectedPlayer.Row.ItemArray[8]}')",
+                        Globals.connection).ExecuteNonQueryAsync();*/
+                    
                     await new SqlCommand(
-                        $"INSERT INTO playerlist_orders (surname) VALUES (N'{selectedPlayer.Row.ItemArray[1]}')",
+                        $"INSERT INTO market(ID_Player, surname, name, patronymic, price, team, dateofbirth, nationality, position, phone) VALUES " +
+                        $"((select ID_Player from PlayerList where surname = N'{selectedPlayer.Row.ItemArray[1]}'), N'{selectedPlayer.Row.ItemArray[1]}', N'{selectedPlayer.Row.ItemArray[2]}', N'{selectedPlayer.Row.ItemArray[3]}', '{price}', N'{selectedPlayer.Row.ItemArray[8]}', N'{selectedPlayer.Row.ItemArray[4]}', N'{selectedPlayer.Row.ItemArray[5]}', N'{selectedPlayer.Row.ItemArray[6]}',N'{selectedPlayer.Row.ItemArray[7]}')",
                         Globals.connection).ExecuteNonQueryAsync();
 
                     //To-Do
                     await OperationsPlayers.AddO(selectedPlayer.Row.ItemArray[1].ToString(), price);
 
-                    await new SqlCommand(
+                    /*await new SqlCommand(
                         $"DELETE FROM playerlist WHERE ID_Player = '{selectedPlayer.Row.ItemArray[0]}'",
-                        Globals.connection).ExecuteNonQueryAsync();
-                    
-                    await new SqlCommand(
-                        $"INSERT INTO market(name, surname, patronymic, dateofbirth, nationality, position,phone,team) VALUES " +
-                        $"(N'{selectedPlayer.Row.ItemArray[2]}',N'{selectedPlayer.Row.ItemArray[1]}',N'{selectedPlayer.Row.ItemArray[3]}',N'{selectedPlayer.Row.ItemArray[4]}',N'{selectedPlayer.Row.ItemArray[5]}','{price}',N'{selectedPlayer.Row.ItemArray[7]}',N'{selectedPlayer.Row.ItemArray[6]}',N'{selectedPlayer.Row.ItemArray[8]}')",
-                        Globals.connection).ExecuteNonQueryAsync();
-                    
+                        Globals.connection).ExecuteNonQueryAsync();//Как-то удалять надо игрока
+
                     Globals.AddOperation(DateTime.Now, "Продажа игрока", Globals.Balance + price, price);
                     Globals.Balance += price;
-                    FillGrid();
+                    FillGrid();*/
 
-                    MessageBox.Show("Игрок успешно продан!");
+                    MessageBox.Show("Игрок успешно выставлен на продажу!");
                 }
             }
         }
@@ -185,7 +186,7 @@ namespace FootballManager.PagesAdmin
 
             if (result == ContentDialogResult.Primary)
             {
-                await new SqlCommand($@"UPDATE playerlist SET surname = N'{dialog.Surname}', name = N'{dialog.MName}', patronymic =  N'{dialog.Patronymic}', dateofbirth = N'{dialog.Dateofbirth}', nationality = N'{dialog.Nationality}', position = N'{dialog.Position}', phone = N'{dialog.Phone}', team = N'{dialog.Team}', WHERE ID_Player = '{cells[0]}'", Globals.connection).ExecuteNonQueryAsync();
+                await new SqlCommand($@"UPDATE playerlist SET surname = N'{dialog.Surname}', name = N'{dialog.MName}', patronymic =  N'{dialog.Patronymic}', dateofbirth = N'{dialog.Dateofbirth}', nationality = N'{dialog.Nationality}', position = N'{dialog.Position}', phone = N'{dialog.Phone}', team = N'{dialog.Team}' WHERE ID_Player = '{cells[0]}'", Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
             }
         }
@@ -199,12 +200,21 @@ namespace FootballManager.PagesAdmin
                 return;
             }
 
-            MessageBoxResult res = MessageBox.Show("Вы уверены, что хотите удалить данную запись?", "Внимание!", MessageBoxButton.YesNo, MessageBoxImage.Question);
-            if (res != MessageBoxResult.No)
+            try
             {
-                await new SqlCommand($@"DELETE FROM playerlist WHERE ID_Player = '{dt.Rows[dataGrid.SelectedIndex].ItemArray[0]}'", Globals.connection).ExecuteNonQueryAsync();
-                FillGrid();
-                
+                MessageBoxResult res = MessageBox.Show("Вы уверены, что хотите удалить данную запись?", "Внимание!",
+                    MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (res != MessageBoxResult.No)
+                {
+                    await new SqlCommand(
+                        $@"DELETE FROM playerlist WHERE ID_Player = '{dt.Rows[dataGrid.SelectedIndex].ItemArray[0]}'",
+                        Globals.connection).ExecuteNonQueryAsync();
+                    FillGrid();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Упс, об этом игроке есть записи в других местах");
             }
         }
         private void CheckDigits(object sender, System.Windows.Input.TextCompositionEventArgs e)

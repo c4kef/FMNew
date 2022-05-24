@@ -2,6 +2,7 @@
 using System;
 using System.ComponentModel;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace FootballManager.PagesAdmin
 {
@@ -65,8 +66,6 @@ namespace FootballManager.PagesAdmin
                 Check();
             }
         }
-
-        
 
         private string nationality;
         public string Nationality
@@ -166,6 +165,6 @@ namespace FootballManager.PagesAdmin
             }
             catch { }
         }
-        public void Check() => this.IsPrimaryButtonEnabled = !(string.IsNullOrEmpty(Patronymic) || Patronymic.Any(char.IsDigit) || string.IsNullOrEmpty(Surname) || Surname.Any(char.IsDigit) || string.IsNullOrEmpty(MName) || MName.Any(char.IsDigit) || string.IsNullOrEmpty(Nationality) ||  string.IsNullOrEmpty(Phone) || string.IsNullOrEmpty(Position)) || string.IsNullOrEmpty(Team) || string.IsNullOrEmpty(Dateofbirth);
+        public void Check() => this.IsPrimaryButtonEnabled = !(string.IsNullOrEmpty(Patronymic) || Patronymic.Any(char.IsDigit) || string.IsNullOrEmpty(Surname) || Surname.Any(char.IsDigit) || string.IsNullOrEmpty(MName) || MName.Any(char.IsDigit) || string.IsNullOrEmpty(Nationality) ||  !Regex.IsMatch(Phone ?? string.Empty, @"^\+375 (17|29|33|44) [0-9]{3}-[0-9]{2}-[0-9]{2}$") || string.IsNullOrEmpty(Position)) || string.IsNullOrEmpty(Team) || string.IsNullOrEmpty(Dateofbirth);
     }
 }

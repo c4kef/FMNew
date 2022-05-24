@@ -121,7 +121,7 @@
                     <DataGridTextColumn
                         Header="id"
                         Width="105"
-                        Binding="{Binding id}" Visibility="Hidden" />
+                        Binding="{Binding ID_Market}" Visibility="Hidden" />
                     <DataGridTextColumn
                         Header="Фамилия"
                         Width="115"
@@ -154,6 +154,10 @@
                         Header="Позиция"
                         Width="140"
                         Binding="{Binding position}" />
+                    <DataGridTextColumn
+                        Header="Команда"
+                        Width="140"
+                        Binding="{Binding team}" />
                 </DataGrid.Columns>
                 <DataGrid.GroupStyle>
                     <GroupStyle
@@ -172,7 +176,7 @@
                         Style="{StaticResource OptionsPanelStyle}">
                         <TextBox x:Name="SearchUI" ui:ControlHelper.PlaceholderText="Поиск по ФИО" Height="22" KeyUp="Search" />
                         <StackPanel Orientation="Horizontal">
-                            <Button VerticalAlignment="Top" Content="Добавить" Click="Add" Margin="0,0,0,0"/>
+                            <!--<Button VerticalAlignment="Top" Content="Добавить" Click="Add" Margin="0,0,0,0"/>-->
                             <Button VerticalAlignment="Top" Content="Удалить" Click="Remove" Margin="10,0,0,0"/>
                             <Button VerticalAlignment="Top" Content="Изменить" Click="Edit" Margin="10,0,0,0"/>
                         </StackPanel>

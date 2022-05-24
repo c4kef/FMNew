@@ -102,24 +102,24 @@ namespace FootballManager.PagesAdmin
                 var selectedPlayers = dataGrid.SelectedItems;
                 decimal price = 0;
                 foreach (DataRowView row in selectedPlayers)
-                    price += decimal.Parse(row.Row.ItemArray[6].ToString());
+                    price += decimal.Parse(row.Row.ItemArray[5].ToString());
 
                 if (Globals.Balance - price >= 0)
                 {
                     var name = string.Empty;
                     for (int i = 0; i < selectedPlayers.Count; i++)
                     {
-                        name = ((DataRowView)selectedPlayers[i]).Row.ItemArray[1].ToString();
+                        name = ((DataRowView)selectedPlayers[i]).Row.ItemArray[2].ToString();
 
-                        await new SqlCommand($"INSERT INTO playerlist(surname, name, patronymic, dateofbirth, position,  nationality,  phone, team) VALUES (N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[1]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[2]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[3]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[4]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[5]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[6]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[7]}' , N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[8]}')", Globals.connection).ExecuteNonQueryAsync();
-                        await new SqlCommand($"DELETE FROM market WHERE ID_Market = '{((DataRowView)selectedPlayers[i]).Row.ItemArray[0]}'", Globals.connection).ExecuteNonQueryAsync();
+                        await new SqlCommand($"INSERT INTO playerlist(surname, name, patronymic, dateofbirth, position,  nationality,  phone, team) VALUES (N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[2]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[3]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[4]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[7]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[9]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[8]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[10]}' , N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[6]}')", Globals.connection).ExecuteNonQueryAsync();
+                        //To-Do
+                        //await new SqlCommand($"DELETE FROM market WHERE ID_Market = '{((DataRowView)selectedPlayers[i]).Row.ItemArray[0]}'", Globals.connection).ExecuteNonQueryAsync();
                         FillGrid();
                     }
                     
                     Globals.AddOperation(DateTime.Now, "Покупка игрока", Globals.Balance - price, price);
                     Globals.Balance -= price;
                     
-                    //To-Do
                     await OperationsPlayers.AddP(name, price);
 
                     MessageBox.Show("Игрок успешно приобретен!");
@@ -136,16 +136,10 @@ namespace FootballManager.PagesAdmin
 
             if (result == ContentDialogResult.Primary)
             {
-                try
-                {
-                    await new SqlCommand($@"INSERT INTO market (surname, name, patronymic, dateofbirth , team, nationality, price, phone, position) VALUES (N'{dialog.Surname}', N'{dialog.MName}', N'{dialog.Patronymic}', N'{dialog.Dateofbirth}',N'{dialog.Team}', N'{dialog.Nationality}', N'{dialog.Price}', N'{dialog.Phone}', N'{dialog.Position}')", Globals.connection).ExecuteNonQueryAsync();
-                    FillGrid();
-                    
-                }
-                catch
-                {
-                    MessageBox.Show("Вы заполнили не все поля, попробуйте еще раз");
-                }
+                await new SqlCommand(
+                    $@"INSERT INTO market (surname, name, patronymic, dateofbirth , team, nationality, price, phone, position) VALUES (N'{dialog.Surname}', N'{dialog.MName}', N'{dialog.Patronymic}', N'{dialog.Dateofbirth}',N'{dialog.Team}', N'{dialog.Nationality}', N'{dialog.Price}', N'{dialog.Phone}', N'{dialog.Position}')",
+                    Globals.connection).ExecuteNonQueryAsync();
+                FillGrid();
             }
         }
 
@@ -171,15 +165,15 @@ namespace FootballManager.PagesAdmin
             MarketDialog dialog = new MarketDialog();
             object[] cells = dt.Rows[dataGrid.SelectedIndex].ItemArray;
 
-            dialog.Surname = (string)cells[1];
-            dialog.MName = (string)cells[2];
-            dialog.Patronymic = (string)cells[3];
-            dialog.Team = (string)cells[4];
-            dialog.Nationality = (string)cells[5];
-            dialog.Price = (decimal)cells[6];
-            dialog.Phone = (string)cells[7];
-            dialog.Position = (string)cells[8];
-            dialog.Dateofbirth = (string)cells[9];
+            dialog.Surname = (string)cells[2];
+            dialog.MName = (string)cells[3];
+            dialog.Patronymic = (string)cells[4];
+            dialog.Price = (decimal)cells[5];
+            dialog.Team = (string)cells[6];
+            dialog.Dateofbirth = (string)cells[7];
+            dialog.Nationality = (string)cells[8];
+            dialog.Position = (string)cells[9];
+            dialog.Phone = (string)cells[10];
 
             var result = await dialog.ShowAsync();
 
@@ -200,12 +194,21 @@ namespace FootballManager.PagesAdmin
                 return;
             }
 
-            MessageBoxResult res = MessageBox.Show("Вы уверены, что хотите удалить данную запись?", "Внимание!", MessageBoxButton.YesNo, MessageBoxImage.Question);
-            if (res != MessageBoxResult.No)
+            try
             {
-                await new SqlCommand($@"DELETE FROM market WHERE ID_Market = '{dt.Rows[dataGrid.SelectedIndex].ItemArray[0]}'", Globals.connection).ExecuteNonQueryAsync();
-                FillGrid();
-                
+                MessageBoxResult res = MessageBox.Show("Вы уверены, что хотите удалить данную запись?", "Внимание!",
+                    MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (res != MessageBoxResult.No)
+                {
+                    await new SqlCommand(
+                        $@"DELETE FROM market WHERE ID_Market = '{dt.Rows[dataGrid.SelectedIndex].ItemArray[0]}'",
+                        Globals.connection).ExecuteNonQueryAsync();
+                    FillGrid();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Какая печаль, где-то еще есть запись о маркете");
             }
         }
     }

@@ -16,8 +16,9 @@
         <TextBox PreviewTextInput="CheckLetters" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Отчество" Margin="0,5,0,0" Text="{Binding Patronymic}"/>
         <TextBox PreviewTextInput="CheckDigits" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="дата рождения" Margin="0,5,0,0" Text="{Binding Dateofbirth}"/>
         <TextBox PreviewTextInput="CheckLetters" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Национальность" Margin="0,5,0,0" Text="{Binding Nationality}"/>
-        <TextBox PreviewTextInput="CheckDigits" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Номер телефона" Margin="0,5,0,0" Text="{Binding Phone}"/>
         <TextBox PreviewTextInput="CheckLetters" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Позиция" Margin="0,5,0,0" Text="{Binding Position}"/>
+        <TextBox PreviewTextInput="CheckDigits" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Номер телефона" Margin="0,5,0,0" Text="{Binding Phone}"/>
+        <TextBox PreviewTextInput="CheckLetters" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Команда" Margin="0,5,0,0" Text="{Binding Team}"/>
     </StackPanel>
 
 </ui:ContentDialog>

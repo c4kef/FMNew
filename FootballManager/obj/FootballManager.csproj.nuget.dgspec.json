@@ -1,34 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Администратор\\source\\repos\\FMNew\\FootballManager\\FootballManager.csproj": {}
+    "C:\\Users\\artem\\source\\repos\\MVP\\FMNew\\FootballManager\\FootballManager.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Администратор\\source\\repos\\FMNew\\FootballManager\\FootballManager.csproj": {
+    "C:\\Users\\artem\\source\\repos\\MVP\\FMNew\\FootballManager\\FootballManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Администратор\\source\\repos\\FMNew\\FootballManager\\FootballManager.csproj",
+        "projectUniqueName": "C:\\Users\\artem\\source\\repos\\MVP\\FMNew\\FootballManager\\FootballManager.csproj",
         "projectName": "FootballManager",
-        "projectPath": "C:\\Users\\Администратор\\source\\repos\\FMNew\\FootballManager\\FootballManager.csproj",
-        "packagesPath": "C:\\Users\\Администратор\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Администратор\\source\\repos\\FMNew\\FootballManager\\obj\\",
+        "projectPath": "C:\\Users\\artem\\source\\repos\\MVP\\FMNew\\FootballManager\\FootballManager.csproj",
+        "packagesPath": "C:\\Users\\artem\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\artem\\source\\repos\\MVP\\FMNew\\FootballManager\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Администратор\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\artem\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Администратор\\source\\repos\\FMNew\\SamplesCommon\\SamplesCommon.csproj": {
-                "projectPath": "C:\\Users\\Администратор\\source\\repos\\FMNew\\SamplesCommon\\SamplesCommon.csproj"
+              "C:\\Users\\artem\\source\\repos\\MVP\\FMNew\\SamplesCommon\\SamplesCommon.csproj": {
+                "projectPath": "C:\\Users\\artem\\source\\repos\\MVP\\FMNew\\SamplesCommon\\SamplesCommon.csproj"
               }
             }
           }
@@ -86,6 +85,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.22, 3.1.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -94,23 +111,22 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\artem\\.dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Администратор\\source\\repos\\FMNew\\SamplesCommon\\SamplesCommon.csproj": {
+    "C:\\Users\\artem\\source\\repos\\MVP\\FMNew\\SamplesCommon\\SamplesCommon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Администратор\\source\\repos\\FMNew\\SamplesCommon\\SamplesCommon.csproj",
+        "projectUniqueName": "C:\\Users\\artem\\source\\repos\\MVP\\FMNew\\SamplesCommon\\SamplesCommon.csproj",
         "projectName": "SamplesCommon",
-        "projectPath": "C:\\Users\\Администратор\\source\\repos\\FMNew\\SamplesCommon\\SamplesCommon.csproj",
-        "packagesPath": "C:\\Users\\Администратор\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Администратор\\source\\repos\\FMNew\\SamplesCommon\\obj\\",
+        "projectPath": "C:\\Users\\artem\\source\\repos\\MVP\\FMNew\\SamplesCommon\\SamplesCommon.csproj",
+        "packagesPath": "C:\\Users\\artem\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\artem\\source\\repos\\MVP\\FMNew\\SamplesCommon\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
-          "C:\\Users\\Администратор\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\artem\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net48",
@@ -118,7 +134,7 @@
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -167,6 +183,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -175,7 +205,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\artem\\.dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         },
         "net5.0-windows10.0.18362": {
           "targetAlias": "net5.0-windows10.0.18362.0",
@@ -205,8 +235,20 @@
           "warn": true,
           "downloadDependencies": [
             {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
               "name": "Microsoft.Windows.SDK.NET.Ref",
-              "version": "[10.0.18362.25, 10.0.18362.25]"
+              "version": "[10.0.18362.22, 10.0.18362.22]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
             }
           ],
           "frameworkReferences": {
@@ -220,7 +262,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\artem\\.dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         },
         "net48": {
           "targetAlias": "net48",
@@ -234,7 +276,7 @@
               "version": "[0.9.4, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\artem\\.dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
