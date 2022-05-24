@@ -95,7 +95,7 @@ namespace FootballManager.PagesAdmin
 
             if (result == ContentDialogResult.Primary)
             {
-                await new SqlCommand($@"INSERT INTO trainingschedule (date, time, location) VALUES (N'{dialog.Date}', N'{dialog.Time}', N'{dialog.Location}')", Globals.connection).ExecuteNonQueryAsync();
+                await new SqlCommand($@"INSERT INTO trainingschedule (date,  location) VALUES (N'{dialog.Date}', N'{dialog.Location}')", Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
                 
             }

@@ -88,7 +88,7 @@ namespace FootballManager.PagesAdmin
 
         public void FillGrid()
         {
-            SqlCommand cmdSel = new SqlCommand("SELECT ID_game_shedule, date, time, team, stadium, Tournaments.name, result, ticket_price, ticket_count FROM Gamesschedule join Tournaments ON (Gamesschedule.ID_tournament = Tournaments.ID_tournament)", Globals.connection);
+            SqlCommand cmdSel = new SqlCommand("SELECT ID_game_shedule, date, team, stadium, Tournaments.name, result, ticket_count FROM Gamesschedule join Tournaments ON (Gamesschedule.ID_tournament = Tournaments.ID_tournament)", Globals.connection);
             adapter = new SqlDataAdapter(cmdSel);
             dt = new DataTable();
             adapter.Fill(dt);
@@ -191,7 +191,7 @@ namespace FootballManager.PagesAdmin
 
             if (result == ContentDialogResult.Primary)
             {
-                await new SqlCommand($@"INSERT INTO gamesschedule (date, time, team, stadium, ID_tournament, result, ticket_price, ticket_count) VALUES (N'{dialog.Date}', N'{dialog.Time}', N'{dialog.Team}', N'{dialog.Stadium}', (select ID_tournament from tournaments where name = N'{dialog.Tournaments}'), N'{dialog.ResultVal}', '0', '0')", Globals.connection).ExecuteNonQueryAsync();
+                await new SqlCommand($@"INSERT INTO gamesschedule (date,  team, stadium, ID_tournament, result,  ticket_count) VALUES (N'{dialog.Date}',N'{dialog.Time}', N'{dialog.Team}', N'{dialog.Stadium}'(select ID_tournament from tournaments where name = N'{dialog.Tournaments}'), N'{dialog.ResultVal}', '0', '0')", Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
             }
         }

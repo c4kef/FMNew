@@ -96,7 +96,7 @@ namespace FootballManager.PagesAdmin
             {
                 //To-Do возможно ошибка в  N'{dialog.Age}', замени на  {dialog.Age}
                 await new SqlCommand(
-                    $@"INSERT INTO employees (name, surname, patronymic, position, phone, team, dateofbirth, nationality ) VALUES (N'{dialog.EName}', N'{dialog.Surname}', N'{dialog.Patronymic}', N'{dialog.Position}', N'{dialog.Phone}', N'{dialog.Team}',N'{dialog.Dateofbirth}')",
+                    $@"INSERT INTO employees (name, surname, patronymic, position, phone, dateofbirth) VALUES (N'{dialog.EName}', N'{dialog.Surname}', N'{dialog.Patronymic}', N'{dialog.Position}', N'{dialog.Phone}',N'{dialog.Dateofbirth}')",
                     Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
             }
@@ -158,7 +158,7 @@ namespace FootballManager.PagesAdmin
             {
                 try
                 {
-                    await new SqlCommand($@"UPDATE employees SET name = N'{dialog.EName}', surname = N'{dialog.Surname}', patronymic = N'{dialog.Patronymic}', position = N'{dialog.Position}', phone = N'{dialog.Phone}', team = N'{dialog.Team}', nationality = N'{dialog.Nationality}' , dateofbirth = N'{dialog.Dateofbirth}', WHERE ID_Employee = '{cells[0]}'", Globals.connection).ExecuteNonQueryAsync();
+                    await new SqlCommand($@"UPDATE employees SET name = N'{dialog.EName}', surname = N'{dialog.Surname}', patronymic = N'{dialog.Patronymic}', position = N'{dialog.Position}', phone = N'{dialog.Phone}', dateofbirth = N'{dialog.Dateofbirth}', WHERE ID_Employee = '{cells[0]}'", Globals.connection).ExecuteNonQueryAsync();
                     FillGrid();
                     
                 }

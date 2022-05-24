@@ -35,7 +35,7 @@ namespace FootballManager.PagesAdmin
 
         public void FillGrid()
         {
-            SqlCommand cmdSel = new SqlCommand("SELECT * FROM gamesschedule WHERE ticket_price != 0 ORDER BY ID_game_shedule ASC", Globals.connection);
+            SqlCommand cmdSel = new SqlCommand("SELECT * FROM gamesschedule WHERE ticket_count != 0 ORDER BY ID_game_shedule ASC", Globals.connection);
             adapter = new SqlDataAdapter(cmdSel);
             dt = new DataTable();
             adapter.Fill(dt);
@@ -95,7 +95,7 @@ namespace FootballManager.PagesAdmin
             dialog.DateList = new List<string>();
 
             var dt_g = new DataTable();
-            new SqlDataAdapter(new SqlCommand("SELECT * FROM gamesschedule WHERE ticket_price = 0 ORDER BY ID_game_shedule ASC", Globals.connection)).Fill(dt_g);
+            new SqlDataAdapter(new SqlCommand("SELECT * FROM gamesschedule WHERE revenue = 0 ORDER BY ID_game_shedule ASC", Globals.connection)).Fill(dt_g);
 
             foreach (DataRow row in dt_g.Rows)
                 dialog.DateList.Add(row.ItemArray[1].ToString());
@@ -105,7 +105,7 @@ namespace FootballManager.PagesAdmin
             if (result == ContentDialogResult.Primary)
             {
                 await new SqlCommand(
-                    $@"UPDATE gamesschedule SET ticket_price = N'{dialog.Price}', ticket_count = N'{dialog.Count}' WHERE date = '{dialog.Date}'",
+                    $@"UPDATE gamesschedule SET revenue = N'{dialog.Price}', ticket_count = N'{dialog.Count}' WHERE date = '{dialog.Date}'",
                     Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
                 var sum = (decimal) dialog.Price * (int) dialog.Count;
@@ -136,6 +136,7 @@ namespace FootballManager.PagesAdmin
 
             dialog.Price = (decimal)cells[7];
             dialog.Count = (int)cells[8];
+            
 
             var result = await dialog.ShowAsync();
 
@@ -146,7 +147,7 @@ namespace FootballManager.PagesAdmin
                     if (DateTime.Parse(dialog.Date).Date.Year < 2000)
                         new Exception("Year not corrected");
 
-                    await new SqlCommand($@"UPDATE gamesschedule SET ticket_price = N'{dialog.Price}', ticket_count = N'{dialog.Count}' WHERE ID_game_shedule = '{cells[0]}'", Globals.connection).ExecuteNonQueryAsync();
+                    await new SqlCommand($@"UPDATE gamesschedule SET revenue = N'{dialog.Price}', ticket_count = N'{dialog.Count}', date = N'{dialog.Date}' WHERE ID_game_shedule = '{cells[0]}'", Globals.connection).ExecuteNonQueryAsync();
                     FillGrid();
                     
                 }
@@ -168,7 +169,7 @@ namespace FootballManager.PagesAdmin
             MessageBoxResult res = MessageBox.Show("Вы уверены, что хотите удалить данную запись?", "Внимание!", MessageBoxButton.YesNo, MessageBoxImage.Question);
             if (res != MessageBoxResult.No)
             {
-                await new SqlCommand($@"UPDATE gamesschedule SET ticket_price = N'0', ticket_count = N'0' WHERE ID_game_shedule = '{dt.Rows[dataGrid.SelectedIndex].ItemArray[0]}'", Globals.connection).ExecuteNonQueryAsync();
+                await new SqlCommand($@"UPDATE gamesschedule SET revenue = N'0', ticket_count = N'0' WHERE ID_game_shedule = '{dt.Rows[dataGrid.SelectedIndex].ItemArray[0]}'", Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
                 
             }

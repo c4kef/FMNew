@@ -35,11 +35,11 @@ namespace FootballManager.PagesAdmin
         {
             dt_p = new DataTable();
             dt_o = new DataTable();
-//
-            adapter_oe = new SqlDataAdapter(new SqlCommand("SELECT ID_Buy, PlayerList.surname, date, sum FROM playersAdd join playerList ON (playersAdd.ID_Player = playerlist.ID_Player)", Globals.connection));
+
+            adapter_oe = new SqlDataAdapter(new SqlCommand("SELECT ID_BuyPlayer, playerList.surname, datebuy, sumbuy FROM buyplayer join playerList ON (buyplayer.ID_Player = playerlist.ID_Player)", Globals.connection));
             adapter_oe.Fill(dt_p);
 
-            adapter_se = new SqlDataAdapter(new SqlCommand("SELECT ID_Sell, playerlist_orders.surname, date, sum FROM playersOrder join playerlist_orders ON (playersOrder.ID_Player = playerlist_orders.ID_Player)", Globals.connection));
+            adapter_se = new SqlDataAdapter(new SqlCommand("SELECT ID_SellPlayer, playerList.surname, datesell, sumsell FROM sellplayer join playerList ON (sellplayer.ID_Market = playerList.ID_Player)", Globals.connection));
             adapter_se.Fill(dt_o);
 
             dataGridOrderP.ItemsSource = dt_p.DefaultView;

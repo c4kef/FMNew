@@ -132,6 +132,11 @@ namespace FootballManager.PagesAdmin
         private async void Add(object sender, RoutedEventArgs e)
         {
             MarketDialog dialog = new MarketDialog();
+            
+            
+            
+            
+            
             var result = await dialog.ShowAsync();
 
             if (result == ContentDialogResult.Primary)
@@ -141,7 +146,7 @@ namespace FootballManager.PagesAdmin
                     await new SqlCommand($@"INSERT INTO market (surname, name, patronymic, dateofbirth , team, nationality, price, phone, position) VALUES (N'{dialog.Surname}', N'{dialog.MName}', N'{dialog.Patronymic}', N'{dialog.Dateofbirth}',N'{dialog.Team}', N'{dialog.Nationality}', N'{dialog.Price}', N'{dialog.Phone}', N'{dialog.Position}')", Globals.connection).ExecuteNonQueryAsync();
                     FillGrid();
                     
-                }
+                }s
                 catch
                 {
                     MessageBox.Show("Вы заполнили не все поля, попробуйте еще раз");
