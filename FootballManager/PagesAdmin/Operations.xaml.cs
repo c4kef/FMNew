@@ -41,7 +41,7 @@ namespace FootballManager.PagesAdmin
                 {
                     (dataGrid.ItemContainerGenerator.ContainerFromItem(dr) as DataGridRow).Visibility = Visibility.Visible;
 
-                    if (value != "Без фильтра" && !dr[1].ToString().ToLower().Contains(value.ToLower()) && int.Parse(dteSelectedMonth.DisplayDate.ToString("dd/MM/yyyy").Split('/')[1]) > int.Parse(dr[1].ToString().Split('/')[1]))
+                    if (value != "Без фильтра" && !dr[1].ToString().ToLower().Contains(value.ToLower()) && int.Parse(dteSelectedMonth.DisplayDate.ToString("dd/MM/yyyy").Split('/')[1]) != int.Parse(dr[1].ToString().Split('/')[1]))
                         (dataGrid.ItemContainerGenerator.ContainerFromItem(dr) as DataGridRow).Visibility = Visibility.Collapsed;
                 }
             }

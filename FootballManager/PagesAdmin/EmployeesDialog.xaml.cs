@@ -2,6 +2,7 @@
 using System;
 using System.ComponentModel;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace FootballManager.PagesAdmin
 {
@@ -165,6 +166,6 @@ namespace FootballManager.PagesAdmin
             }
             catch { }
         }
-        public void Check() => this.IsPrimaryButtonEnabled = !(string.IsNullOrEmpty(team) || string.IsNullOrEmpty(dateofbirth) || string.IsNullOrEmpty(phone) || string.IsNullOrEmpty(Position) || string.IsNullOrEmpty(Patronymic) || Patronymic.Any(char.IsDigit) || string.IsNullOrEmpty(Surname) || Surname.Any(char.IsDigit) || string.IsNullOrEmpty(EName) || EName.Any(char.IsDigit));
+        public void Check() => this.IsPrimaryButtonEnabled = !(string.IsNullOrEmpty(team) || string.IsNullOrEmpty(dateofbirth) || !Regex.IsMatch(Phone ?? string.Empty, @"^\+375 (17|29|33|44) [0-9]{3}-[0-9]{2}-[0-9]{2}$") || string.IsNullOrEmpty(Position) || string.IsNullOrEmpty(Patronymic) || Patronymic.Any(char.IsDigit) || string.IsNullOrEmpty(Surname) || Surname.Any(char.IsDigit) || string.IsNullOrEmpty(EName) || EName.Any(char.IsDigit));
     }
 }

@@ -43,7 +43,6 @@ namespace FootballManager.PagesAdmin
                     return;
 
                 price = value;
-                Calculate();
             Check();
             }
         }
@@ -61,18 +60,10 @@ namespace FootballManager.PagesAdmin
                     return;
 
                 count = value;
-                Calculate();
             Check();
             }
         }
 
-        private void Calculate()
-        {
-            if (count is null || price is null)
-                return;
-
-            Balance.Content = $"Доход: {Count * Price}";
-        }
         private void CheckDigits(object sender, System.Windows.Input.TextCompositionEventArgs e)
         {
             try

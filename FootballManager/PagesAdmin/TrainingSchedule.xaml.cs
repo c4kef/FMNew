@@ -97,7 +97,6 @@ namespace FootballManager.PagesAdmin
             {
                 await new SqlCommand($@"INSERT INTO trainingschedule (date,  location) VALUES (N'{dialog.Date}', N'{dialog.Location}')", Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
-                
             }
         }
 
@@ -140,6 +139,22 @@ namespace FootballManager.PagesAdmin
                 FillGrid();
                 
             }
+        }
+        
+        private void Calendar_OnSelectedDatesChanged(object sender, CalendarModeChangedEventArgs calendarModeChangedEventArgs)
+        {
+            if (dataGrid.ItemsSource is null)
+                return;
+
+            foreach (DataRowView dr in dataGrid.ItemsSource)
+            {
+                (dataGrid.ItemContainerGenerator.ContainerFromItem(dr) as DataGridRow).Visibility = Visibility.Visible;
+
+                if (dteSelectedMonth.DisplayDate.Month != DateTime.Parse(dr[1].ToString()).Month)
+                    (dataGrid.ItemContainerGenerator.ContainerFromItem(dr) as DataGridRow).Visibility = Visibility.Collapsed;
+            }
+            
+            dteSelectedMonth.DisplayMode = CalendarMode.Year;
         }
     }
 }

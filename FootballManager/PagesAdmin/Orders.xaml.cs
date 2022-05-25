@@ -313,5 +313,21 @@ namespace FootballManager.PagesAdmin
                     (dataGridOrderEquipment.ItemContainerGenerator.ContainerFromItem(dr) as DataGridRow).Visibility = Visibility.Collapsed;
             }
         }
+        
+        private void Calendar_OnSelectedDatesChanged(object sender, CalendarModeChangedEventArgs calendarModeChangedEventArgs)
+        {
+            if (dataGridOrderEquipment.ItemsSource is null)
+                return;
+
+            foreach (DataRowView dr in dataGridOrderEquipment.ItemsSource)
+            {
+                (dataGridOrderEquipment.ItemContainerGenerator.ContainerFromItem(dr) as DataGridRow).Visibility = Visibility.Visible;
+
+                if (dteSelectedMonth.DisplayDate.Month != DateTime.Parse(dr[1].ToString()).Month)
+                    (dataGridOrderEquipment.ItemContainerGenerator.ContainerFromItem(dr) as DataGridRow).Visibility = Visibility.Collapsed;
+            }
+            
+            dteSelectedMonth.DisplayMode = CalendarMode.Year;
+        }
     }
 }

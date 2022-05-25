@@ -154,6 +154,7 @@
                                 <Button VerticalAlignment="Top" Content="Изменить" Click="Edit" Margin="10,0,0,0"/>
                             </StackPanel>
                             <Button HorizontalAlignment="Center" Content="Отчёт" Click="Export" Margin="10,10,0,0"/>
+                            <Calendar Name="dteSelectedMonth" DisplayMode="Year" SelectionMode="None" DisplayModeChanged="Calendar_OnSelectedDatesChanged" />
                         </StackPanel>
                     </ui:SimpleStackPanel>
                 </ScrollViewer>

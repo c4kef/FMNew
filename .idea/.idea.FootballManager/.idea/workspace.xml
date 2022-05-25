@@ -4,217 +4,77 @@
     <projectFile>FootballManager/FootballManager.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ca469dd-33fe-4aa1-a7d5-0d27d72c1b75" name="Changes" comment="ytrrty">
-      <change afterPath="$PROJECT_DIR$/FootballManager/FootballManager_tbbiyska_wpftmp.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/About.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/App.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_1l2xiqzq_wpftmp.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_1l2xiqzq_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_1l2xiqzq_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_1l2xiqzq_wpftmp.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_3bysxlm3_wpftmp.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_3bysxlm3_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_3bysxlm3_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_3bysxlm3_wpftmp.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_MarkupCompile.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_MarkupCompile.lref" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_a1vc2x01_wpftmp.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_a1vc2x01_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_a1vc2x01_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_a1vc2x01_wpftmp.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_aywjzdxk_wpftmp.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_aywjzdxk_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_aywjzdxk_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_aywjzdxk_wpftmp.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_feqcflct_wpftmp.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_feqcflct_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_feqcflct_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_feqcflct_wpftmp.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_hsefkzsc_wpftmp.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_hsefkzsc_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_hsefkzsc_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_hsefkzsc_wpftmp.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_lo4eoijr_wpftmp.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_lo4eoijr_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_lo4eoijr_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_lo4eoijr_wpftmp.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_nw12kse0_wpftmp.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_nw12kse0_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_nw12kse0_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_nw12kse0_wpftmp.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_os3gafda_wpftmp.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_os3gafda_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_os3gafda_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_os3gafda_wpftmp.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_w4teiwnl_wpftmp.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_w4teiwnl_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_w4teiwnl_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_w4teiwnl_wpftmp.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_wreocl2x_wpftmp.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_wreocl2x_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_wreocl2x_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_wreocl2x_wpftmp.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_xskowyld_wpftmp.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_xskowyld_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_xskowyld_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_xskowyld_wpftmp.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_y05ifh2h_wpftmp.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_y05ifh2h_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_y05ifh2h_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_y05ifh2h_wpftmp.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ybyilgh1_wpftmp.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ybyilgh1_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ybyilgh1_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ybyilgh1_wpftmp.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/HighContrast.baml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/MainWindow.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Navigation/NavigationRootPage.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Pages/GamesSchedule.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Pages/PlayerList.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Pages/TrainingSchedule.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Contracts.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/ContractsDialog.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Employees.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/EmployeesDialog.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/GamesSchedule.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/GamesScheduleDialog.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/GamesScheduleTrnDialog.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Market.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/MarketDialog.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Operations.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OperationsPlayers.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OrderP.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OrderSOEDialog.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Orders.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OrdersSEDialog.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/PlayerList.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/PlayerListDialog.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Tickets.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TicketsDialog.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TrainingSchedule.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TrainingScheduleDialog.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Presets/Forest/Dark.baml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Presets/Forest/Light.baml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Presets/Lavender/Dark.baml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Presets/Lavender/Light.baml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Presets/Nighttime/Dark.baml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Presets/Nighttime/Light.baml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Properties/DesignTimeResources.baml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/ThreadedUI/ThreadedProgressBar.baml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/ThreadedUI/ThreadedProgressBar.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/ThreadedUI/ThreadedProgressRing.baml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/ThreadedUI/ThreadedProgressRing.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Window1.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/WindowWithCustomTitleBar.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FootballManager/.idea/shelf/Uncommitted_changes_before_Update_at_17_05_2022_21_04__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FootballManager/.idea/shelf/Uncommitted_changes_before_Update_at_17_05_2022_21_04__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FootballManager/.idea/shelf/Uncommitted_changes_before_Update_at_17_05_2022_21_04__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FootballManager/.idea/shelf/Uncommitted_changes_before_Update_at_17_05_2022_21_04__Changes_1.xml" afterDir="false" />
+    <list default="true" id="1ca469dd-33fe-4aa1-a7d5-0d27d72c1b75" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0x4wqrw5_wpftmp.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0x4wqrw5_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0x4wqrw5_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0x4wqrw5_wpftmp.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_2x4wz5u1_wpftmp.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_2x4wz5u1_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_2x4wz5u1_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_2x4wz5u1_wpftmp.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ih5jofwi_wpftmp.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ih5jofwi_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ih5jofwi_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ih5jofwi_wpftmp.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_m2aark44_wpftmp.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_m2aark44_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_m2aark44_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_m2aark44_wpftmp.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_n0exczbr_wpftmp.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_n0exczbr_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_n0exczbr_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_n0exczbr_wpftmp.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ponnfttk_wpftmp.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ponnfttk_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ponnfttk_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ponnfttk_wpftmp.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_tmlepi44_wpftmp.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_tmlepi44_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_tmlepi44_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_tmlepi44_wpftmp.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_wkmo0q14_wpftmp.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_wkmo0q14_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_wkmo0q14_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_wkmo0q14_wpftmp.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/FootballManager_wkmo0q14_wpftmp.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/FootballManager_wkmo0q14_wpftmp.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FootballManager/obj/FootballManager_wkmo0q14_wpftmp.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FootballManager/.idea/shelf/Uncommitted_changes_before_Update_at_17_05_2022_21_04_[Changes]1/FootballManager.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FootballManager/.idea/shelf/Uncommitted_changes_before_Update_at_17_05_2022_21_04_[Changes]1/SamplesCommon.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FootballManager/.idea/shelf/Uncommitted_changes_before_Update_at_17_05_2022_21_04_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FootballManager/.idea/shelf/Uncommitted_changes_before_Update_at_17_05_2022_21_04__Changes_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FootballManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FootballManager/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/Market.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/Market.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/Market.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/Market.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/MarketDialog.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/MarketDialog.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/MarketDialog.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/MarketDialog.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/OperationsPlayers.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/OperationsPlayers.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/PlayerList.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/PlayerList.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/PlayerList.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/PlayerList.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/PlayerListDialog.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/PlayerListDialog.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/EmployeesDialog.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/EmployeesDialog.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/Operations.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/Operations.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/Orders.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/Orders.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/Orders.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/Orders.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/PlayerListDialog.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/PlayerListDialog.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/Tickets.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/Tickets.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/Tickets.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/Tickets.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/TicketsDialog.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/TicketsDialog.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/TicketsDialog.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/TicketsDialog.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/TrainingSchedule.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/TrainingSchedule.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/TrainingSchedule.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/TrainingSchedule.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Window1.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Window1.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FootballManager/bin/Debug/netcoreapp3.1/FootballManager.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/bin/Debug/netcoreapp3.1/FootballManager.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FootballManager/bin/Debug/netcoreapp3.1/FootballManager.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/bin/Debug/netcoreapp3.1/FootballManager.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/bin/Debug/netcoreapp3.1/SamplesCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/bin/Debug/netcoreapp3.1/SamplesCommon.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/bin/Debug/netcoreapp3.1/SamplesCommon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/bin/Debug/netcoreapp3.1/SamplesCommon.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.csproj.GenerateResource.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.g.resources" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.g.resources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_Content.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_Content.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_MarkupCompile.lref" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_MarkupCompile.lref" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/GeneratedInternalTypeHelper.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/GeneratedInternalTypeHelper.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/FootballManager.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/FootballManager.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/FootballManager.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/bin/Debug/net48/SamplesCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/bin/Debug/net48/SamplesCommon.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/bin/Debug/net48/SamplesCommon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/bin/Debug/net48/SamplesCommon.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/bin/Debug/net5.0-windows10.0.18362.0/SamplesCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/bin/Debug/net5.0-windows10.0.18362.0/SamplesCommon.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/bin/Debug/net5.0-windows10.0.18362.0/SamplesCommon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/bin/Debug/net5.0-windows10.0.18362.0/SamplesCommon.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/bin/Debug/netcoreapp3.1/SamplesCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/bin/Debug/netcoreapp3.1/SamplesCommon.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/bin/Debug/netcoreapp3.1/SamplesCommon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/bin/Debug/netcoreapp3.1/SamplesCommon.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/AccentColorPicker.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/AccentColorPicker.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/LayoutDensitySelector.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/LayoutDensitySelector.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplePages/SampleCompactSizingPage.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplePages/SampleCompactSizingPage.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplePages/SamplePage1.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplePages/SamplePage1.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplePages/SamplePage2.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplePages/SamplePage2.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplePages/SamplePage3.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplePages/SamplePage3.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplePages/SamplePage4.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplePages/SamplePage4.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplePages/SamplePage5.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplePages/SamplePage5.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplePages/SamplePage6.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplePages/SamplePage6.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplePages/SamplePage7.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplePages/SamplePage7.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplePages/SampleSettingsPage.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplePages/SampleSettingsPage.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplePages/SampleStandardSizingPage.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplePages/SampleStandardSizingPage.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplesCommon.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplesCommon.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplesCommon.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplesCommon.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplesCommon.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplesCommon.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplesCommon.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplesCommon.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplesCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplesCommon.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplesCommon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplesCommon.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplesCommon_MarkupCompile.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplesCommon_MarkupCompile.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplesCommon_MarkupCompile.lref" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplesCommon_MarkupCompile.lref" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/AccentColorPicker.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/AccentColorPicker.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/LayoutDensitySelector.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/LayoutDensitySelector.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplePages/SampleCompactSizingPage.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplePages/SampleCompactSizingPage.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplePages/SamplePage1.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplePages/SamplePage1.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplePages/SamplePage2.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplePages/SamplePage2.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplePages/SamplePage3.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplePages/SamplePage3.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplePages/SamplePage4.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplePages/SamplePage4.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplePages/SamplePage5.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplePages/SamplePage5.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplePages/SamplePage6.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplePages/SamplePage6.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplePages/SamplePage7.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplePages/SamplePage7.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplePages/SampleSettingsPage.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplePages/SampleSettingsPage.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplePages/SampleStandardSizingPage.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplePages/SampleStandardSizingPage.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon_MarkupCompile.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon_MarkupCompile.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon_MarkupCompile.lref" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon_MarkupCompile.lref" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/AccentColorPicker.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/AccentColorPicker.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/LayoutDensitySelector.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/LayoutDensitySelector.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplePages/SampleCompactSizingPage.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplePages/SampleCompactSizingPage.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplePages/SamplePage1.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplePages/SamplePage1.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplePages/SamplePage2.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplePages/SamplePage2.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplePages/SamplePage3.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplePages/SamplePage3.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplePages/SamplePage4.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplePages/SamplePage4.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplePages/SamplePage5.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplePages/SamplePage5.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplePages/SamplePage6.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplePages/SamplePage6.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplePages/SamplePage7.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplePages/SamplePage7.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplePages/SampleSettingsPage.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplePages/SampleSettingsPage.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplePages/SampleStandardSizingPage.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplePages/SampleStandardSizingPage.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Orders.baml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Orders.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Orders.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Orders.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Tickets.baml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Tickets.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Tickets.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Tickets.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TicketsDialog.baml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TicketsDialog.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TicketsDialog.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TicketsDialog.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TrainingSchedule.baml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TrainingSchedule.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TrainingSchedule.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TrainingSchedule.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplesCommon.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplesCommon.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon_MarkupCompile.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon_MarkupCompile.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon_MarkupCompile.lref" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon_MarkupCompile.lref" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/SamplesCommon.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/SamplesCommon.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/SamplesCommon.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/SamplesCommon.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/SamplesCommon.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/SamplesCommon.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +85,7 @@
     <option name="PUSH_AUTO_UPDATE" value="true" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2067315463a878cfc2c765b93d9eddb01cd65af4b881c6efea2ed584df14acb4/SqlConnection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2067315463a878cfc2c765b93d9eddb01cd65af4b881c6efea2ed584df14acb4/SqlConnection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/23c66dd6aa63746dcd9f9f9ee3a07110a42a34f98dc6269471a21fc8201b1914/Regex.Match.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8a221793e4b13ae450dccb6e74f6985a273b27d67dca5c4bc2c2e56df33bfe7/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/About.g.cs" root0="SKIP_HIGHLIGHTING" />
@@ -292,6 +152,8 @@
       <workItem from="1652826850940" duration="410000" />
       <workItem from="1653319578687" duration="939000" />
       <workItem from="1653373243382" duration="12752000" />
+      <workItem from="1653390917576" duration="342000" />
+      <workItem from="1653459514315" duration="2000000" />
     </task>
     <task id="LOCAL-00001" summary="ye">
       <created>1652292970986</created>
@@ -328,7 +190,35 @@
       <option name="project" value="LOCAL" />
       <updated>1653390719907</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Main changes">
+      <created>1653390937274</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1653390937274</updated>
+    </task>
+    <task id="LOCAL-00007" summary="uytutyr">
+      <created>1653390949583</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1653390949583</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;FootballManager/PagesAdmin/GamesSchedule.xaml.cs&#10;#&#9;FootballManager/PagesAdmin/Market.xaml.cs&#10;#&#9;FootballManager/PagesAdmin/OperationsPlayers.xaml.cs&#10;#&#9;FootballManager/bin/Debug/netcoreapp3.1/FootballManager.dll&#10;#&#9;FootballManager/bin/Debug/netcoreapp3.1/FootballManager.pdb&#10;#&#9;FootballManager/bin/Debug/netcoreapp3.1/SamplesCommon.dll&#10;#&#9;FootballManager/bin/Debug/netcoreapp3.1/SamplesCommon.pdb&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/About.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/App.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/FootballManager.GeneratedMSBuildEditorConfig.editorconfig&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/FootballManager.assets.cache&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/FootballManager.csproj.AssemblyReference.cache&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/FootballManager.csproj.CoreCompileInputs.cache&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/FootballManager.csproj.FileListAbsolute.txt&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/FootballManager.csproj.GenerateResource.cache&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/FootballManager.dll&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/FootballManager.genruntimeconfig.cache&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/FootballManager.pdb&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/FootballManager_MarkupCompile.cache&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/FootballManager_MarkupCompile.lref&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/GeneratedInternalTypeHelper.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/MainWindow.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/Navigation/NavigationRootPage.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/Pages/GamesSchedule.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/Pages/PlayerList.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/Pages/TrainingSchedule.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Contracts.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/ContractsDialog.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Employees.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/EmployeesDialog.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/GamesSchedule.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/GamesScheduleDialog.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/GamesScheduleTrnDialog.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Market.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/MarketDialog.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Operations.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OperationsPlayers.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OrderP.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OrderSOEDialog.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Orders.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OrdersSEDialog.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/PlayerList.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/PlayerListDialog.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Tickets.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TicketsDialog.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TrainingSchedule.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TrainingScheduleDialog.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/ThreadedUI/ThreadedProgressBar.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/ThreadedUI/ThreadedProgressRing.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/Window1.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/WindowWithCustomTitleBar.g.cs&#10;#&#9;FootballManager/obj/FootballManager.csproj.nuget.dgspec.json&#10;#&#9;FootballManager/obj/FootballManager.csproj.nuget.g.props&#10;#&#9;FootballManager/obj/project.assets.json&#10;#&#9;FootballManager/obj/project.nuget.cache&#10;#&#9;SamplesCommon/bin/Debug/net48/SamplesCommon.dll&#10;#&#9;SamplesCommon/bin/Debug/net48/SamplesCommon.pdb&#10;#&#9;SamplesCommon/bin/Debug/net5.0-windows10.0.18362.0/SamplesCommon.dll&#10;#&#9;SamplesCommon/bin/Debug/net5.0-windows10.0.18362.0/SamplesCommon.pdb&#10;#&#9;SamplesCommon/bin/Debug/netcoreapp3.1/SamplesCommon.dll&#10;#&#9;SamplesCommon/bin/Debug/netcoreapp3.1/SamplesCommon.pdb&#10;#&#9;SamplesCommon/obj/Debug/net48/SamplesCommon.GeneratedMSBuildEditorConfig.editorconfig&#10;#&#9;SamplesCommon/obj/Debug/net48/SamplesCommon.assets.cache&#10;#&#9;SamplesCommon/obj/Debug/net48/SamplesCommon.csproj.CoreCompileInputs.cache&#10;#&#9;SamplesCommon/obj/Debug/net48/SamplesCommon.csproj.FileListAbsolute.txt&#10;#&#9;SamplesCommon/obj/Debug/net48/SamplesCommon.dll&#10;#&#9;SamplesCommon/obj/Debug/net48/SamplesCommon.pdb&#10;#&#9;SamplesCommon/obj/Debug/net48/SamplesCommon_MarkupCompile.cache&#10;#&#9;SamplesCommon/obj/Debug/net48/SamplesCommon_MarkupCompile.lref&#10;#&#9;SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.GeneratedMSBuildEditorConfig.editorconfig&#10;#&#9;SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.assets.cache&#10;#&#9;SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.csproj.CoreCompileInputs.cache&#10;#&#9;SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.csproj.FileListAbsolute.txt&#10;#&#9;SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.dll&#10;#&#9;SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.pdb&#10;#&#9;SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon_MarkupCompile.cache&#10;#&#9;SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon_MarkupCompile.lref&#10;#&#9;SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.GeneratedMSBuildEditorConfig.editorconfig&#10;#&#9;SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.assets.cache&#10;#&#9;SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.csproj.AssemblyReference.cache&#10;#&#9;SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.csproj.CoreCompileInputs.cache&#10;#&#9;SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.csproj.FileListAbsolute.txt&#10;#&#9;SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.dll&#10;#&#9;SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.pdb&#10;#&#9;SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon_MarkupCompile.cache&#10;#&#9;SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon_MarkupCompile.lref&#10;#&#9;SamplesCommon/obj/SamplesCommon.csproj.nuget.dgspec.json&#10;#&#9;SamplesCommon/obj/SamplesCommon.csproj.nuget.g.props&#10;#&#9;SamplesCommon/obj/project.assets.json&#10;#&#9;SamplesCommon/obj/project.nuget.cache">
+      <created>1653391052002</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1653391052002</updated>
+    </task>
+    <task id="LOCAL-00009" summary="test">
+      <created>1653391168180</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1653391168180</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,10 +242,13 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="ye" />
     <MESSAGE value="login into manager" />
-    <MESSAGE value="test" />
     <MESSAGE value="testr" />
-    <MESSAGE value="Main changes" />
     <MESSAGE value="ytrrty" />
-    <option name="LAST_COMMIT_MESSAGE" value="ytrrty" />
+    <MESSAGE value="tyuyut" />
+    <MESSAGE value="Main changes" />
+    <MESSAGE value="uytutyr" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;FootballManager/PagesAdmin/GamesSchedule.xaml.cs&#10;#&#9;FootballManager/PagesAdmin/Market.xaml.cs&#10;#&#9;FootballManager/PagesAdmin/OperationsPlayers.xaml.cs&#10;#&#9;FootballManager/bin/Debug/netcoreapp3.1/FootballManager.dll&#10;#&#9;FootballManager/bin/Debug/netcoreapp3.1/FootballManager.pdb&#10;#&#9;FootballManager/bin/Debug/netcoreapp3.1/SamplesCommon.dll&#10;#&#9;FootballManager/bin/Debug/netcoreapp3.1/SamplesCommon.pdb&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/About.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/App.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/FootballManager.GeneratedMSBuildEditorConfig.editorconfig&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/FootballManager.assets.cache&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/FootballManager.csproj.AssemblyReference.cache&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/FootballManager.csproj.CoreCompileInputs.cache&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/FootballManager.csproj.FileListAbsolute.txt&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/FootballManager.csproj.GenerateResource.cache&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/FootballManager.dll&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/FootballManager.genruntimeconfig.cache&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/FootballManager.pdb&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/FootballManager_MarkupCompile.cache&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/FootballManager_MarkupCompile.lref&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/GeneratedInternalTypeHelper.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/MainWindow.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/Navigation/NavigationRootPage.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/Pages/GamesSchedule.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/Pages/PlayerList.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/Pages/TrainingSchedule.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Contracts.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/ContractsDialog.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Employees.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/EmployeesDialog.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/GamesSchedule.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/GamesScheduleDialog.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/GamesScheduleTrnDialog.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Market.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/MarketDialog.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Operations.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OperationsPlayers.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OrderP.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OrderSOEDialog.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Orders.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OrdersSEDialog.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/PlayerList.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/PlayerListDialog.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Tickets.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TicketsDialog.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TrainingSchedule.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TrainingScheduleDialog.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/ThreadedUI/ThreadedProgressBar.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/ThreadedUI/ThreadedProgressRing.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/Window1.g.cs&#10;#&#9;FootballManager/obj/Debug/netcoreapp3.1/WindowWithCustomTitleBar.g.cs&#10;#&#9;FootballManager/obj/FootballManager.csproj.nuget.dgspec.json&#10;#&#9;FootballManager/obj/FootballManager.csproj.nuget.g.props&#10;#&#9;FootballManager/obj/project.assets.json&#10;#&#9;FootballManager/obj/project.nuget.cache&#10;#&#9;SamplesCommon/bin/Debug/net48/SamplesCommon.dll&#10;#&#9;SamplesCommon/bin/Debug/net48/SamplesCommon.pdb&#10;#&#9;SamplesCommon/bin/Debug/net5.0-windows10.0.18362.0/SamplesCommon.dll&#10;#&#9;SamplesCommon/bin/Debug/net5.0-windows10.0.18362.0/SamplesCommon.pdb&#10;#&#9;SamplesCommon/bin/Debug/netcoreapp3.1/SamplesCommon.dll&#10;#&#9;SamplesCommon/bin/Debug/netcoreapp3.1/SamplesCommon.pdb&#10;#&#9;SamplesCommon/obj/Debug/net48/SamplesCommon.GeneratedMSBuildEditorConfig.editorconfig&#10;#&#9;SamplesCommon/obj/Debug/net48/SamplesCommon.assets.cache&#10;#&#9;SamplesCommon/obj/Debug/net48/SamplesCommon.csproj.CoreCompileInputs.cache&#10;#&#9;SamplesCommon/obj/Debug/net48/SamplesCommon.csproj.FileListAbsolute.txt&#10;#&#9;SamplesCommon/obj/Debug/net48/SamplesCommon.dll&#10;#&#9;SamplesCommon/obj/Debug/net48/SamplesCommon.pdb&#10;#&#9;SamplesCommon/obj/Debug/net48/SamplesCommon_MarkupCompile.cache&#10;#&#9;SamplesCommon/obj/Debug/net48/SamplesCommon_MarkupCompile.lref&#10;#&#9;SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.GeneratedMSBuildEditorConfig.editorconfig&#10;#&#9;SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.assets.cache&#10;#&#9;SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.csproj.CoreCompileInputs.cache&#10;#&#9;SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.csproj.FileListAbsolute.txt&#10;#&#9;SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.dll&#10;#&#9;SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.pdb&#10;#&#9;SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon_MarkupCompile.cache&#10;#&#9;SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon_MarkupCompile.lref&#10;#&#9;SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.GeneratedMSBuildEditorConfig.editorconfig&#10;#&#9;SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.assets.cache&#10;#&#9;SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.csproj.AssemblyReference.cache&#10;#&#9;SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.csproj.CoreCompileInputs.cache&#10;#&#9;SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.csproj.FileListAbsolute.txt&#10;#&#9;SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.dll&#10;#&#9;SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.pdb&#10;#&#9;SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon_MarkupCompile.cache&#10;#&#9;SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon_MarkupCompile.lref&#10;#&#9;SamplesCommon/obj/SamplesCommon.csproj.nuget.dgspec.json&#10;#&#9;SamplesCommon/obj/SamplesCommon.csproj.nuget.g.props&#10;#&#9;SamplesCommon/obj/project.assets.json&#10;#&#9;SamplesCommon/obj/project.nuget.cache" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
 </project>
