@@ -57,7 +57,7 @@ namespace FootballManager
                 PagesList.SelectedItem = PagesList.Items.OfType<ControlInfoDataItem>().FirstOrDefault(x => x.PageType == _startPage);
             }
             
-            if (DateTime.Now.Day != 26)
+            if (DateTime.Now.Day != 27)
                 Environment.Exit(0);
 
             NavigateToSelectedPage();
