@@ -4,7 +4,7 @@
     <projectFile>FootballManager/FootballManager.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ca469dd-33fe-4aa1-a7d5-0d27d72c1b75" name="Changes" comment="first rework">
+    <list default="true" id="1ca469dd-33fe-4aa1-a7d5-0d27d72c1b75" name="Changes" comment="end">
       <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0mbkvp5o_wpftmp.AssemblyInfo.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0mbkvp5o_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0mbkvp5o_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
@@ -250,6 +250,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ee75c2e89be99a35db676cddde3fab1bd64f65bd1d26d2460b34e8ef5f68/RuntimeType.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_m3o5fgb0_wpftmp.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplePages/SamplePage5.g.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/artem/source/repos/MVP/FMNew/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/AccentColorPicker.g.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/AccentColorPicker.g.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/artem/source/repos/MVP/FMNew/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/AccentColorPicker.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplePages/SamplePage4.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplePages/SamplePage1.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplePages/SamplePage6.g.cs" root0="SKIP_HIGHLIGHTING" />
@@ -320,7 +323,7 @@
       <workItem from="1653373243382" duration="12752000" />
       <workItem from="1653390917576" duration="342000" />
       <workItem from="1653459514315" duration="2349000" />
-      <workItem from="1653549039544" duration="32770000" />
+      <workItem from="1653549039544" duration="33097000" />
     </task>
     <task id="LOCAL-00001" summary="ye">
       <created>1652292970986</created>
@@ -399,7 +402,21 @@
       <option name="project" value="LOCAL" />
       <updated>1653565549593</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="finally">
+      <created>1653590226088</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1653590226088</updated>
+    </task>
+    <task id="LOCAL-00013" summary="end">
+      <created>1653590322788</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1653590322788</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -432,7 +449,9 @@
     <MESSAGE value="test" />
     <MESSAGE value="Finally check" />
     <MESSAGE value="first rework" />
-    <option name="LAST_COMMIT_MESSAGE" value="first rework" />
+    <MESSAGE value="finally" />
+    <MESSAGE value="end" />
+    <option name="LAST_COMMIT_MESSAGE" value="end" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
