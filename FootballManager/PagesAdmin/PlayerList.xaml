@@ -153,6 +153,14 @@
                         Header="Команда"
                         Width="130"
                         Binding="{Binding team}"/>
+                    <DataGridTextColumn
+                        Header="Логин"
+                        Width="130"
+                        Binding="{Binding login}"/>
+                    <DataGridTextColumn
+                        Header="Пароль"
+                        Width="130"
+                        Binding="{Binding pass}"/>
                 </DataGrid.Columns>
                 <DataGrid.GroupStyle>
                     <GroupStyle

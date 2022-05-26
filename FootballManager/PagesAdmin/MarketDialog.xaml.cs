@@ -135,22 +135,7 @@ namespace FootballManager.PagesAdmin
                 Check();
             }
         }
-          private string team ;
-        public string Team
-        {
-            get
-            {
-                return team;
-            }
-            set
-            {
-                if (team == value)
-                    return;
 
-                team = value;
-                Check();
-            }
-        }
         private decimal? price;
         public decimal? Price
         {
@@ -185,6 +170,6 @@ namespace FootballManager.PagesAdmin
             catch { }
         }
         
-        public void Check() => this.IsPrimaryButtonEnabled = !(string.IsNullOrEmpty(MName) || string.IsNullOrEmpty(Surname) || string.IsNullOrEmpty(Patronymic) || string.IsNullOrEmpty(Dateofbirth) || string.IsNullOrEmpty(Team) || string.IsNullOrEmpty(Nationality) || !Regex.IsMatch(Phone ?? string.Empty, @"^\+375 (17|29|33|44) [0-9]{3}-[0-9]{2}-[0-9]{2}$") || string.IsNullOrEmpty(Position) || Price == null);
+        public void Check() => this.IsPrimaryButtonEnabled = !(string.IsNullOrEmpty(MName) || string.IsNullOrEmpty(Surname) || string.IsNullOrEmpty(Patronymic) || string.IsNullOrEmpty(Dateofbirth) || string.IsNullOrEmpty(Nationality) || !Regex.IsMatch(Phone ?? string.Empty, @"^\+375(17|29|33|44)[0-9]{3}[0-9]{2}[0-9]{2}$") || string.IsNullOrEmpty(Position) || Price == null);
     }
 }

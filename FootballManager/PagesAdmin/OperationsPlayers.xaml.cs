@@ -36,10 +36,10 @@ namespace FootballManager.PagesAdmin
             dt_p = new DataTable();
             dt_o = new DataTable();
 //
-            adapter_oe = new SqlDataAdapter(new SqlCommand("SELECT ID_BuyPlayer, PlayerList.surname, datebuy, sumbuy FROM buyplayer join playerList ON (buyplayer.ID_Player = playerlist.ID_Player)", Globals.connection));
+            adapter_oe = new SqlDataAdapter(new SqlCommand("SELECT ID_BuyPlayer, surname, datebuy, sumbuy FROM buyplayer", Globals.connection));
             adapter_oe.Fill(dt_p);
 
-            adapter_se = new SqlDataAdapter(new SqlCommand("SELECT ID_SellPlayer, market.surname, datesell, sumsell FROM sellplayer join market ON (sellplayer.ID_Market = market.ID_Market)", Globals.connection));
+            adapter_se = new SqlDataAdapter(new SqlCommand("SELECT ID_SellPlayer, surname, datesell, sumsell FROM sellplayer", Globals.connection));
             adapter_se.Fill(dt_o);
 
             dataGridOrderP.ItemsSource = dt_p.DefaultView;
@@ -125,8 +125,8 @@ namespace FootballManager.PagesAdmin
         }
 
         //PlayersAdd
-        public static async Task AddP(string pid, decimal sum) => await new SqlCommand($@"INSERT INTO buyplayer (ID_Player, datebuy, sumbuy) VALUES ((select ID_Player from playerlist where surname = N'{pid}'), N'{DateTime.Now.Date}', '{sum}')",Globals.connection).ExecuteNonQueryAsync();
-        public static async Task AddO(string pid, decimal sum) => await new SqlCommand($"INSERT INTO SellPlayer (ID_Market, datesell, sumsell) VALUES ((select ID_Market from market where surname = N'{pid}'), N'{DateTime.Now.Date}', '{sum}')",Globals.connection).ExecuteNonQueryAsync();
+        public static async Task AddP(string surname, decimal sum) => await new SqlCommand($@"INSERT INTO buyplayer (datebuy, sumbuy, surname) VALUES ('{DateTime.Now.Date}', '{sum}', N'{surname}')",Globals.connection).ExecuteNonQueryAsync();
+        public static async Task AddO(string surname, decimal sum) => await new SqlCommand($"INSERT INTO SellPlayer (datesell, sumsell, surname) VALUES ('{DateTime.Now.Date}', '{sum}', N'{surname}')",Globals.connection).ExecuteNonQueryAsync();
             //await new SqlCommand($@"INSERT INTO playersOrder (ID_Player, date, sum) VALUES ((select ID_Player from playerlist_orders where surname = N'{pid}'), N'{DateTime.Now.Date.ToString("MM/dd/yyyy")}', {sum})", Globals.connection).ExecuteNonQueryAsync();
 
         private void SearchO(object sender, KeyEventArgs e)
@@ -135,7 +135,7 @@ namespace FootballManager.PagesAdmin
             {
                 (dataGridOrderO.ItemContainerGenerator.ContainerFromItem(dr) as DataGridRow).Visibility = Visibility.Visible;
 
-                if (SearchUIO.Text != string.Empty && !dr[1].ToString().ToLower().Contains(SearchUIO.Text.ToLower()))
+                if (SearchUIO.Text != string.Empty && !dr[4].ToString().ToLower().Contains(SearchUIO.Text.ToLower()))
                     (dataGridOrderO.ItemContainerGenerator.ContainerFromItem(dr) as DataGridRow).Visibility = Visibility.Collapsed;
             }
         }
@@ -151,16 +151,17 @@ namespace FootballManager.PagesAdmin
             OrderP dialog = new OrderP();
             object[] cells = dt_p.Rows[dataGridOrderP.SelectedIndex].ItemArray;
 
-            dialog.Player = (string) cells[1];
+            dialog.Player = (string) cells[4];
             dialog.Date = DateTime.Parse(cells[2].ToString());
             dialog.Sum = (int)cells[3];
             var result = await dialog.ShowAsync();
 
             if (result == ContentDialogResult.Primary)
             {
-                    await new SqlCommand($@"UPDATE playersAdd SET ID_Player = (select ID_Player from PlayerList where surname = N'{dialog.Player}'), date = N'{dialog.Date.Value.Date}', sum = N'{dialog.Sum}' WHERE ID_Buy = '{cells[0]}'", Globals.connection).ExecuteNonQueryAsync();
-                    FillGrid();
-                    
+                await new SqlCommand(
+                    $@"UPDATE buyplayer SET surname = N'{dialog.Player}', datebuy = '{dialog.Date.Value.Date}', sumbuy '{dialog.Sum}' WHERE ID_BuyPlayer = '{cells[0]}'",
+                    Globals.connection).ExecuteNonQueryAsync();
+                FillGrid();
             }
         }
 
@@ -175,7 +176,7 @@ namespace FootballManager.PagesAdmin
             MessageBoxResult res = MessageBox.Show("Вы уверены, что хотите удалить данную запись?", "Внимание!", MessageBoxButton.YesNo, MessageBoxImage.Question);
             if (res != MessageBoxResult.No)
             {
-                await new SqlCommand($@"DELETE FROM playersAdd WHERE ID_Buy = '{dt_p.Rows[dataGridOrderP.SelectedIndex].ItemArray[0]}'", Globals.connection).ExecuteNonQueryAsync();
+                await new SqlCommand($@"DELETE FROM buyplayer WHERE ID_BuyPlayer = '{dt_p.Rows[dataGridOrderP.SelectedIndex].ItemArray[0]}'", Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
                 
             }
@@ -192,8 +193,8 @@ namespace FootballManager.PagesAdmin
             OrderP dialog = new OrderP();
             object[] cells = dt_p.Rows[dataGridOrderP.SelectedIndex].ItemArray;
 
-            dialog.Date = DateTime.Parse(cells[1].ToString());
-            dialog.Player = (string) cells[2];
+            dialog.Date = DateTime.Parse(cells[2].ToString());
+            dialog.Player = (string) cells[4];
             dialog.Sum = (int) cells[3];
 
             var result = await dialog.ShowAsync();
@@ -201,7 +202,7 @@ namespace FootballManager.PagesAdmin
             if (result == ContentDialogResult.Primary)
             {
                 await new SqlCommand(
-                    $@"UPDATE playersOrder SET ID_Player = (select ID_Player from PlayerList where surname = N'{dialog.Player}'), date = N'{dialog.Date.Value.Date}', sum = N'{dialog.Sum}' WHERE ID_Sell = '{cells[0]}'",
+                    $@"UPDATE sellplayer SET surname = N'{dialog.Player}', datesell = '{dialog.Date.Value.Date}', sumsell = '{dialog.Sum}' WHERE ID_SellPlayer = '{cells[0]}'",
                     Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
             }
@@ -218,7 +219,7 @@ namespace FootballManager.PagesAdmin
             MessageBoxResult res = MessageBox.Show("Вы уверены, что хотите удалить данную запись?", "Внимание!", MessageBoxButton.YesNo, MessageBoxImage.Question);
             if (res != MessageBoxResult.No)
             {
-                await new SqlCommand($@"DELETE FROM playersOrder WHERE ID_Sell = '{dt_o.Rows[dataGridOrderO.SelectedIndex].ItemArray[0]}'", Globals.connection).ExecuteNonQueryAsync();
+                await new SqlCommand($@"DELETE FROM SellPlayer WHERE ID_SellPlayer = '{dt_o.Rows[dataGridOrderO.SelectedIndex].ItemArray[0]}'", Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
                 
             }
@@ -230,7 +231,7 @@ namespace FootballManager.PagesAdmin
             {
                 (dataGridOrderP.ItemContainerGenerator.ContainerFromItem(dr) as DataGridRow).Visibility = Visibility.Visible;
 
-                if (SearchUIP.Text != string.Empty && !dr[1].ToString().ToLower().Contains(SearchUIP.Text.ToLower()) && !dr[1].ToString().ToLower().Contains(SearchUIP.Text.ToLower()))
+                if (SearchUIP.Text != string.Empty && !dr[4].ToString().ToLower().Contains(SearchUIP.Text.ToLower()) && !dr[4].ToString().ToLower().Contains(SearchUIP.Text.ToLower()))
                     (dataGridOrderP.ItemContainerGenerator.ContainerFromItem(dr) as DataGridRow).Visibility = Visibility.Collapsed;
             }
         }

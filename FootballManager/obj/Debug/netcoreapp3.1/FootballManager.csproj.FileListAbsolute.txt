@@ -2990,3 +2990,7 @@ C:\Users\artem\source\repos\MVP\FMNew\FootballManager\obj\Debug\netcoreapp3.1\Fo
 C:\Users\artem\source\repos\MVP\FMNew\FootballManager\obj\Debug\netcoreapp3.1\FootballManager.dll
 C:\Users\artem\source\repos\MVP\FMNew\FootballManager\obj\Debug\netcoreapp3.1\FootballManager.pdb
 C:\Users\artem\source\repos\MVP\FMNew\FootballManager\obj\Debug\netcoreapp3.1\FootballManager.genruntimeconfig.cache
+C:\Users\artem\source\repos\MVP\FMNew\FootballManager\obj\Debug\netcoreapp3.1\PagesAdmin\MarketRegisterDialog.g.cs
+C:\Users\artem\source\repos\MVP\FMNew\FootballManager\obj\Debug\netcoreapp3.1\PagesAdmin\MarketRegisterDialog.baml
+C:\Users\artem\source\repos\MVP\FMNew\FootballManager\obj\Debug\netcoreapp3.1\PagesAdmin\MarketSellDialog.g.cs
+C:\Users\artem\source\repos\MVP\FMNew\FootballManager\obj\Debug\netcoreapp3.1\PagesAdmin\MarketSellDialog.baml

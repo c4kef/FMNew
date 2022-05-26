@@ -112,20 +112,20 @@ namespace FootballManager.PagesAdmin
                         Globals.connection).ExecuteNonQueryAsync();*/
                     
                     await new SqlCommand(
-                        $"INSERT INTO market(ID_Player, surname, name, patronymic, price, team, dateofbirth, nationality, position, phone) VALUES " +
-                        $"((select ID_Player from PlayerList where surname = N'{selectedPlayer.Row.ItemArray[1]}'), N'{selectedPlayer.Row.ItemArray[1]}', N'{selectedPlayer.Row.ItemArray[2]}', N'{selectedPlayer.Row.ItemArray[3]}', '{price}', N'{selectedPlayer.Row.ItemArray[8]}', N'{selectedPlayer.Row.ItemArray[4]}', N'{selectedPlayer.Row.ItemArray[5]}', N'{selectedPlayer.Row.ItemArray[6]}',N'{selectedPlayer.Row.ItemArray[7]}')",
+                        $"INSERT INTO market(surname, name, patronymic, price, team, dateofbirth, nationality, position, phone) VALUES " +
+                        $"(N'{selectedPlayer.Row.ItemArray[1]}', N'{selectedPlayer.Row.ItemArray[2]}', N'{selectedPlayer.Row.ItemArray[3]}', '{price}', N'{selectedPlayer.Row.ItemArray[8]}', N'{selectedPlayer.Row.ItemArray[4]}', N'{selectedPlayer.Row.ItemArray[5]}', N'{selectedPlayer.Row.ItemArray[6]}',N'{selectedPlayer.Row.ItemArray[7]}')",
                         Globals.connection).ExecuteNonQueryAsync();
 
                     //To-Do
-                    await OperationsPlayers.AddO(selectedPlayer.Row.ItemArray[1].ToString(), price);
+                    //await OperationsPlayers.AddO(selectedPlayer.Row.ItemArray[1].ToString(), price);
 
-                    /*await new SqlCommand(
+                    await new SqlCommand(
                         $"DELETE FROM playerlist WHERE ID_Player = '{selectedPlayer.Row.ItemArray[0]}'",
                         Globals.connection).ExecuteNonQueryAsync();//Как-то удалять надо игрока
 
-                    Globals.AddOperation(DateTime.Now, "Продажа игрока", Globals.Balance + price, price);
-                    Globals.Balance += price;
-                    FillGrid();*/
+                    //Globals.AddOperation(DateTime.Now, "Продажа игрока", Globals.Balance + price, price);
+                    //Globals.Balance += price;
+                    FillGrid();
 
                     MessageBox.Show("Игрок успешно выставлен на продажу!");
                 }
@@ -142,7 +142,7 @@ namespace FootballManager.PagesAdmin
                 try
                 {
                     var r = dialog;
-                  await new SqlCommand($@"INSERT INTO playerlist (surname, name, patronymic, dateofbirth, nationality, position, phone, team) VALUES (N'{dialog.Surname}', N'{dialog.MName}', N'{dialog.Patronymic}', N'{dialog.Dateofbirth}', N'{dialog.Nationality}', N'{dialog.Position}', N'{dialog.Phone}',N'{dialog.Team}')", Globals.connection).ExecuteNonQueryAsync();
+                  await new SqlCommand($@"INSERT INTO playerlist (surname, name, patronymic, dateofbirth, nationality, position, phone, team) VALUES (N'{dialog.Surname}', N'{dialog.MName}', N'{dialog.Patronymic}', N'{dialog.Dateofbirth}', N'{dialog.Nationality}', N'{dialog.Position}', N'{dialog.Phone}',N'Игрок клуба')", Globals.connection).ExecuteNonQueryAsync();
                     FillGrid();
                     
                 }
@@ -181,12 +181,12 @@ namespace FootballManager.PagesAdmin
             dialog.Nationality = (string)cells[5];
             dialog.Position = (string)cells[6];
             dialog.Phone = (string)cells[7];
-            dialog.Team = (string)cells[8];
+            
             var result = await dialog.ShowAsync();
 
             if (result == ContentDialogResult.Primary)
             {
-                await new SqlCommand($@"UPDATE playerlist SET surname = N'{dialog.Surname}', name = N'{dialog.MName}', patronymic =  N'{dialog.Patronymic}', dateofbirth = N'{dialog.Dateofbirth}', nationality = N'{dialog.Nationality}', position = N'{dialog.Position}', phone = N'{dialog.Phone}', team = N'{dialog.Team}' WHERE ID_Player = '{cells[0]}'", Globals.connection).ExecuteNonQueryAsync();
+                await new SqlCommand($@"UPDATE playerlist SET surname = N'{dialog.Surname}', name = N'{dialog.MName}', patronymic =  N'{dialog.Patronymic}', dateofbirth = N'{dialog.Dateofbirth}', nationality = N'{dialog.Nationality}', position = N'{dialog.Position}', phone = N'{dialog.Phone}' WHERE ID_Player = '{cells[0]}'", Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
             }
         }

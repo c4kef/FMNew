@@ -184,6 +184,12 @@
     <Page Update="PagesAdmin\GamesScheduleTrnDialog.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="PagesAdmin\MarketRegisterDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PagesAdmin\MarketSellDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
 
   <ItemGroup>
