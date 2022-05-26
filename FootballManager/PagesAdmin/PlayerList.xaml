@@ -136,7 +136,7 @@
                     <DataGridTextColumn
                         Header="Дата рождения"
                         Width="68"
-                        Binding="{Binding dateofbirth}" />
+                        Binding="{Binding dateofbirth, StringFormat=dd/MM/yyyy}" />
                     <DataGridTextColumn
                         Header="Национальность"
                         Width="120"

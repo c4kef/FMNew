@@ -116,13 +116,13 @@
                 VirtualizingPanel.IsVirtualizingWhenGrouping="True">
                 <DataGrid.Columns>
                     <DataGridTextColumn
+                        Header="id"
+                        Width="105"
+                        Binding="{Binding ID_game_shedule}" Visibility="Hidden"/>
+                    <DataGridTextColumn
                         Header="Дата"
                         Width="83"
-                        Binding="{Binding date, StringFormat=dd/MM/yyyy}" />
-                    <DataGridTextColumn
-                        Header="Время"
-                        Width="88"
-                        Binding="{Binding time}" />
+                        Binding="{Binding date}" />
                     <DataGridTextColumn
                         Header="Команда соперников"
                         Width="145"
@@ -139,6 +139,14 @@
                         Header="Результат игры"
                         Width="150"
                         Binding="{Binding result}" />
+                    <DataGridTextColumn
+                        Header="Доход"
+                        Width="150"
+                        Binding="{Binding revenue}" Visibility="Hidden"/>
+                    <DataGridTextColumn
+                        Header="Кол-во билетов"
+                        Width="105"
+                        Binding="{Binding ticket_count}" Visibility="Hidden"/>
                 </DataGrid.Columns>
                 <DataGrid.GroupStyle>
                     <GroupStyle

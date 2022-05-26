@@ -15,6 +15,7 @@ using ClosedXML.Excel;
 using FootballManager.PagesAdmin;
 using Microsoft.Win32;
 using System.Data.SqlClient;
+using System.IO;
 
 namespace FootballManager
 {
@@ -22,8 +23,14 @@ namespace FootballManager
     {
         public Window1()
         {
-            Globals.connection = new SqlConnection(@"Data Source=C4ke;Initial Catalog=footballclub1; Integrated Security = True; MultipleActiveResultSets=True");
+            //DESKTOP-B4OPU5P\SQLEXPRESS
+            //C4ke
+            Globals.connection = new SqlConnection(@"Data Source=DESKTOP-B4OPU5P\SQLEXPRESS;Initial Catalog=footballclub1; Integrated Security = True; MultipleActiveResultSets=True");
             Globals.connection.Open();
+
+            if (File.Exists("money.txt"))
+                Globals.Balance = int.Parse(File.ReadAllText("money.txt"));
+            
             InitializeComponent();
         }
 

@@ -115,6 +115,10 @@
                 VirtualizingPanel.IsVirtualizingWhenGrouping="True">
                 <DataGrid.Columns>
                     <DataGridTextColumn
+                        Header="id"
+                        Width="105"
+                        Binding="{Binding ID_Player}" Visibility="Hidden"/>
+                    <DataGridTextColumn
                         Header="Фамилия"
                         Width="115"
                         Binding="{Binding surname}" />
@@ -127,21 +131,33 @@
                         Width="115"
                         Binding="{Binding patronymic}" />
                     <DataGridTextColumn
-                        Header="дата рождения"
+                        Header="Дата рождения"
                         Width="68"
-                        Binding="{Binding Dateofbirth}" />
+                        Binding="{Binding dateofbirth, StringFormat=dd/MM/yyyy}" />
                     <DataGridTextColumn
                         Header="Национальность"
                         Width="120"
                         Binding="{Binding nationality}"/>
                     <DataGridTextColumn
+                        Header="Позиция"
+                        Width="150"
+                        Binding="{Binding position}"/>
+                    <DataGridTextColumn
                         Header="Номер телефона"
                         Width="130"
                         Binding="{Binding phone}"/>
                     <DataGridTextColumn
-                        Header="Позиция"
-                        Width="150"
-                        Binding="{Binding position}"/>
+                        Header="Команда"
+                        Width="130"
+                        Binding="{Binding team}"/>
+                    <DataGridTextColumn
+                        Header="Логин"
+                        Width="130"
+                        Binding="{Binding login}" Visibility="Hidden"/>
+                    <DataGridTextColumn
+                        Header="Пароль"
+                        Width="130"
+                        Binding="{Binding pass}" Visibility="Hidden"/>
                 </DataGrid.Columns>
                 <DataGrid.GroupStyle>
                     <GroupStyle

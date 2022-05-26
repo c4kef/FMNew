@@ -35,20 +35,32 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="obj\Debug\net48\SamplesCommon_ppcxs2t4_wpftmp.AssemblyInfoInputs.cache" />
+    <Content Include="obj\Debug\net48\SamplesCommon_ppcxs2t4_wpftmp.assets.cache" />
+    <Content Include="obj\Debug\net48\SamplesCommon_ppcxs2t4_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
     <Content Include="obj\Debug\net48\SamplesCommon_pyhnd1fq_wpftmp.AssemblyInfoInputs.cache" />
     <Content Include="obj\Debug\net48\SamplesCommon_pyhnd1fq_wpftmp.assets.cache" />
     <Content Include="obj\Debug\net48\SamplesCommon_pyhnd1fq_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <Content Include="obj\Debug\net5.0-windows10.0.18362.0\SamplesCommon_eckt4uqx_wpftmp.AssemblyInfoInputs.cache" />
+    <Content Include="obj\Debug\net5.0-windows10.0.18362.0\SamplesCommon_eckt4uqx_wpftmp.assets.cache" />
+    <Content Include="obj\Debug\net5.0-windows10.0.18362.0\SamplesCommon_eckt4uqx_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
     <Content Include="obj\Debug\net5.0-windows10.0.18362.0\SamplesCommon_ozsxuttu_wpftmp.AssemblyInfoInputs.cache" />
     <Content Include="obj\Debug\net5.0-windows10.0.18362.0\SamplesCommon_ozsxuttu_wpftmp.assets.cache" />
     <Content Include="obj\Debug\net5.0-windows10.0.18362.0\SamplesCommon_ozsxuttu_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <Content Include="obj\Debug\netcoreapp3.1\SamplesCommon_fp03yiob_wpftmp.AssemblyInfoInputs.cache" />
+    <Content Include="obj\Debug\netcoreapp3.1\SamplesCommon_fp03yiob_wpftmp.assets.cache" />
+    <Content Include="obj\Debug\netcoreapp3.1\SamplesCommon_fp03yiob_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
     <Content Include="obj\Debug\netcoreapp3.1\SamplesCommon_pjfxna1u_wpftmp.AssemblyInfoInputs.cache" />
     <Content Include="obj\Debug\netcoreapp3.1\SamplesCommon_pjfxna1u_wpftmp.assets.cache" />
     <Content Include="obj\Debug\netcoreapp3.1\SamplesCommon_pjfxna1u_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Include="obj\Debug\net48\SamplesCommon_ppcxs2t4_wpftmp.AssemblyInfo.cs" />
     <Compile Include="obj\Debug\net48\SamplesCommon_pyhnd1fq_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\net5.0-windows10.0.18362.0\SamplesCommon_eckt4uqx_wpftmp.AssemblyInfo.cs" />
     <Compile Include="obj\Debug\net5.0-windows10.0.18362.0\SamplesCommon_ozsxuttu_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\netcoreapp3.1\SamplesCommon_fp03yiob_wpftmp.AssemblyInfo.cs" />
     <Compile Include="obj\Debug\netcoreapp3.1\SamplesCommon_pjfxna1u_wpftmp.AssemblyInfo.cs" />
   </ItemGroup>
 

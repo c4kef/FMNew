@@ -123,21 +123,17 @@
                         Width="105"
                         Binding="{Binding id}" Visibility="Hidden"/>
                     <DataGridTextColumn
-                        Header="Фамилия"
-                        Width="125"
-                        Binding="{Binding surname}" />
-                    <DataGridTextColumn
                         Header="Имя"
                         Width="110"
                         Binding="{Binding name}" />
                     <DataGridTextColumn
+                        Header="Фамилия"
+                        Width="125"
+                        Binding="{Binding surname}" />
+                    <DataGridTextColumn
                         Header="Отчество"
                         Width="125"
                         Binding="{Binding patronymic}" />
-                    <DataGridTextColumn
-                        Header="дата рождения"
-                        Width="68"
-                        Binding="{Binding dateofbirth}" />
                     <DataGridTextColumn
                         Header="Должность"
                         Width="130"
@@ -146,6 +142,10 @@
                         Header="Номер телефона"
                         Width="130"
                         Binding="{Binding phone}" />
+                    <DataGridTextColumn
+                        Header="дата рождения"
+                        Width="68"
+                        Binding="{Binding dateofbirth, StringFormat=dd/MM/yyyy}" />
                 </DataGrid.Columns>
                 <DataGrid.GroupStyle>
                     <GroupStyle

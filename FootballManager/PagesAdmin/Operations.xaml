@@ -128,6 +128,10 @@
                         Width="150"
                         Binding="{Binding status}" />
                     <DataGridTextColumn
+                        Header="Сумма (USD)"
+                        Width="150"
+                        Binding="{Binding sum}" />
+                    <DataGridTextColumn
                         Header="Описание"
                         Width="180"
                         Binding="{Binding description}" />
@@ -135,10 +139,6 @@
                         Header="Дата"
                         Width="83"
                         Binding="{Binding datetime, StringFormat=dd/MM/yyyy}" />
-                    <DataGridTextColumn
-                        Header="Сумма (USD)"
-                        Width="150"
-                        Binding="{Binding sum}" />
                 </DataGrid.Columns>
                 <DataGrid.GroupStyle>
                     <GroupStyle
@@ -157,6 +157,7 @@
                         Style="{StaticResource OptionsPanelStyle}">
                         <Button HorizontalAlignment="Center" Content="Отчёт" Click="Export" Margin="5,0,0,0"/>
                         <ComboBox Width="270" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Операция" Margin="0,5,0,0" ItemsSource="{Binding OList}" SelectedItem="{Binding OVal}"/>
+                        <Label Content="Поиск по дате" HorizontalAlignment="Center" FontSize="20"/>
                         <Calendar Name="dteSelectedMonth" DisplayMode="Year" SelectionMode="None" DisplayModeChanged="Calendar_OnSelectedDatesChanged" />
                     </ui:SimpleStackPanel>
                 </ScrollViewer>

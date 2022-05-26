@@ -123,17 +123,21 @@
                             Width="105"
                             Binding="{Binding ID_SellPlayer}" Visibility="Hidden"/>
                         <DataGridTextColumn
+                            Header="ID_Market"
+                            Width="105"
+                            Binding="{Binding ID_Market}" Visibility="Hidden"/>
+                        <DataGridTextColumn
                             Header="Дата"
                             Width="83"
                             Binding="{Binding datesell, StringFormat=dd/MM/yyyy}" />
                         <DataGridTextColumn
-                            Header="Игрок"
-                            Width="135"
-                            Binding="{Binding surname}" />
-                        <DataGridTextColumn
                             Header="Стоимость продажи (USD)"
                             Width="170"
                             Binding="{Binding sumsell}" />
+                        <DataGridTextColumn
+                            Header="Игрок"
+                            Width="135"
+                            Binding="{Binding surname}" />
                     </DataGrid.Columns>
                     <DataGrid.GroupStyle>
                         <GroupStyle
@@ -178,21 +182,25 @@
                 VirtualizingPanel.IsVirtualizingWhenGrouping="True">
                     <DataGrid.Columns>
                         <DataGridTextColumn
-                        Header="ID_BuyPlayer"
-                        Width="105"
-                        Binding="{Binding ID_BuyPlayer}" Visibility="Hidden"/>
+                            Header="ID_BuyPlayer"
+                            Width="105"
+                            Binding="{Binding ID_BuyPlayer}" Visibility="Hidden"/>
                         <DataGridTextColumn
-                        Header="Дата"
-                        Width="83"
-                        Binding="{Binding datebuy, StringFormat=dd/MM/yyyy}" />
+                            Header="ID_Player"
+                            Width="105"
+                            Binding="{Binding ID_Player}" Visibility="Hidden"/>
                         <DataGridTextColumn
-                        Header="Игрок"
-                        Width="135"
-                        Binding="{Binding surname}" />
+                            Header="Дата"
+                            Width="83"
+                            Binding="{Binding datebuy, StringFormat=dd/MM/yyyy}" />
                         <DataGridTextColumn
-                        Header="Стоимость покупки (USD)"
-                        Width="170"
-                        Binding="{Binding sumbuy}" />
+                            Header="Стоимость покупки (USD)"
+                            Width="170"
+                            Binding="{Binding sumbuy}" />
+                        <DataGridTextColumn
+                            Header="Игрок"
+                            Width="135"
+                            Binding="{Binding surname}" />
                     </DataGrid.Columns>
                     <DataGrid.GroupStyle>
                         <GroupStyle

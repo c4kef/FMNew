@@ -2,6 +2,7 @@
 using System;
 using System.ComponentModel;
 using System.Text.RegularExpressions;
+using System.Windows;
 
 namespace FootballManager.PagesAdmin
 {
@@ -118,9 +119,29 @@ namespace FootballManager.PagesAdmin
                 Check();
             }
         }
+        
+        private string team;
+        public string Team
+        {
+            get
+            {
+                return team;
+            }
+            set
+            {
+                if (team == value)
+                    return;
 
-        private string dateofbirth;
-        public string Dateofbirth
+                if (value == "Игрок клуба")
+                    TeamBox.Visibility = Visibility.Collapsed;
+                
+                team = value;
+                Check();
+            }
+        }
+
+        private DateTime dateofbirth = DateTime.Now;
+        public DateTime Dateofbirth
         {
             get
             {
@@ -170,6 +191,6 @@ namespace FootballManager.PagesAdmin
             catch { }
         }
         
-        public void Check() => this.IsPrimaryButtonEnabled = !(string.IsNullOrEmpty(MName) || string.IsNullOrEmpty(Surname) || string.IsNullOrEmpty(Patronymic) || string.IsNullOrEmpty(Dateofbirth) || string.IsNullOrEmpty(Nationality) || !Regex.IsMatch(Phone ?? string.Empty, @"^\+375(17|29|33|44)[0-9]{3}[0-9]{2}[0-9]{2}$") || string.IsNullOrEmpty(Position) || Price == null);
+        public void Check() => this.IsPrimaryButtonEnabled = !(string.IsNullOrEmpty(MName) || string.IsNullOrEmpty(Surname) || string.IsNullOrEmpty(Patronymic) || Dateofbirth.Date.Year < 2000 || string.IsNullOrEmpty(Nationality) || !Regex.IsMatch(Phone ?? string.Empty, @"^375(17|29|33|44)[0-9]{3}[0-9]{2}[0-9]{2}$") || string.IsNullOrEmpty(Position) || Price == null);
     }
 }

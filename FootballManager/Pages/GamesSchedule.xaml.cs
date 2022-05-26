@@ -28,9 +28,9 @@ namespace FootballManager.Pages
             _cvs = new CollectionViewSource();
         }
 
-        public void FillGrid()
+        public void FillGrid() 
         {
-            SqlCommand cmdSel = new SqlCommand("SELECT gamesschedule.ID_game_shedule, gamesschedule.date, gamesschedule.time, gamesschedule.team, gamesschedule.stadium, tournaments.name, gamesschedule.result FROM gamesschedule INNER JOIN tournaments ON gamesschedule.ID_tournament = tournaments.ID_tournament", Globals.connection);
+            SqlCommand cmdSel = new SqlCommand("SELECT ID_game_shedule, date, team, stadium, Tournaments.name, result, revenue, ticket_count FROM Gamesschedule join Tournaments ON (Gamesschedule.ID_tournament = Tournaments.ID_tournament)", Globals.connection);
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmdSel);
             da.Fill(dt);

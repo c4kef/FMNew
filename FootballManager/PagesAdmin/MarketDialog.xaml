@@ -15,9 +15,10 @@
         <TextBox PreviewTextInput="CheckLetters" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Имя" Margin="0,5,0,0" Text="{Binding MName}"/>
         <TextBox PreviewTextInput="CheckLetters" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Отчество" Margin="0,5,0,0" Text="{Binding Patronymic}"/>
         <TextBox PreviewTextInput="CheckDigits" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Стоимость (USD)" Margin="0,5,0,0" Text="{Binding Price}"/>
-        <TextBox PreviewTextInput="CheckDigits" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="дата рождения" Margin="0,5,0,0" Text="{Binding Dateofbirth}"/>
+        <DatePicker Width="270" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="дата рождения" Margin="0,5,0,0" SelectedDate="{Binding Dateofbirth}"/>
         <TextBox PreviewTextInput="CheckLetters" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Национальность" Margin="0,5,0,0" Text="{Binding Nationality}"/>
         <TextBox PreviewTextInput="CheckDigits" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Номер телефона" Margin="0,5,0,0" Text="{Binding Phone}"/>
+        <TextBox x:Name="TeamBox" PreviewTextInput="CheckLetters" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Команда" Margin="0,5,0,0" Text="{Binding Team}"/>
         <TextBox PreviewTextInput="CheckLetters" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Позиция" Margin="0,5,0,0" Text="{Binding Position}"/>
     </StackPanel>
 

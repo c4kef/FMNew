@@ -101,6 +101,7 @@ namespace FootballManager
 
         public void Leave()
         {
+            Globals.UserLogin = string.Empty;
             new Window1().Show();
             this.Close();
             Globals.isManager = false;

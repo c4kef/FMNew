@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data.SqlClient;
 using System.Globalization;
+using System.IO;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -28,14 +29,29 @@ namespace FootballManager
 
         private static decimal _balance = 120_000;
         private static decimal _last_balance;
+
         public static decimal Balance
         {
             get => _balance;
             set
             {
                 _last_balance = _balance;
-                new Thread(new ThreadStart(() => MessageBox.Show($"Статус: {((_last_balance < _balance) ? "Пополнение" : "Расход")}\nСумма: {_balance - _last_balance}"))).Start();
+                if (!string.IsNullOrEmpty(UserLogin))
+                    new Thread(new ThreadStart(() =>
+                            MessageBox.Show(
+                                $"Статус: {((_last_balance < _balance) ? "Пополнение" : "Расход")}\nСумма: {_balance - _last_balance}")))
+                        .Start();
                 _balance = value;
+
+                try
+                {
+                    File.WriteAllText("money.txt", value.ToString());
+                }
+                catch
+                {
+
+                }
+
                 OnStaticPropertyChanged("Balance");
             }
         }

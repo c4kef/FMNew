@@ -118,8 +118,42 @@ namespace FootballManager.PagesAdmin
             }
         }
         
-        private string dateofbirth;
-        public string Dateofbirth
+        private string pass;
+        public string Pass
+        {
+            get
+            {
+                return pass;
+            }
+            set
+            {
+                if (pass == value)
+                    return;
+
+                pass = value;
+                Check();
+            }
+        }
+        
+        private string login;
+        public string Login
+        {
+            get
+            {
+                return login;
+            }
+            set
+            {
+                if (login == value)
+                    return;
+
+                login = value;
+                Check();
+            }
+        }
+        
+        private DateTime dateofbirth = DateTime.Now;
+        public DateTime Dateofbirth
         {
             get
             {
@@ -149,6 +183,6 @@ namespace FootballManager.PagesAdmin
             }
             catch { }
         }
-        public void Check() => this.IsPrimaryButtonEnabled = !(string.IsNullOrEmpty(Patronymic) || Patronymic.Any(char.IsDigit) || string.IsNullOrEmpty(Surname) || Surname.Any(char.IsDigit) || string.IsNullOrEmpty(MName) || MName.Any(char.IsDigit) || string.IsNullOrEmpty(Nationality) || !Regex.IsMatch(Phone ?? string.Empty, @"^375(17|29|33|44)[0-9]{3}[0-9]{2}[0-9]{2}$") || string.IsNullOrEmpty(Position)) || string.IsNullOrEmpty(Dateofbirth);
+        public void Check() => this.IsPrimaryButtonEnabled = !(string.IsNullOrEmpty(Patronymic) || string.IsNullOrEmpty(Login) || string.IsNullOrEmpty(Pass) || Patronymic.Any(char.IsDigit) || string.IsNullOrEmpty(Surname) || Surname.Any(char.IsDigit) || string.IsNullOrEmpty(MName) || MName.Any(char.IsDigit) || string.IsNullOrEmpty(Nationality) || !Regex.IsMatch(Phone ?? string.Empty, @"^375(17|29|33|44)[0-9]{3}[0-9]{2}[0-9]{2}$") || string.IsNullOrEmpty(Position) || Dateofbirth.Date.Year < 2000);
     }
 }
