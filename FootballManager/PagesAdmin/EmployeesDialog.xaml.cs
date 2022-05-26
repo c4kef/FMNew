@@ -66,8 +66,8 @@ namespace FootballManager.PagesAdmin
                 Check();
             }
         }
-        private string dateofbirth;
-        public string Dateofbirth
+        private DateTime dateofbirth = DateTime.Now;
+        public DateTime Dateofbirth
         {
             get
             {
@@ -116,40 +116,6 @@ namespace FootballManager.PagesAdmin
             }
         }
 
-        private string team;
-        public string Team
-        {
-            get
-            {
-                return team;
-            }
-            set
-            {
-                if (team == value)
-                    return;
-
-                team = value;
-                Check();
-            }
-        }
-        private string nationality;
-        public string Nationality
-        {
-            get
-            {
-                return nationality;
-            }
-            set
-            {
-                if (nationality != value)
-                    return;
-
-                nationality = value;
-                Check();
-            }
-        }
-
-
         private void CheckLetters(object sender, System.Windows.Input.TextCompositionEventArgs e)
         {
             try
@@ -166,6 +132,6 @@ namespace FootballManager.PagesAdmin
             }
             catch { }
         }
-        public void Check() => this.IsPrimaryButtonEnabled = !(string.IsNullOrEmpty(team) || string.IsNullOrEmpty(dateofbirth) || !Regex.IsMatch(Phone ?? string.Empty, @"^\+375 (17|29|33|44) [0-9]{3}-[0-9]{2}-[0-9]{2}$") || string.IsNullOrEmpty(Position) || string.IsNullOrEmpty(Patronymic) || Patronymic.Any(char.IsDigit) || string.IsNullOrEmpty(Surname) || Surname.Any(char.IsDigit) || string.IsNullOrEmpty(EName) || EName.Any(char.IsDigit));
+        public void Check() => this.IsPrimaryButtonEnabled = !(dateofbirth.Year < 2000 || !Regex.IsMatch(Phone ?? string.Empty, @"^375(17|29|33|44)[0-9]{3}[0-9]{2}[0-9]{2}$") || string.IsNullOrEmpty(Position) || string.IsNullOrEmpty(Patronymic) || Patronymic.Any(char.IsDigit) || string.IsNullOrEmpty(Surname) || Surname.Any(char.IsDigit) || string.IsNullOrEmpty(EName) || EName.Any(char.IsDigit));
     }
 }

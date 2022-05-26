@@ -11,10 +11,9 @@
 
     <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
         <DatePicker ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Выберите дату" Width="270" SelectedDate="{Binding Date}"/>
-        <!--<ui:SimpleTimePicker x:Name="Test" ui:ControlHelper.CornerRadius="10" Width="270" Margin="0,5,0,0" SelectedDateTime="{Binding Time}"/>-->
+        <ui:SimpleTimePicker x:Name="Test" ui:ControlHelper.CornerRadius="10" Width="270" Margin="0,5,0,0" SelectedDateTime="{Binding Time}"/>
         <TextBox PreviewTextInput="CheckLetters" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Команда соперников" Margin="0,5,0,0" Text="{Binding Team}"/>
         <TextBox PreviewTextInput="CheckLetters" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Место проведения" Margin="0,5,0,0" Text="{Binding Stadium}"/>
-        <TextBox PreviewTextInput="CheckDigits" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Доход" Margin="0,5,0,0" Text="{Binding Revenue}"/>
         <ComboBox Width="270" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Тип игры" Margin="0,5,0,0" ItemsSource="{Binding ListTours}" SelectedItem="{Binding Tournaments}"/>
         <ComboBox Width="270" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Результат" Margin="0,5,0,0" ItemsSource="{Binding Result}" SelectedItem="{Binding ResultVal}"/>
     </StackPanel>

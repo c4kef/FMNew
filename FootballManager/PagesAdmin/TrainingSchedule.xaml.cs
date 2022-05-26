@@ -61,6 +61,10 @@ namespace FootballManager.PagesAdmin
             dt.Columns.Remove("ID_training_schedule");
 
             dt.TableName = "Data";
+            
+            for (int i = 1; i < dataGrid.Columns.Count; i++)
+                dt.Columns[i - 1].ColumnName = dataGrid.Columns[i].Header.ToString();
+
             wb.Worksheets.Add(dt);
             SaveFileDialog saveDialog = new SaveFileDialog();
             saveDialog.AddExtension = true;
@@ -95,7 +99,7 @@ namespace FootballManager.PagesAdmin
 
             if (result == ContentDialogResult.Primary)
             {
-                await new SqlCommand($@"INSERT INTO trainingschedule (date,  location) VALUES (N'{dialog.Date}', N'{dialog.Location}')", Globals.connection).ExecuteNonQueryAsync();
+                await new SqlCommand($@"INSERT INTO trainingschedule (date,  location) VALUES (N'{dialog.Date.Date + dialog.Time.TimeOfDay}', N'{dialog.Location}')", Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
             }
         }
@@ -118,7 +122,7 @@ namespace FootballManager.PagesAdmin
 
             if (result == ContentDialogResult.Primary)
             {
-                await new SqlCommand($@"UPDATE trainingschedule SET date = N'{dialog.Date}', location = N'{dialog.Location}' WHERE ID_training_schedule = '{cells[0]}'", Globals.connection).ExecuteNonQueryAsync();
+                await new SqlCommand($@"UPDATE trainingschedule SET date = N'{dialog.Date.Date + dialog.Time.TimeOfDay}', location = N'{dialog.Location}' WHERE ID_training_schedule = '{cells[0]}'", Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
                 
             }

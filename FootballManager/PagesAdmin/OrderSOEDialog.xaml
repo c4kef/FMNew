@@ -13,9 +13,9 @@
         <!-- Content body -->
         <DatePicker Width="270" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Дата заказа" SelectedDate="{Binding DateOrderCreated}"/>
         <DatePicker Width="270" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Дата выполнения" Margin="0,5,0,0" SelectedDate="{Binding DateOrderEnded}"/>
-        <ComboBox Width="270" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Статус заказа" Margin="0,5,0,0" ItemsSource="{Binding Status}" SelectedItem="{Binding StatusValue}"/>
+        <ComboBox x:Name="StatusOrder" Width="270" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Статус заказа" Margin="0,5,0,0" ItemsSource="{Binding Status}" SelectedItem="{Binding StatusValue}"/>
         <ComboBox Width="270" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Сотрудник" Margin="0,5,0,0" ItemsSource="{Binding Employees}" DisplayMemberPath="surname" SelectedItem="{Binding EmployeesValue}"/>
-        <ComboBox Width="270" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Товар" Margin="0,5,0,0" ItemsSource="{Binding SporteQuipment}" DisplayMemberPath="name" SelectedItem="{Binding SporteQuipmentValue}"/>
+        <ComboBox Width="270" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Товар"  Margin="0,5,0,0" ItemsSource="{Binding SporteQuipment}" DisplayMemberPath="name" SelectedItem="{Binding SporteQuipmentValue}"/>
         <TextBox PreviewTextInput="CheckDigits" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Количество" Margin="0,5,0,0" Text="{Binding Count}"/>
         <Label x:Name="Balance" ui:ControlHelper.CornerRadius="10" Margin="0,10,0,0" Content="Доход: "/>
     </StackPanel>

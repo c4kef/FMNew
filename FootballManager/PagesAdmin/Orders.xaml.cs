@@ -63,6 +63,10 @@ namespace FootballManager.PagesAdmin
             var dt_oe_t = dt_oe;
             dt_oe_t.Columns.Remove("ID_Order");
             dt_oe_t.TableName = "Data";
+            
+            for (int i = 1; i < dataGridOrderEquipment.Columns.Count; i++)
+                dt_oe_t.Columns[i - 1].ColumnName = dataGridOrderEquipment.Columns[i].Header.ToString();
+            
             wb.Worksheets.Add(dt_oe_t);
             SaveFileDialog saveDialog = new SaveFileDialog();
             saveDialog.AddExtension = true;
@@ -84,6 +88,11 @@ namespace FootballManager.PagesAdmin
             var dt_se_t = dt_se;
             dt_se_t.Columns.Remove("ID_sports_equipment");
             dt_se_t.TableName = "Data";
+            
+            for (int i = 1; i < dataGridSportEquipment.Columns.Count; i++)
+                dt_se_t.Columns[i - 1].ColumnName = dataGridSportEquipment.Columns[i].Header.ToString();
+
+            
             wb.Worksheets.Add(dt_se_t);
             SaveFileDialog saveDialog = new SaveFileDialog();
             saveDialog.AddExtension = true;
@@ -218,10 +227,27 @@ namespace FootballManager.PagesAdmin
             new SqlDataAdapter(new SqlCommand("SELECT * FROM sports_equipment", Globals.connection)).Fill(dt_sqd);
 
             for (int i = 0; i < dt_ed.Rows.Count; i++)
+            {
                 dialog.Employees.Add(new EmployeesData() { id = (int)dt_ed.Rows[i].ItemArray[0], surname = (string)dt_ed.Rows[i].ItemArray[2] });
+                if ((string) dt_ed.Rows[i].ItemArray[2] == (string) cells[4])
+                    dialog.EmployeesValue = new EmployeesData()
+                        {id = (int) dt_ed.Rows[i].ItemArray[0], surname = (string) dt_ed.Rows[i].ItemArray[2]};
+            }
 
             for (int i = 0; i < dt_sqd.Rows.Count; i++)
-                dialog.SporteQuipment.Add(new SporteQuipmentData() { id = (int)dt_sqd.Rows[i].ItemArray[0], name = (string)dt_sqd.Rows[i].ItemArray[1], price = (decimal)dt_sqd.Rows[i].ItemArray[2] });
+            {
+                dialog.SporteQuipment.Add(new SporteQuipmentData()
+                {
+                    id = (int) dt_sqd.Rows[i].ItemArray[0], name = (string) dt_sqd.Rows[i].ItemArray[1],
+                    price = (decimal) dt_sqd.Rows[i].ItemArray[2]
+                });
+                if ((string) dt_sqd.Rows[i].ItemArray[1] == (string) cells[5])
+                    dialog.SporteQuipmentValue = new SporteQuipmentData()
+                    {
+                        id = (int) dt_sqd.Rows[i].ItemArray[0], name = (string) dt_sqd.Rows[i].ItemArray[1],
+                        price = (decimal) dt_sqd.Rows[i].ItemArray[2]
+                    };
+            }
 
             var result = await dialog.ShowAsync();
 

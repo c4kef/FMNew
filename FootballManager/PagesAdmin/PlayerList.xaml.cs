@@ -2,8 +2,10 @@
 using Microsoft.Win32;
 using ModernWpf.Controls;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Reflection;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -64,13 +66,44 @@ namespace FootballManager.PagesAdmin
             }
         }
 
+
+        public DataTable ToDataTable<T>(List<T> items)
+        {
+            DataTable dataTable = new DataTable(typeof(T).Name);
+
+            //Get all the properties
+            PropertyInfo[] Props = typeof(T).GetProperties(BindingFlags.Public | BindingFlags.Instance);
+            foreach (PropertyInfo prop in Props)
+            {
+                //Setting column names as Property names
+                dataTable.Columns.Add(prop.Name);
+            }
+            foreach (T item in items)
+            {
+                var values = new object[Props.Length];
+                for (int i = 0; i < Props.Length; i++)
+                {
+                    //inserting property values to datatable rows
+                    values[i] = Props[i].GetValue(item, null);
+                }
+                dataTable.Rows.Add(values);
+            }
+            //put a breakpoint here and check datatable
+            return dataTable;
+        }
+        
         private void Export(object sender, RoutedEventArgs e)
         {
             var wb = new XLWorkbook();
 
             var dtt = dt;
+            
             dtt.Columns.Remove("ID_Player");
             dtt.TableName = "Data";
+
+            for (int i = 1; i < dataGrid.Columns.Count; i++)
+                dtt.Columns[i - 1].ColumnName = dataGrid.Columns[i].Header.ToString();
+            
             wb.Worksheets.Add(dtt);
             SaveFileDialog saveDialog = new SaveFileDialog();
             saveDialog.AddExtension = true;
@@ -142,7 +175,7 @@ namespace FootballManager.PagesAdmin
                 try
                 {
                     var r = dialog;
-                  await new SqlCommand($@"INSERT INTO playerlist (surname, name, patronymic, dateofbirth, nationality, position, phone, team) VALUES (N'{dialog.Surname}', N'{dialog.MName}', N'{dialog.Patronymic}', N'{dialog.Dateofbirth}', N'{dialog.Nationality}', N'{dialog.Position}', N'{dialog.Phone}',N'Игрок клуба')", Globals.connection).ExecuteNonQueryAsync();
+                  await new SqlCommand($@"INSERT INTO playerlist (surname, name, patronymic, dateofbirth, nationality, position, phone, team, login, pass) VALUES (N'{dialog.Surname}', N'{dialog.MName}', N'{dialog.Patronymic}', N'{dialog.Dateofbirth.Date}', N'{dialog.Nationality}', N'{dialog.Position}', N'{dialog.Phone}', N'Игрок клуба', N'{dialog.Login}', N'{dialog.Pass}')", Globals.connection).ExecuteNonQueryAsync();
                     FillGrid();
                     
                 }
@@ -177,16 +210,18 @@ namespace FootballManager.PagesAdmin
             dialog.Surname = (string)cells[1];
             dialog.MName = (string)cells[2];
             dialog.Patronymic = (string)cells[3];
-            dialog.Dateofbirth = (string)cells[4];
+            dialog.Dateofbirth = DateTime.Parse(cells[4].ToString());
             dialog.Nationality = (string)cells[5];
             dialog.Position = (string)cells[6];
             dialog.Phone = (string)cells[7];
+            dialog.Login = (cells[9] is null) ? string.Empty : cells[9].ToString();
+            dialog.Pass = (cells[10] is null) ? string.Empty : cells[10].ToString();
             
             var result = await dialog.ShowAsync();
 
             if (result == ContentDialogResult.Primary)
             {
-                await new SqlCommand($@"UPDATE playerlist SET surname = N'{dialog.Surname}', name = N'{dialog.MName}', patronymic =  N'{dialog.Patronymic}', dateofbirth = N'{dialog.Dateofbirth}', nationality = N'{dialog.Nationality}', position = N'{dialog.Position}', phone = N'{dialog.Phone}' WHERE ID_Player = '{cells[0]}'", Globals.connection).ExecuteNonQueryAsync();
+                await new SqlCommand($@"UPDATE playerlist SET surname = N'{dialog.Surname}', name = N'{dialog.MName}', patronymic =  N'{dialog.Patronymic}', dateofbirth = N'{dialog.Dateofbirth.Date}', nationality = N'{dialog.Nationality}', position = N'{dialog.Position}', phone = N'{dialog.Phone}', login = N'{dialog.Login}', pass = N'{dialog.Pass}' WHERE ID_Player = '{cells[0]}'", Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
             }
         }

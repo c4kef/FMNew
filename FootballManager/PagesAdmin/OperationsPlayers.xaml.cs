@@ -36,10 +36,10 @@ namespace FootballManager.PagesAdmin
             dt_p = new DataTable();
             dt_o = new DataTable();
 //
-            adapter_oe = new SqlDataAdapter(new SqlCommand("SELECT ID_BuyPlayer, surname, datebuy, sumbuy FROM buyplayer", Globals.connection));
+            adapter_oe = new SqlDataAdapter(new SqlCommand("SELECT ID_BuyPlayer, ID_Player, datebuy, sumbuy, surname FROM buyplayer", Globals.connection));
             adapter_oe.Fill(dt_p);
 
-            adapter_se = new SqlDataAdapter(new SqlCommand("SELECT ID_SellPlayer, surname, datesell, sumsell FROM sellplayer", Globals.connection));
+            adapter_se = new SqlDataAdapter(new SqlCommand("SELECT ID_SellPlayer, ID_Market, datesell, sumsell, surname FROM sellplayer", Globals.connection));
             adapter_se.Fill(dt_o);
 
             dataGridOrderP.ItemsSource = dt_p.DefaultView;
@@ -60,8 +60,13 @@ namespace FootballManager.PagesAdmin
         {
             var wb = new XLWorkbook();
             var dtP = dt_p;
-            //dtP.Columns.Remove("id");
+            dtP.Columns.Remove("ID_BuyPlayer");
+            dtP.Columns.Remove("ID_Player");
             dtP.TableName = "Data";
+            
+            for (int i = 2; i < dataGridOrderP.Columns.Count; i++)
+                dtP.Columns[i - 2].ColumnName = dataGridOrderP.Columns[i].Header.ToString();
+            
             wb.Worksheets.Add(dtP);
             SaveFileDialog saveDialog = new SaveFileDialog();
             saveDialog.AddExtension = true;
@@ -81,8 +86,13 @@ namespace FootballManager.PagesAdmin
         {
             var wb = new XLWorkbook();
             var dtP = dt_o;
-            //dtP.Columns.Remove("id");
+            dtP.Columns.Remove("ID_SellPlayer");
+            dtP.Columns.Remove("ID_Market");
             dtP.TableName = "Data";
+            
+            for (int i = 2; i < dataGridOrderO.Columns.Count; i++)
+                dtP.Columns[i - 2].ColumnName = dataGridOrderO.Columns[i].Header.ToString();
+            
             wb.Worksheets.Add(dtP);
             SaveFileDialog saveDialog = new SaveFileDialog();
             saveDialog.AddExtension = true;

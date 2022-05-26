@@ -34,7 +34,7 @@ namespace FootballManager.PagesAdmin
 
         public void FillGrid()
         {
-            SqlCommand cmdSel = new SqlCommand("SELECT ID_Contract, date_start, date_ended, month_pay, PlayerList.surname FROM contracts join playerList ON (Contracts.ID_Player = playerlist.ID_Player)", Globals.connection);
+            SqlCommand cmdSel = new SqlCommand("SELECT ID_Contract, date_start, date_ended, month_pay, surname FROM contracts", Globals.connection);
             adapter = new SqlDataAdapter(cmdSel);
             dt = new DataTable();
             adapter.Fill(dt);
@@ -78,16 +78,25 @@ namespace FootballManager.PagesAdmin
 
             //Тут заполняем всех игроков по фамилии
             foreach (DataRow row in dt_p.Rows)
-                dialog.PList.Add(row.ItemArray[1].ToString());
+                if (!IsExists(row.ItemArray[1].ToString()))
+                    dialog.PList.Add(row.ItemArray[1].ToString());
 
             var result = await dialog.ShowAsync();
 
             if (result == ContentDialogResult.Primary)
             {
                 await new SqlCommand(
-                    $@"INSERT INTO contracts (date_start, date_ended, month_pay, ID_Player) VALUES (N'{dialog.DateStart.Date}', N'{dialog.DateEnd.Date}', '{dialog.MonthPay}', (select ID_Player from PlayerList where surname = N'{dialog.PValue}'))",
+                    $@"INSERT INTO contracts (date_start, date_ended, month_pay, surname) VALUES (N'{dialog.DateStart.Date}', N'{dialog.DateEnd.Date}', '{dialog.MonthPay}',N'{dialog.PValue}')",
                     Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
+            }
+
+            bool IsExists(string surname)
+            {
+                var reader = new SqlCommand($@"SELECT * FROM contracts WHERE surname = N'{surname}'", Globals.connection)
+                    .ExecuteReader();
+
+                return reader.HasRows;
             }
         }
 
@@ -108,6 +117,10 @@ namespace FootballManager.PagesAdmin
             var dtt = dt;
             dtt.Columns.Remove("ID_Contract");
             dtt.TableName = "Data";
+            
+            for (int i = 1; i < dataGrid.Columns.Count; i++)
+                dtt.Columns[i - 1].ColumnName = dataGrid.Columns[i].Header.ToString();
+            
             wb.Worksheets.Add(dtt);
             SaveFileDialog saveDialog = new SaveFileDialog();
             saveDialog.AddExtension = true;
@@ -168,7 +181,7 @@ namespace FootballManager.PagesAdmin
             if (result == ContentDialogResult.Primary)
             {
                 await new SqlCommand(
-                    $@"UPDATE contracts SET date_start = N'{dialog.DateStart.Date}', date_ended = N'{dialog.DateEnd.Date}', month_pay = '{dialog.MonthPay}', ID_Player = (select ID_Player from PlayerList where surname = N'{dialog.PValue}') WHERE ID_Contract = '{cells[0]}'",
+                    $@"UPDATE contracts SET date_start = N'{dialog.DateStart.Date}', date_ended = N'{dialog.DateEnd.Date}', month_pay = '{dialog.MonthPay}', surname = N'{dialog.PValue}' WHERE ID_Contract = '{cells[0]}'",
                     Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
             }

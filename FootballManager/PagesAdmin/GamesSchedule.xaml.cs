@@ -43,7 +43,9 @@ namespace FootballManager.PagesAdmin
                 {
                     (dataGrid.ItemContainerGenerator.ContainerFromItem(dr) as DataGridRow).Visibility = Visibility.Visible;
 
-                    if (value != "Без фильтра" && !dr[4].ToString().ToLower().Contains(value.ToLower()))
+                    if (value == "Без фильтра")
+                        continue;
+                    else if (!dr[4].ToString().ToLower().Contains(value.ToLower()) || dteSelectedMonth.DisplayDate.Month != DateTime.Parse(dr[1].ToString()).Month)
                         (dataGrid.ItemContainerGenerator.ContainerFromItem(dr) as DataGridRow).Visibility = Visibility.Collapsed;
                 }
             }
@@ -62,7 +64,9 @@ namespace FootballManager.PagesAdmin
                 { 
                     (dataGrid.ItemContainerGenerator.ContainerFromItem(dr) as DataGridRow).Visibility = Visibility.Visible;
 
-                    if (value != "Без фильтра" && dr[5].ToString().ToLower() != value.ToLower())
+                    if (value == "Без фильтра")
+                        continue;
+                    else if (!dr[5].ToString().ToLower().Contains(value.ToLower()) || dteSelectedMonth.DisplayDate.Month != DateTime.Parse(dr[1].ToString()).Month)
                         (dataGrid.ItemContainerGenerator.ContainerFromItem(dr) as DataGridRow).Visibility = Visibility.Collapsed;
                 }
             }
@@ -88,7 +92,7 @@ namespace FootballManager.PagesAdmin
 
         public void FillGrid()
         {
-            SqlCommand cmdSel = new SqlCommand("SELECT ID_game_shedule, date, team, stadium, Tournaments.name, result, ticket_count, revenue FROM Gamesschedule join Tournaments ON (Gamesschedule.ID_tournament = Tournaments.ID_tournament)", Globals.connection);
+            SqlCommand cmdSel = new SqlCommand("SELECT ID_game_shedule, date, team, stadium, Tournaments.name, result, revenue, ticket_count FROM Gamesschedule join Tournaments ON (Gamesschedule.ID_tournament = Tournaments.ID_tournament)", Globals.connection);
             adapter = new SqlDataAdapter(cmdSel);
             dt = new DataTable();
             adapter.Fill(dt);
@@ -109,6 +113,9 @@ namespace FootballManager.PagesAdmin
             dd.TableName = "Data";
             dd.Columns.Remove("ID_game_shedule");
 
+            for (int i = 1; i < dataGrid.Columns.Count; i++)
+                dd.Columns[i - 1].ColumnName = dataGrid.Columns[i].Header.ToString();
+            
             wb.Worksheets.Add(dd);
             SaveFileDialog saveDialog = new SaveFileDialog();
             saveDialog.AddExtension = true;
@@ -132,6 +139,9 @@ namespace FootballManager.PagesAdmin
             dd.TableName = "Data";
             dd.Columns.Remove("ID_tournament");
 
+            for (int i = 1; i < dataGridTrn.Columns.Count; i++)
+                dd.Columns[i - 1].ColumnName = dataGridTrn.Columns[i].Header.ToString();
+            
             wb.Worksheets.Add(dd);
             SaveFileDialog saveDialog = new SaveFileDialog();
             saveDialog.AddExtension = true;
@@ -191,7 +201,7 @@ namespace FootballManager.PagesAdmin
 
             if (result == ContentDialogResult.Primary)
             {
-                await new SqlCommand($@"INSERT INTO gamesschedule (date, team, stadium, ID_tournament, result, ticket_count, revenue) VALUES (N'{dialog.Date}', N'{dialog.Team}', N'{dialog.Stadium}', (select ID_tournament from tournaments where name = N'{dialog.Tournaments}'), N'{dialog.ResultVal}', '0', '{dialog.Revenue}')", Globals.connection).ExecuteNonQueryAsync();
+                await new SqlCommand($@"INSERT INTO gamesschedule (date, team, stadium, ID_tournament, result, ticket_count, revenue) VALUES (N'{dialog.Date.Date + dialog.Time.TimeOfDay}', N'{dialog.Team}', N'{dialog.Stadium}', (select ID_tournament from tournaments where name = N'{dialog.Tournaments}'), N'{dialog.ResultVal}', '0', '0')", Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
             }
         }
@@ -219,11 +229,11 @@ namespace FootballManager.PagesAdmin
             object[] cells = dt.Rows[dataGrid.SelectedIndex].ItemArray;
 
             dialog.Date = DateTime.Parse(cells[1].ToString());
+            dialog.Time = DateTime.Parse(cells[1].ToString());
             dialog.Team = (string)cells[2];
             dialog.Stadium = (string)cells[3];
             dialog.Tournaments = (string) cells[4];
             dialog.ResultVal = (string) cells[5];
-            dialog.Revenue = decimal.Parse(cells[7].ToString());
 
             var dt_t = new DataTable();
             new SqlDataAdapter(new SqlCommand("SELECT * FROM tournaments", Globals.connection)).Fill(dt_t);
@@ -234,7 +244,7 @@ namespace FootballManager.PagesAdmin
 
             if (result == ContentDialogResult.Primary)
             {
-                await new SqlCommand($@"UPDATE gamesschedule SET date = N'{dialog.Date}', team = N'{dialog.Team}', stadium = N'{dialog.Stadium}', ID_tournament = (select ID_tournament from tournaments where name = N'{dialog.Tournaments}'), result = N'{dialog.ResultVal}', revenue = '{dialog.Revenue}' WHERE ID_game_shedule = '{cells[0]}'", Globals.connection).ExecuteNonQueryAsync();
+                await new SqlCommand($@"UPDATE gamesschedule SET date = N'{dialog.Date.Date + dialog.Time.TimeOfDay}', team = N'{dialog.Team}', stadium = N'{dialog.Stadium}', ID_tournament = (select ID_tournament from tournaments where name = N'{dialog.Tournaments}'), result = N'{dialog.ResultVal}', revenue = '0' WHERE ID_game_shedule = '{cells[0]}'", Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
             }
         }
@@ -321,7 +331,12 @@ namespace FootballManager.PagesAdmin
                 return;
             }
             
-            MessageBox.Show($"{DateTime.Parse(cells[1].ToString())}\n{(string)cells[3]}\n{(string)cells[4]}");
+            MessageBox.Show($"Дата: {DateTime.Parse(cells[1].ToString())}\nКол-во: {cells[6]}\nДоход: {cells[7]}");
+        }
+
+        private void Calendar_OnSelectedDatesChanged(object sender, CalendarModeChangedEventArgs calendarModeChangedEventArgs)
+        {
+            dteSelectedMonth.DisplayMode = CalendarMode.Year;
         }
     }
 }

@@ -120,17 +120,33 @@
                         Width="105"
                         Binding="{Binding ID_game_shedule}" Visibility="Hidden"/>
                     <DataGridTextColumn
-                        Header="Дата игры"
+                        Header="Дата"
                         Width="83"
-                        Binding="{Binding date, StringFormat=dd/MM/yyyy}" />
+                        Binding="{Binding date}" />
                     <DataGridTextColumn
-                        Header="Стоимость одного билета (USD)"
-                        Width="210"
-                        Binding="{Binding ticket_price}" />
+                        Header="Команда соперников"
+                        Width="145"
+                        Binding="{Binding team}" Visibility="Hidden"/>
                     <DataGridTextColumn
-                        Header="Количество проданных билетов"
-                        Width="205"
-                        Binding="{Binding ticket_count}" />
+                        Header="Место проведения"
+                        Width="155"
+                        Binding="{Binding stadium}" Visibility="Hidden"/>
+                    <DataGridTextColumn
+                        Header="Турнир"
+                        Width="150"
+                        Binding="{Binding name}" Visibility="Hidden"/>
+                    <DataGridTextColumn
+                        Header="Результат игры"
+                        Width="150"
+                        Binding="{Binding result}" Visibility="Hidden"/>
+                    <DataGridTextColumn
+                        Header="Доход"
+                        Width="150"
+                        Binding="{Binding revenue}"/>
+                    <DataGridTextColumn
+                        Header="Кол-во билетов"
+                        Width="105"
+                        Binding="{Binding ticket_count}"/>
                 </DataGrid.Columns>
                 <DataGrid.GroupStyle>
                     <GroupStyle
@@ -154,6 +170,7 @@
                                 <Button VerticalAlignment="Top" Content="Изменить" Click="Edit" Margin="10,0,0,0"/>
                             </StackPanel>
                             <Button HorizontalAlignment="Center" Content="Отчёт" Click="Export" Margin="10,10,0,0"/>
+                            <Label Content="Поиск по дате" HorizontalAlignment="Center" FontSize="20"/>
                             <Calendar Name="dteSelectedMonth" DisplayMode="Year" SelectionMode="None" DisplayModeChanged="Calendar_OnSelectedDatesChanged" />
                         </StackPanel>
                     </ui:SimpleStackPanel>

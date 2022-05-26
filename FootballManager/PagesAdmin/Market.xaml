@@ -119,9 +119,13 @@
                 VirtualizingPanel.IsVirtualizingWhenGrouping="True">
                 <DataGrid.Columns>
                     <DataGridTextColumn
-                        Header="id"
+                        Header="ID_Market"
                         Width="105"
                         Binding="{Binding ID_Market}" Visibility="Hidden" />
+                    <DataGridTextColumn
+                        Header="ID_Player"
+                        Width="105"
+                        Binding="{Binding ID_Player}" Visibility="Hidden" />
                     <DataGridTextColumn
                         Header="Фамилия"
                         Width="115"
@@ -139,25 +143,25 @@
                         Width="120"
                         Binding="{Binding price}"/>
                     <DataGridTextColumn
+                        Header="Команда"
+                        Width="140"
+                        Binding="{Binding team}" />
+                    <DataGridTextColumn
                         Header="дата рождения"
                         Width="68"
-                        Binding="{Binding dateofbirth}" />
+                        Binding="{Binding dateofbirth, StringFormat=dd/MM/yyyy}" />
                     <DataGridTextColumn
                         Header="Национальность"
                         Width="120"
                         Binding="{Binding nationality}" />
                     <DataGridTextColumn
-                        Header="Номер телефона"
-                        Width="130"
-                        Binding="{Binding phone}" />
-                    <DataGridTextColumn
                         Header="Позиция"
                         Width="140"
                         Binding="{Binding position}" />
                     <DataGridTextColumn
-                        Header="Команда"
-                        Width="140"
-                        Binding="{Binding team}" />
+                        Header="Номер телефона"
+                        Width="130"
+                        Binding="{Binding phone}" />
                 </DataGrid.Columns>
                 <DataGrid.GroupStyle>
                     <GroupStyle
@@ -176,16 +180,16 @@
                         Style="{StaticResource OptionsPanelStyle}">
                         <TextBox x:Name="SearchUI" ui:ControlHelper.PlaceholderText="Поиск по ФИО" Height="22" KeyUp="Search" />
                         <StackPanel Orientation="Horizontal">
-                            <!--<Button VerticalAlignment="Top" Content="Добавить" Click="Add" Margin="0,0,0,0"/>-->
+                            <Button VerticalAlignment="Top" Content="Добавить" Click="Add" Margin="0,0,0,0"/>
                             <Button VerticalAlignment="Top" Content="Удалить" Click="Remove" Margin="10,0,0,0"/>
                             <Button VerticalAlignment="Top" Content="Изменить" Click="Edit" Margin="10,0,0,0"/>
-                            <Button HorizontalAlignment="Center" Content="Отчёт" Click="Export" Margin="5,0,0,0"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                             <Button Content="Приобрести" Click="BuyPlayer" Margin="10,10,0,0"/>
                             <Button Content="Продать" Click="SellPlayer" Margin="10,10,0,0"/>
                             <Button Content="Снять" Click="OutOrder" Margin="10,10,0,0"/>
                         </StackPanel>
+                        <Button HorizontalAlignment="Center" Content="Отчёт" Click="Export" Margin="5,0,0,0"/>
                     </ui:SimpleStackPanel>
                 </ScrollViewer>
             </sc:ControlExample.Options>

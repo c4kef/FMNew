@@ -55,9 +55,15 @@ namespace FootballManager.PagesAdmin
         private void Export(object sender, RoutedEventArgs e)
         {
             var wb = new XLWorkbook();
-            dt.Columns.Remove("ID_Market");
-            dt.TableName = "Data";
-            wb.Worksheets.Add(dt);
+            var dtt = dt;
+            dtt.Columns.Remove("ID_Market");
+            dtt.Columns.Remove("ID_Player");
+            dtt.TableName = "Data";
+            
+            for (int i = 2; i < dataGrid.Columns.Count; i++)
+                dtt.Columns[i - 2].ColumnName = dataGrid.Columns[i].Header.ToString();
+            
+            wb.Worksheets.Add(dtt);
             SaveFileDialog saveDialog = new SaveFileDialog();
             saveDialog.AddExtension = true;
             saveDialog.Filter = "(*.xlsx)|*.xlsx";
@@ -152,7 +158,7 @@ namespace FootballManager.PagesAdmin
             if (result == ContentDialogResult.Primary)
             {
                 await new SqlCommand(
-                    $@"INSERT INTO market (surname, name, patronymic, dateofbirth , team, nationality, price, phone, position) VALUES (N'{dialog.Surname}', N'{dialog.MName}', N'{dialog.Patronymic}', N'{dialog.Dateofbirth}',N'Игрок клуба', N'{dialog.Nationality}', N'{dialog.Price}', N'{dialog.Phone}', N'{dialog.Position}')",
+                    $@"INSERT INTO market (surname, name, patronymic, dateofbirth , team, nationality, price, phone, position) VALUES (N'{dialog.Surname}', N'{dialog.MName}', N'{dialog.Patronymic}', N'{dialog.Dateofbirth}',N'{dialog.Team}', N'{dialog.Nationality}', N'{dialog.Price}', N'{dialog.Phone}', N'{dialog.Position}')",
                     Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
             }
@@ -184,7 +190,8 @@ namespace FootballManager.PagesAdmin
             dialog.MName = (string)cells[3];
             dialog.Patronymic = (string)cells[4];
             dialog.Price = (decimal)cells[5];
-            dialog.Dateofbirth = (string)cells[7];
+            dialog.Team = (string)cells[6];
+            dialog.Dateofbirth = DateTime.Parse(cells[7].ToString());
             dialog.Nationality = (string)cells[8];
             dialog.Position = (string)cells[9];
             dialog.Phone = (string)cells[10];
@@ -194,7 +201,7 @@ namespace FootballManager.PagesAdmin
             if (result == ContentDialogResult.Primary)
             {
                 await new SqlCommand(
-                    $@"UPDATE market SET name = N'{dialog.MName}', surname = N'{dialog.Surname}', patronymic = N'{dialog.Patronymic}',  nationality = N'{dialog.Nationality}', phone = N'{dialog.Phone}', position = N'{dialog.Position}', price = '{dialog.Price}', dateofbirth= '{dialog.Dateofbirth}', team = 'Игрок клуба' WHERE ID_Market = '{cells[0]}'",
+                    $@"UPDATE market SET name = N'{dialog.MName}', surname = N'{dialog.Surname}', patronymic = N'{dialog.Patronymic}',  nationality = N'{dialog.Nationality}', phone = N'{dialog.Phone}', position = N'{dialog.Position}', price = '{dialog.Price}', dateofbirth= '{dialog.Dateofbirth}', team = N'{dialog.Team}' WHERE ID_Market = '{cells[0]}'",
                     Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
             }
@@ -248,6 +255,7 @@ namespace FootballManager.PagesAdmin
             if (result != ContentDialogResult.Primary) return;
             await new SqlCommand($@"DELETE FROM market WHERE ID_Market = '{items[0]}'", Globals.connection).ExecuteNonQueryAsync();
             await OperationsPlayers.AddO(items[2].ToString(), (decimal) dialog.Price);
+            Globals.AddOperation(DateTime.Now, "Продажа игрока", Globals.Balance + (decimal)dialog.Price, (decimal)dialog.Price);
             Globals.Balance += (decimal)dialog.Price;
             FillGrid();
             MessageBox.Show("Игрок продан");
@@ -269,8 +277,17 @@ namespace FootballManager.PagesAdmin
                 return;
             }
             
+            var dialog = new MarketRegisterDialog();
+            var result = await dialog.ShowAsync();
+
+            if (result != ContentDialogResult.Primary)
+            {
+                MessageBox.Show("Укажите логин и пароль");
+                return;
+            }
+                
             await new SqlCommand(
-                $"INSERT INTO playerlist(surname, name, patronymic, dateofbirth, position,  nationality,  phone, team) VALUES (N'{items[2]}', N'{items[3]}', N'{items[4]}', N'{items[7]}', N'{items[9]}', N'{items[8]}', N'{items[10]}' , N'Игрок клуба')",
+                $"INSERT INTO playerlist(surname, name, patronymic, dateofbirth, position,  nationality,  phone, team, login, pass) VALUES (N'{items[2]}', N'{items[3]}', N'{items[4]}', N'{items[7]}', N'{items[9]}', N'{items[8]}', N'{items[10]}' , N'Игрок клуба', N'{dialog.Login}',N'{dialog.Pass}')",
                 Globals.connection).ExecuteNonQueryAsync();
             await new SqlCommand($@"DELETE FROM market WHERE ID_Market = '{items[0]}'", Globals.connection).ExecuteNonQueryAsync();
             FillGrid();

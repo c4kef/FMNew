@@ -47,9 +47,13 @@ namespace FootballManager.PagesAdmin
         {
             var wb = new XLWorkbook();
 
-            dt.Columns.Remove("ID_tournament");
+            dt.Columns.Remove("ID_game_shedule");
 
             dt.TableName = "Data";
+            
+            for (int i = 1; i < dataGrid.Columns.Count; i++)
+                dt.Columns[i - 1].ColumnName = dataGrid.Columns[i].Header.ToString();
+            
             wb.Worksheets.Add(dt);
             SaveFileDialog saveDialog = new SaveFileDialog();
             saveDialog.AddExtension = true;
@@ -108,9 +112,8 @@ namespace FootballManager.PagesAdmin
                     $@"UPDATE gamesschedule SET revenue = N'{dialog.Price}', ticket_count = N'{dialog.Count}' WHERE date = '{dialog.Date}'",
                     Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
-                var sum = (decimal) dialog.Price * (int) dialog.Count;
-                Globals.AddOperation(DateTime.Now, "Продажа билетов", Globals.Balance + sum, sum);
-                Globals.Balance += sum;
+                Globals.AddOperation(DateTime.Now, "Продажа билетов", Globals.Balance + (decimal)dialog.Price, (decimal)dialog.Price);
+                Globals.Balance += (decimal)dialog.Price;
             }
         }
 
@@ -134,8 +137,8 @@ namespace FootballManager.PagesAdmin
             foreach (DataRow row in dt_g.Rows)
                 dialog.DateList.Add(row.ItemArray[1].ToString());
 
-            dialog.Price = (decimal)cells[7];
-            dialog.Count = (int)cells[8];
+            dialog.Price = (decimal)cells[6];
+            dialog.Count = (int)cells[7];
             
 
             var result = await dialog.ShowAsync();
@@ -149,7 +152,6 @@ namespace FootballManager.PagesAdmin
 
                     await new SqlCommand($@"UPDATE gamesschedule SET revenue = N'{dialog.Price}', ticket_count = N'{dialog.Count}', date = N'{dialog.Date}' WHERE ID_game_shedule = '{cells[0]}'", Globals.connection).ExecuteNonQueryAsync();
                     FillGrid();
-                    
                 }
                 catch
                 {
@@ -171,7 +173,6 @@ namespace FootballManager.PagesAdmin
             {
                 await new SqlCommand($@"UPDATE gamesschedule SET revenue = N'0', ticket_count = N'0' WHERE ID_game_shedule = '{dt.Rows[dataGrid.SelectedIndex].ItemArray[0]}'", Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
-                
             }
         }
         

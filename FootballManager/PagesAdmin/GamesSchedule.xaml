@@ -146,7 +146,11 @@
                     <DataGridTextColumn
                         Header="Доход"
                         Width="150"
-                        Binding="{Binding revenue}" />
+                        Binding="{Binding revenue}" Visibility="Hidden"/>
+                    <DataGridTextColumn
+                        Header="Кол-во билетов"
+                        Width="105"
+                        Binding="{Binding ticket_count}" Visibility="Hidden"/>
                 </DataGrid.Columns>
                 <DataGrid.GroupStyle>
                     <GroupStyle
@@ -174,6 +178,8 @@
                             <Label Content="Фильтрация" HorizontalAlignment="Center"/>
                             <ComboBox Width="270" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Турнир" Margin="0,5,0,0" ItemsSource="{Binding TList}" SelectedItem="{Binding TVal}"/>
                             <ComboBox Width="270" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Результат игры" Margin="0,5,0,0" ItemsSource="{Binding RList}" SelectedItem="{Binding RVal}"/>
+                            <Label Content="Поиск по дате" HorizontalAlignment="Center" FontSize="20"/>
+                            <Calendar Name="dteSelectedMonth" DisplayMode="Year" SelectionMode="None" DisplayModeChanged="Calendar_OnSelectedDatesChanged" />
                         </ui:SimpleStackPanel>
                     </ScrollViewer>
                 </sc:ControlExample.Options>
@@ -200,9 +206,9 @@
                 VirtualizingPanel.IsVirtualizingWhenGrouping="True">
                 <DataGrid.Columns>
                     <DataGridTextColumn
-                        Header="id"
+                        Header="ID_tournament"
                         Width="105"
-                        Binding="{Binding id}" Visibility="Hidden"/>
+                        Binding="{Binding ID_tournament}" Visibility="Hidden"/>
                     <DataGridTextColumn
                         Header="Название турнира"
                         Width="230"

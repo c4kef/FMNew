@@ -118,7 +118,7 @@
                         <DataGridTextColumn
                         Header="id"
                         Width="105"
-                        Binding="{Binding id}" Visibility="Hidden"/>
+                        Binding="{Binding ID_Order}" Visibility="Hidden"/>
                         <DataGridTextColumn
                         Header="Дата заказа"
                         Width="127"
@@ -167,6 +167,7 @@
                                 <Button VerticalAlignment="Top" Content="Изменить" Click="EditOE" Margin="10,0,0,0"/>
                             </StackPanel>
                             <Button HorizontalAlignment="Center" Content="Отчёт" Click="ExportOE" Margin="0,0,0,0"/>
+                            <Label Content="Поиск по дате" HorizontalAlignment="Center" FontSize="20"/>
                             <Calendar Name="dteSelectedMonth" DisplayMode="Year" SelectionMode="None" DisplayModeChanged="Calendar_OnSelectedDatesChanged" />
                         </ui:SimpleStackPanel>
                     </ScrollViewer>

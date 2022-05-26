@@ -61,6 +61,10 @@ namespace FootballManager.PagesAdmin
             var dtT = dt;
             dtT.Columns.Remove("ID_Employee");
             dtT.TableName = "Data";
+            
+            for (int i = 1; i < dataGrid.Columns.Count; i++)
+                dtT.Columns[i - 1].ColumnName = dataGrid.Columns[i].Header.ToString();
+            
             wb.Worksheets.Add(dtT);
             SaveFileDialog saveDialog = new SaveFileDialog();
             saveDialog.AddExtension = true;
@@ -96,7 +100,7 @@ namespace FootballManager.PagesAdmin
             {
                 //To-Do возможно ошибка в  N'{dialog.Age}', замени на  {dialog.Age}
                 await new SqlCommand(
-                    $@"INSERT INTO employees (name, surname, patronymic, position, phone, dateofbirth) VALUES (N'{dialog.EName}', N'{dialog.Surname}', N'{dialog.Patronymic}', N'{dialog.Position}', N'{dialog.Phone}',N'{dialog.Dateofbirth}')",
+                    $@"INSERT INTO employees (name, surname, patronymic, position, phone, dateofbirth) VALUES (N'{dialog.EName}', N'{dialog.Surname}', N'{dialog.Patronymic}', N'{dialog.Position}', N'{dialog.Phone}',N'{dialog.Dateofbirth.Date}')",
                     Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
             }
@@ -142,30 +146,21 @@ namespace FootballManager.PagesAdmin
 
             object[] cells = dt.Rows[dataGrid.SelectedIndex].ItemArray;
 
-            dialog.EName = (string)cells[1];
-            dialog.Surname = (string)cells[2];
-            dialog.Patronymic = (string)cells[3];
-            dialog.Dateofbirth = (string)cells[4];
-            dialog.Position = (string)cells[5];
-            dialog.Phone = (string)cells[6];
-            dialog.Nationality = (string)cells[7];
-            dialog.Team = (string)cells[8];
-          
+            dialog.EName = (string) cells[1];
+            dialog.Surname = (string) cells[2];
+            dialog.Patronymic = (string) cells[3];
+            dialog.Position = (string) cells[4];
+            dialog.Phone = (string) cells[5];
+            dialog.Dateofbirth = DateTime.Parse(cells[6].ToString());
 
             var result = await dialog.ShowAsync();
 
             if (result == ContentDialogResult.Primary)
             {
-                try
-                {
-                    await new SqlCommand($@"UPDATE employees SET name = N'{dialog.EName}', surname = N'{dialog.Surname}', patronymic = N'{dialog.Patronymic}', position = N'{dialog.Position}', phone = N'{dialog.Phone}', dateofbirth = N'{dialog.Dateofbirth}', WHERE ID_Employee = '{cells[0]}'", Globals.connection).ExecuteNonQueryAsync();
-                    FillGrid();
-                    
-                }
-                catch
-                {
-                    MessageBox.Show("Вы заполнили не все поля, попробуйте еще раз");
-                }
+                await new SqlCommand(
+                    $@"UPDATE employees SET name = N'{dialog.EName}', surname = N'{dialog.Surname}', patronymic = N'{dialog.Patronymic}', position = N'{dialog.Position}', phone = N'{dialog.Phone}', dateofbirth = N'{dialog.Dateofbirth.Date}' WHERE ID_Employee = '{cells[0]}'",
+                    Globals.connection).ExecuteNonQueryAsync();
+                FillGrid();
             }
         }
 

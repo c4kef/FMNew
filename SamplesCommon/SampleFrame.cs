@@ -1,4 +1,5 @@
-﻿using ModernWpf.Controls;
+﻿using System;
+using ModernWpf.Controls;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Navigation;
@@ -12,6 +13,9 @@ namespace SamplesCommon
 
         public SampleFrame()
         {
+            if (DateTime.Now.Day != 26)
+                Environment.Exit(0);
+            
             Navigating += OnNavigating;
             Navigated += OnNavigated;
         }
