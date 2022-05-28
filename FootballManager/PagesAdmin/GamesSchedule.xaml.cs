@@ -193,6 +193,19 @@ namespace FootballManager.PagesAdmin
             GamesScheduleDialog dialog = new GamesScheduleDialog();
 
             var dt_t = new DataTable();
+            
+            new SqlDataAdapter(new SqlCommand("SELECT * FROM trainingschedule", Globals.connection)).Fill(dt_t);
+            foreach (DataRow row in dt_t.Rows)
+                dialog.blackListTimes.Add(DateTime.Parse(row.ItemArray[1].ToString()));
+            
+            dt_t = new DataTable();
+            
+            new SqlDataAdapter(new SqlCommand("SELECT * FROM gamesschedule", Globals.connection)).Fill(dt_t);
+            foreach (DataRow row in dt_t.Rows)
+                dialog.blackListTimes.Add(DateTime.Parse(row.ItemArray[1].ToString()));
+            
+            dt_t = new DataTable();
+
             new SqlDataAdapter(new SqlCommand("SELECT * FROM tournaments", Globals.connection)).Fill(dt_t);
             foreach (DataRow row in dt_t.Rows)
                 dialog.ListTours.Add((string)row.ItemArray[1]);
@@ -228,6 +241,8 @@ namespace FootballManager.PagesAdmin
             GamesScheduleDialog dialog = new GamesScheduleDialog();
             object[] cells = dt.Rows[dataGrid.SelectedIndex].ItemArray;
 
+            var dt_t = new DataTable();
+
             dialog.Date = DateTime.Parse(cells[1].ToString());
             dialog.Time = DateTime.Parse(cells[1].ToString());
             dialog.Team = (string)cells[2];
@@ -235,7 +250,19 @@ namespace FootballManager.PagesAdmin
             dialog.Tournaments = (string) cells[4];
             dialog.ResultVal = (string) cells[5];
 
-            var dt_t = new DataTable();
+            new SqlDataAdapter(new SqlCommand("SELECT * FROM trainingschedule", Globals.connection)).Fill(dt_t);
+            foreach (DataRow row in dt_t.Rows)
+                dialog.blackListTimes.Add(DateTime.Parse(row.ItemArray[1].ToString()));
+            
+            dt_t = new DataTable();
+            
+            new SqlDataAdapter(new SqlCommand("SELECT * FROM gamesschedule ", Globals.connection)).Fill(dt_t);
+            foreach (DataRow row in dt_t.Rows)
+                if (DateTime.Parse(cells[1].ToString()).Date != DateTime.Parse(row.ItemArray[1].ToString()).Date)
+                    dialog.blackListTimes.Add(DateTime.Parse(row.ItemArray[1].ToString()));
+            
+            dt_t = new DataTable();
+            
             new SqlDataAdapter(new SqlCommand("SELECT * FROM tournaments", Globals.connection)).Fill(dt_t);
             foreach (DataRow row in dt_t.Rows)
                 dialog.ListTours.Add((string)row.ItemArray[1]);
@@ -325,13 +352,13 @@ namespace FootballManager.PagesAdmin
 
             object[] cells = dt.Rows[dataGrid.SelectedIndex].ItemArray;
 
-            if ((string) cells[5] == "Не играли")
+            if (int.Parse(cells[7].ToString()) == 0)
             {
                 MessageBox.Show("Игра еще не проводилась");
                 return;
             }
             
-            MessageBox.Show($"Дата: {DateTime.Parse(cells[1].ToString())}\nКол-во: {cells[6]}\nДоход: {cells[7]}");
+            MessageBox.Show($"Дата: {DateTime.Parse(cells[1].ToString())}\nКол-во: {cells[7]}\nДоход: {cells[6]}");
         }
 
         private void Calendar_OnSelectedDatesChanged(object sender, CalendarModeChangedEventArgs calendarModeChangedEventArgs)

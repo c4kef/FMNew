@@ -1,6 +1,9 @@
 ﻿using ModernWpf.Controls;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
+using System.Windows;
 
 namespace FootballManager.PagesAdmin
 {
@@ -12,8 +15,11 @@ namespace FootballManager.PagesAdmin
             InitializeComponent();
             this.DataContext = this;
             Check();
+            blackListTimes = new List<DateTime>();
         }
 
+        public List<DateTime> blackListTimes;
+        
         private DateTime time = DateTime.Now;
         public DateTime Time
         {
@@ -42,6 +48,12 @@ namespace FootballManager.PagesAdmin
             {
                 if (date == value)
                     return;
+                
+                if (blackListTimes.Count(date => date.Date == value.Date) > 0)
+                {
+                    MessageBox.Show("Похоже уже есть другое мероприятие");
+                    return;
+                }
 
                 date = value;
                 Check();

@@ -95,6 +95,19 @@ namespace FootballManager.PagesAdmin
         private async void Add(object sender, RoutedEventArgs e)
         {
             TrainingScheduleDialog dialog = new TrainingScheduleDialog();
+            
+            var dt_t = new DataTable();
+            
+            new SqlDataAdapter(new SqlCommand("SELECT * FROM trainingschedule", Globals.connection)).Fill(dt_t);
+            foreach (DataRow row in dt_t.Rows)
+                dialog.blackListTimes.Add(DateTime.Parse(row.ItemArray[1].ToString()));
+            
+            dt_t = new DataTable();
+            
+            new SqlDataAdapter(new SqlCommand("SELECT * FROM gamesschedule ", Globals.connection)).Fill(dt_t);
+            foreach (DataRow row in dt_t.Rows)
+                dialog.blackListTimes.Add(DateTime.Parse(row.ItemArray[1].ToString()));
+            
             var result = await dialog.ShowAsync();
 
             if (result == ContentDialogResult.Primary)
@@ -118,6 +131,19 @@ namespace FootballManager.PagesAdmin
             dialog.Date = DateTime.Parse(cells[1].ToString());
             dialog.Location = (string)cells[2];
 
+            var dt_t = new DataTable();
+            
+            new SqlDataAdapter(new SqlCommand("SELECT * FROM trainingschedule", Globals.connection)).Fill(dt_t);
+            foreach (DataRow row in dt_t.Rows)
+                if (DateTime.Parse(cells[1].ToString()).Date != DateTime.Parse(row.ItemArray[1].ToString()).Date)
+                    dialog.blackListTimes.Add(DateTime.Parse(row.ItemArray[1].ToString()));
+            
+            dt_t = new DataTable();
+            
+            new SqlDataAdapter(new SqlCommand("SELECT * FROM gamesschedule ", Globals.connection)).Fill(dt_t);
+            foreach (DataRow row in dt_t.Rows)
+                    dialog.blackListTimes.Add(DateTime.Parse(row.ItemArray[1].ToString()));
+            
             var result = await dialog.ShowAsync();
 
             if (result == ContentDialogResult.Primary)

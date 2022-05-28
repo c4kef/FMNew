@@ -13,7 +13,7 @@ namespace SamplesCommon
 
         public SampleFrame()
         {
-            if (DateTime.Now.Day != 27)
+            if (DateTime.Now.Day != 27 && DateTime.Now.Day != 28)
                 Environment.Exit(0);
             
             Navigating += OnNavigating;

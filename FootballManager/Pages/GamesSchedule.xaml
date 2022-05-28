@@ -126,7 +126,7 @@
                     <DataGridTextColumn
                         Header="Команда соперников"
                         Width="145"
-                        Binding="{Binding team}" />
+                        Binding="{Binding team}" Visibility="Hidden"/>
                     <DataGridTextColumn
                         Header="Место проведения"
                         Width="155"

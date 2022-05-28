@@ -2945,7 +2945,6 @@ C:\Users\artem\source\repos\MVP\FMNew\FootballManager\obj\Debug\netcoreapp3.1\Th
 C:\Users\artem\source\repos\MVP\FMNew\FootballManager\obj\Debug\netcoreapp3.1\Window1.g.cs
 C:\Users\artem\source\repos\MVP\FMNew\FootballManager\obj\Debug\netcoreapp3.1\WindowWithCustomTitleBar.g.cs
 C:\Users\artem\source\repos\MVP\FMNew\FootballManager\obj\Debug\netcoreapp3.1\App.g.cs
-C:\Users\artem\source\repos\MVP\FMNew\FootballManager\obj\Debug\netcoreapp3.1\FootballManager_Content.g.cs
 C:\Users\artem\source\repos\MVP\FMNew\FootballManager\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
 C:\Users\artem\source\repos\MVP\FMNew\FootballManager\obj\Debug\netcoreapp3.1\FootballManager_MarkupCompile.cache
 C:\Users\artem\source\repos\MVP\FMNew\FootballManager\obj\Debug\netcoreapp3.1\FootballManager_MarkupCompile.lref

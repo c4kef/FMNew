@@ -35,7 +35,8 @@ namespace FootballManager.PagesAdmin
 
         public void FillGrid()
         {
-            SqlCommand cmdSel = new SqlCommand("SELECT * FROM gamesschedule WHERE ticket_count != 0 ORDER BY ID_game_shedule ASC", Globals.connection);
+            //SqlCommand cmdSel = new SqlCommand("SELECT * FROM gamesschedule WHERE ticket_count != 0 ORDER BY ID_game_shedule ASC", Globals.connection);
+            SqlCommand cmdSel = new SqlCommand("SELECT * FROM gamesschedule ORDER BY ID_game_shedule ASC", Globals.connection);
             adapter = new SqlDataAdapter(cmdSel);
             dt = new DataTable();
             adapter.Fill(dt);

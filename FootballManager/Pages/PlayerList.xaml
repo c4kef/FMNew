@@ -149,7 +149,7 @@
                     <DataGridTextColumn
                         Header="Команда"
                         Width="130"
-                        Binding="{Binding team}"/>
+                        Binding="{Binding team}" Visibility="Hidden"/>
                     <DataGridTextColumn
                         Header="Логин"
                         Width="130"
