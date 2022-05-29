@@ -27,10 +27,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SamplesCommon\SamplesCommon.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Resource Include="icon.ico" />
     <Resource Include="Login.jpg" />
   </ItemGroup>
@@ -190,5 +186,11 @@
     <Page Update="PagesAdmin\MarketSellDialog.xaml">
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="SamplesCommon">
+      <HintPath>..\Libs\SamplesCommon.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>

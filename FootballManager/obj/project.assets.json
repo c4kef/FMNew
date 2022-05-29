@@ -2127,24 +2127,6 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
-      },
-      "SamplesCommon/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "MaterialDesignThemes": "4.2.1",
-          "ModernWpfUI": "0.9.4",
-          "ModernWpfUI.MahApps": "0.9.4"
-        },
-        "compile": {
-          "bin/placeholder/SamplesCommon.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/SamplesCommon.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WPF"
-        ]
       }
     }
   },
@@ -7101,11 +7083,6 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
-    },
-    "SamplesCommon/1.0.0": {
-      "type": "project",
-      "path": "../SamplesCommon/SamplesCommon.csproj",
-      "msbuildProject": "../SamplesCommon/SamplesCommon.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -7117,7 +7094,6 @@
       "Microsoft.Office.Interop.Excel >= 15.0.4795.1000",
       "ModernWpfUI >= 0.9.4",
       "ModernWpfUI.MahApps >= 0.9.4",
-      "SamplesCommon >= 1.0.0",
       "System.Data.SqlClient >= 4.8.3"
     ]
   },
@@ -7145,11 +7121,7 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {
-            "C:\\Users\\artem\\source\\repos\\MVP\\FMNew\\SamplesCommon\\SamplesCommon.csproj": {
-              "projectPath": "C:\\Users\\artem\\source\\repos\\MVP\\FMNew\\SamplesCommon\\SamplesCommon.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

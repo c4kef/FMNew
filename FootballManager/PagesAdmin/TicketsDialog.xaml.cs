@@ -72,6 +72,6 @@ namespace FootballManager.PagesAdmin
             }
             catch { }
         }
-        public void Check() => this.IsPrimaryButtonEnabled = !(Count == null || Price == null || string.IsNullOrEmpty(Date));
+        public void Check() => this.IsPrimaryButtonEnabled = !(Count == null || Count == 0 || Price == null || Price == 0|| string.IsNullOrEmpty(Date));
     }
 }

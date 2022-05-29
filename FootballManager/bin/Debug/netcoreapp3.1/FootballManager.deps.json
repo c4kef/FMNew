@@ -15,8 +15,8 @@
           "Microsoft.Office.Interop.Excel": "15.0.4795.1000",
           "ModernWpfUI": "0.9.4",
           "ModernWpfUI.MahApps": "0.9.4",
-          "SamplesCommon": "1.0.0",
-          "System.Data.SqlClient": "4.8.3"
+          "System.Data.SqlClient": "4.8.3",
+          "SamplesCommon": "1.0.0.0"
         },
         "runtime": {
           "FootballManager.dll": {}
@@ -1389,14 +1389,12 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
-      "SamplesCommon/1.0.0": {
-        "dependencies": {
-          "MaterialDesignThemes": "4.2.1",
-          "ModernWpfUI": "0.9.4",
-          "ModernWpfUI.MahApps": "0.9.4"
-        },
+      "SamplesCommon/1.0.0.0": {
         "runtime": {
-          "SamplesCommon.dll": {}
+          "SamplesCommon.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
@@ -2114,8 +2112,8 @@
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
-    "SamplesCommon/1.0.0": {
-      "type": "project",
+    "SamplesCommon/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }
