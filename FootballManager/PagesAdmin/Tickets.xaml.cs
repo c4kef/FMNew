@@ -129,15 +129,14 @@ namespace FootballManager.PagesAdmin
             TicketsDialog dialog = new TicketsDialog();
             dialog.DateList = new List<string>();
             object[] cells = dt.Rows[dataGrid.SelectedIndex].ItemArray;
-
-            dialog.Date = cells[0].ToString();
-
+            
             var dt_g = new DataTable();
             new SqlDataAdapter(new SqlCommand("SELECT * FROM gamesschedule ORDER BY ID_game_shedule ASC", Globals.connection)).Fill(dt_g);
 
             foreach (DataRow row in dt_g.Rows)
                 dialog.DateList.Add(row.ItemArray[1].ToString());
 
+            dialog.Date = cells[1].ToString();
             dialog.Price = (decimal)cells[6];
             dialog.Count = (int)cells[7];
             

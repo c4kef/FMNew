@@ -126,7 +126,7 @@
                     <DataGridTextColumn
                         Header="Дата"
                         Width="83"
-                        Binding="{Binding date, StringFormat=dd/MM/yyyy}" />
+                        Binding="{Binding date, StringFormat=dd/MM/yyyy HH:mm}" />
                     <DataGridTextColumn
                         Header="Команда соперников"
                         Width="145"
