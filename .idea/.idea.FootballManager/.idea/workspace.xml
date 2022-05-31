@@ -6,18 +6,29 @@
   <component name="ChangeListManager">
     <list default="true" id="1ca469dd-33fe-4aa1-a7d5-0d27d72c1b75" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FootballManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FootballManager/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/Pages/GamesSchedule.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Pages/GamesSchedule.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/Pages/TrainingSchedule.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Pages/TrainingSchedule.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/GamesSchedule.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/GamesSchedule.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/TrainingSchedule.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/TrainingSchedule.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Navigation/NavigationRootPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Navigation/NavigationRootPage.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/OrderSOEDialog.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/OrderSOEDialog.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FootballManager/bin/Debug/netcoreapp3.1/FootballManager.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/bin/Debug/netcoreapp3.1/FootballManager.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FootballManager/bin/Debug/netcoreapp3.1/FootballManager.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/bin/Debug/netcoreapp3.1/FootballManager.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.g.resources" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.g.resources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/GamesSchedule.baml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/GamesSchedule.baml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/GamesSchedule.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/GamesSchedule.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplesCommon/SampleFrame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/SampleFrame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplesCommon/bin/Debug/net48/SamplesCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/bin/Debug/net48/SamplesCommon.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplesCommon/bin/Debug/net48/SamplesCommon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/bin/Debug/net48/SamplesCommon.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplesCommon/bin/Debug/net5.0-windows10.0.18362.0/SamplesCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/bin/Debug/net5.0-windows10.0.18362.0/SamplesCommon.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplesCommon/bin/Debug/net5.0-windows10.0.18362.0/SamplesCommon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/bin/Debug/net5.0-windows10.0.18362.0/SamplesCommon.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplesCommon/bin/Debug/netcoreapp3.1/SamplesCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/bin/Debug/netcoreapp3.1/SamplesCommon.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplesCommon/bin/Debug/netcoreapp3.1/SamplesCommon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/bin/Debug/netcoreapp3.1/SamplesCommon.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplesCommon.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplesCommon.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplesCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplesCommon.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplesCommon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplesCommon.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +76,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.43222892&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.43255395&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -121,7 +132,11 @@
       <workItem from="1653676932575" duration="2401000" />
       <workItem from="1653721053813" duration="208000" />
       <workItem from="1653848234895" duration="1467000" />
-      <workItem from="1653904085338" duration="325000" />
+      <workItem from="1653904085338" duration="607000" />
+      <workItem from="1653913318292" duration="166000" />
+      <workItem from="1653919880955" duration="290000" />
+      <workItem from="1653930699769" duration="277000" />
+      <workItem from="1653994226968" duration="325000" />
     </task>
     <task id="LOCAL-00001" summary="ye">
       <created>1652292970986</created>
@@ -249,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653849106060</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Ура, закончили!">
+      <created>1653904685604</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1653904685604</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,7 +310,8 @@
     <MESSAGE value="End" />
     <MESSAGE value="finally" />
     <MESSAGE value="Finally" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finally" />
+    <MESSAGE value="Ура, закончили!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ура, закончили!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

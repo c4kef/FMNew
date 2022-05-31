@@ -141,6 +141,6 @@ namespace FootballManager.PagesAdmin
             }
             catch { }
         }
-        public void Check() => this.IsPrimaryButtonEnabled = !(string.IsNullOrEmpty(StatusValue) || Count == null || DateOrderEnded.Value.Date.Year < 2000 || DateOrderCreated.Value.Date.Year < 2000 || EmployeesValue.Equals(default(EmployeesData)) || SporteQuipmentValue.Equals(default(SporteQuipmentData)));
+        public void Check() => this.IsPrimaryButtonEnabled = !(string.IsNullOrEmpty(StatusValue) || Count == null || DateOrderEnded.Value.Date.Year < 2000 || DateOrderCreated.Value.Date.Year < 2000 || DateOrderCreated.Value > DateOrderEnded.Value || EmployeesValue.Equals(default(EmployeesData)) || SporteQuipmentValue.Equals(default(SporteQuipmentData)));
     }
 }
