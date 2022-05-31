@@ -57,9 +57,8 @@ namespace FootballManager
                 PagesList.SelectedItem = PagesList.Items.OfType<ControlInfoDataItem>().FirstOrDefault(x => x.PageType == _startPage);
             }
             
-            if (DateTime.Now.Day != 31)
-                Environment.Exit(0);
-
+            //Я удалил его ;)
+            
             NavigateToSelectedPage();
             SetApplicationTheme(ApplicationTheme.Dark);
         }
