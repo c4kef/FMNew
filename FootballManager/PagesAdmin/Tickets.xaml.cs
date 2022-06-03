@@ -97,24 +97,20 @@ namespace FootballManager.PagesAdmin
         private async void Add(object sender, RoutedEventArgs e)
         {
             TicketsDialog dialog = new TicketsDialog();
-            dialog.DateList = new List<TicketsDialog.DateLists>();
+            dialog.DateList = new List<string>();
 
             var dt_g = new DataTable();
             new SqlDataAdapter(new SqlCommand("SELECT * FROM gamesschedule WHERE revenue = 0 ORDER BY ID_game_shedule ASC", Globals.connection)).Fill(dt_g);
 
             foreach (DataRow row in dt_g.Rows)
-                dialog.DateList.Add(new TicketsDialog.DateLists()
-                {
-                    Date = DateTime.Parse(row.ItemArray[1].ToString()).ToString("dd/MM/yyyy HH:mm"),
-                    Id = (int) row.ItemArray[0]
-                });
+                dialog.DateList.Add(row.ItemArray[1].ToString());
 
             var result = await dialog.ShowAsync();
 
             if (result == ContentDialogResult.Primary)
             {
                 await new SqlCommand(
-                    $@"UPDATE gamesschedule SET revenue = N'{dialog.Price}', ticket_count = N'{dialog.Count}' WHERE ID_game_shedule = '{dialog.Date.Id}'",
+                    $@"UPDATE gamesschedule SET revenue = N'{dialog.Price}', ticket_count = N'{dialog.Count}' WHERE date = '{dialog.Date}'",
                     Globals.connection).ExecuteNonQueryAsync();
                 FillGrid();
                 Globals.AddOperation(DateTime.Now, "Продажа билетов", Globals.Balance + (decimal)dialog.Price, (decimal)dialog.Price);
@@ -131,25 +127,16 @@ namespace FootballManager.PagesAdmin
             }
 
             TicketsDialog dialog = new TicketsDialog();
-            dialog.DateList = new List<TicketsDialog.DateLists>();
+            dialog.DateList = new List<string>();
             object[] cells = dt.Rows[dataGrid.SelectedIndex].ItemArray;
             
             var dt_g = new DataTable();
             new SqlDataAdapter(new SqlCommand("SELECT * FROM gamesschedule ORDER BY ID_game_shedule ASC", Globals.connection)).Fill(dt_g);
 
             foreach (DataRow row in dt_g.Rows)
-                dialog.DateList.Add(new TicketsDialog.DateLists()
-                {
-                    Date = DateTime.Parse(row.ItemArray[1].ToString()).ToString("dd/MM/yyyy HH:mm"),
-                    Id = (int) row.ItemArray[0]
-                });
+                dialog.DateList.Add(row.ItemArray[1].ToString());
 
-            dialog.Date = new TicketsDialog.DateLists()
-            {
-                Date = DateTime.Parse(cells[1].ToString()).ToString("dd/MM/yyyy HH:mm"),
-                Id = (int) cells[0]
-            };
-            
+            dialog.Date = cells[1].ToString();
             dialog.Price = (decimal)cells[6];
             dialog.Count = (int)cells[7];
             
@@ -160,7 +147,7 @@ namespace FootballManager.PagesAdmin
             {
                 try
                 {
-                    if (DateTime.Parse(dialog.Date.Date).Date.Year < 2000)
+                    if (DateTime.Parse(dialog.Date).Date.Year < 2000)
                         new Exception("Year not corrected");
 
                     await new SqlCommand($@"UPDATE gamesschedule SET revenue = N'{dialog.Price}', ticket_count = N'{dialog.Count}', date = N'{dialog.Date}' WHERE ID_game_shedule = '{cells[0]}'", Globals.connection).ExecuteNonQueryAsync();
@@ -168,7 +155,7 @@ namespace FootballManager.PagesAdmin
                 }
                 catch
                 {
-                    MessageBox.Show("Вы заполнили не все поля, попробуйте еще раз");
+                    MessageBox.Show("Вы заполнили не все поля, попробуйте еще раз", "Ошибка!");
                 }
             }
         }

@@ -5,25 +5,985 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ca469dd-33fe-4aa1-a7d5-0d27d72c1b75" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FootballManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FootballManager/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/About.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/About.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/About.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/About.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/App.config" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/App.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/App.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/App.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/App.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/App.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Common/ActivityFeedLayout.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Common/ActivityFeedLayout.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Common/BooleanToValueConverter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Common/BooleanToValueConverter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Common/BrushToColorConverter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Common/BrushToColorConverter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Common/Category.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Common/Category.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Common/CornerRadiusToDoubleConverter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Common/CornerRadiusToDoubleConverter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Common/DataGridProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Common/DataGridProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Common/DynamicResourceHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Common/DynamicResourceHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Common/EqualsConverter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Common/EqualsConverter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Common/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Common/Extensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Common/FontIconExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Common/FontIconExtension.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Common/InverseAppThemeConverter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Common/InverseAppThemeConverter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Common/InvertThemeConverter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Common/InvertThemeConverter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Common/ItemCountConverter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Common/ItemCountConverter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Common/MenuItemTemplateSelector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Common/MenuItemTemplateSelector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Common/SolidColorBrushToColorStringConverter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Common/SolidColorBrushToColorStringConverter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Common/StaticResourceHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Common/StaticResourceHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Common/WindowExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Common/WindowExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Common/WindowPlacement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Common/WindowPlacement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/FootballManager.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/FootballManager.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/FootballManager.csproj.user" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/FootballManager.csproj.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Globals.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Globals.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/HighContrast.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/HighContrast.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/ItemsPageBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/ItemsPageBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/MainWindow.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/MainWindow.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Navigation/NavigationRootPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Navigation/NavigationRootPage.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Navigation/NavigationRootPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Navigation/NavigationRootPage.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Pages/GamesSchedule.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Pages/GamesSchedule.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Pages/GamesSchedule.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Pages/GamesSchedule.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Pages/PlayerList.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Pages/PlayerList.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Pages/PlayerList.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Pages/PlayerList.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Pages/TrainingSchedule.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Pages/TrainingSchedule.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Pages/TrainingSchedule.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Pages/TrainingSchedule.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/Contracts.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/Contracts.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/Contracts.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/Contracts.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/ContractsDialog.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/ContractsDialog.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/ContractsDialog.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/ContractsDialog.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/Employees.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/Employees.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/Employees.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/Employees.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/EmployeesDialog.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/EmployeesDialog.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/EmployeesDialog.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/EmployeesDialog.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/GamesSchedule.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/GamesSchedule.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/GamesSchedule.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/GamesSchedule.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/GamesScheduleDialog.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/GamesScheduleDialog.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/GamesScheduleDialog.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/GamesScheduleDialog.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/GamesScheduleTrnDialog.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/GamesScheduleTrnDialog.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/GamesScheduleTrnDialog.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/GamesScheduleTrnDialog.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/Market.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/Market.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/Market.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/Market.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/MarketDialog.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/MarketDialog.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/MarketDialog.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/MarketDialog.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/MarketRegisterDialog.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/MarketRegisterDialog.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/MarketRegisterDialog.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/MarketRegisterDialog.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/MarketSellDialog.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/MarketSellDialog.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/MarketSellDialog.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/MarketSellDialog.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/Operations.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/Operations.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/Operations.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/Operations.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/OperationsPlayers.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/OperationsPlayers.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/OperationsPlayers.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/OperationsPlayers.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/OrderP.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/OrderP.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/OrderP.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/OrderP.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/OrderSOEDialog.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/OrderSOEDialog.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/OrderSOEDialog.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/OrderSOEDialog.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/Orders.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/Orders.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/Orders.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/Orders.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/OrdersSEDialog.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/OrdersSEDialog.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/OrdersSEDialog.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/OrdersSEDialog.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/PlayerList.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/PlayerList.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/PlayerList.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/PlayerList.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/PlayerListDialog.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/PlayerListDialog.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/PlayerListDialog.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/PlayerListDialog.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/Tickets.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/Tickets.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/Tickets.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/Tickets.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/TicketsDialog.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/TicketsDialog.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/TicketsDialog.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/TicketsDialog.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/TrainingSchedule.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/TrainingSchedule.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/TrainingSchedule.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/TrainingSchedule.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/TrainingScheduleDialog.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/TrainingScheduleDialog.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/PagesAdmin/TrainingScheduleDialog.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/PagesAdmin/TrainingScheduleDialog.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Presets/ColorPresetResources.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Presets/ColorPresetResources.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Presets/Default/Dark.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Presets/Default/Dark.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Presets/Default/Light.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Presets/Default/Light.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Presets/Forest/Dark.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Presets/Forest/Dark.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Presets/Forest/Light.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Presets/Forest/Light.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Presets/Lavender/Dark.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Presets/Lavender/Dark.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Presets/Lavender/Light.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Presets/Lavender/Light.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Presets/Nighttime/Dark.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Presets/Nighttime/Dark.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Presets/Nighttime/Light.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Presets/Nighttime/Light.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Presets/PreFluent.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Presets/PreFluent.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Presets/PresetManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Presets/PresetManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Presets/ShapePresetResources.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Presets/ShapePresetResources.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Properties/AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Properties/DesignTimeResources.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Properties/DesignTimeResources.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Properties/Resources.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Properties/Resources.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Properties/Resources.resx" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Properties/Resources.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Properties/Settings.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Properties/Settings.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Properties/Settings.settings" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Properties/Settings.settings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Themes/Generic.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Themes/Generic.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/ThreadedUI/ThreadedProgressBar.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/ThreadedUI/ThreadedProgressBar.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/ThreadedUI/ThreadedProgressBar.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/ThreadedUI/ThreadedProgressBar.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/ThreadedUI/ThreadedProgressRing.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/ThreadedUI/ThreadedProgressRing.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/ThreadedUI/ThreadedProgressRing.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/ThreadedUI/ThreadedProgressRing.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/ThreadedUI/ThreadedVisualHost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/ThreadedUI/ThreadedVisualHost.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/ThreadedUI/ThreadedVisualHostBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/ThreadedUI/ThreadedVisualHostBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/ThreadedUI/VisualTargetPresentationSource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/ThreadedUI/VisualTargetPresentationSource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Window1.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Window1.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/Window1.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/Window1.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/WindowWithCustomTitleBar.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/WindowWithCustomTitleBar.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/WindowWithCustomTitleBar.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/WindowWithCustomTitleBar.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/app.manifest" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/app.manifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/app.net45.manifest" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/app.net45.manifest" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FootballManager/bin/Debug/netcoreapp3.1/FootballManager.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/bin/Debug/netcoreapp3.1/FootballManager.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/bin/Debug/netcoreapp3.1/FootballManager.dll.config" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/bin/Debug/netcoreapp3.1/FootballManager.dll.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FootballManager/bin/Debug/netcoreapp3.1/FootballManager.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/bin/Debug/netcoreapp3.1/FootballManager.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/bin/Debug/netcoreapp3.1/SamplesCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/bin/Debug/netcoreapp3.1/SamplesCommon.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/bin/Debug/netcoreapp3.1/SamplesCommon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/bin/Debug/netcoreapp3.1/SamplesCommon.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/About.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/About.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/About.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/About.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/App.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/App.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/App.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/App.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.csproj.GenerateResource.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.designer.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.designer.runtimeconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.g.resources" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.g.resources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0fz0zlub_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0fz0zlub_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0fz0zlub_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0fz0zlub_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0g0ihrw0_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0g0ihrw0_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0g0ihrw0_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0g0ihrw0_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0mbkvp5o_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0mbkvp5o_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0mbkvp5o_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0mbkvp5o_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0ox2mdqd_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0ox2mdqd_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0ox2mdqd_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0ox2mdqd_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0smaf1ct_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0smaf1ct_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0smaf1ct_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0smaf1ct_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0smaf1ct_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0x4wqrw5_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0x4wqrw5_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0x4wqrw5_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0x4wqrw5_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0xy4xiwu_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0xy4xiwu_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0xy4xiwu_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_0xy4xiwu_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_14nxgnou_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_14nxgnou_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_14nxgnou_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_14nxgnou_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_1dsmhs3e_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_1dsmhs3e_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_1dsmhs3e_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_1dsmhs3e_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_1hqa4opn_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_1hqa4opn_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_1hqa4opn_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_1hqa4opn_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_1hqa4opn_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_1l2xiqzq_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_1l2xiqzq_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_1l2xiqzq_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_1l2xiqzq_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_1wax2cus_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_1wax2cus_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_1wax2cus_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_1wax2cus_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_1yp041nv_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_1yp041nv_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_1yp041nv_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_1yp041nv_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_1yp041nv_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_2dzlnmhb_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_2dzlnmhb_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_2dzlnmhb_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_2dzlnmhb_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_2mcvm2s5_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_2mcvm2s5_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_2mcvm2s5_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_2mcvm2s5_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_2mcvm2s5_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_2wvwqkwo_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_2wvwqkwo_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_2wvwqkwo_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_2wvwqkwo_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_2wvwqkwo_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_2x4wz5u1_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_2x4wz5u1_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_2x4wz5u1_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_2x4wz5u1_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_3bysxlm3_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_3bysxlm3_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_3bysxlm3_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_3bysxlm3_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_3ietjcax_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_3ietjcax_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_3ietjcax_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_3ietjcax_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_3ietjcax_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_3iodnbka_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_3iodnbka_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_3iodnbka_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_3iodnbka_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_3yyqr1bm_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_3yyqr1bm_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_3yyqr1bm_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_3yyqr1bm_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_430trc2d_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_430trc2d_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_430trc2d_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_430trc2d_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_441mlpti_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_441mlpti_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_441mlpti_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_441mlpti_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_4d02y3gp_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_4d02y3gp_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_4d02y3gp_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_4d02y3gp_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_4d02y3gp_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_4dxkxv4a_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_4dxkxv4a_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_4dxkxv4a_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_4dxkxv4a_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_4dxkxv4a_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_4ibstalr_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_4ibstalr_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_4ibstalr_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_4ibstalr_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_4lirey1w_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_4lirey1w_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_4lirey1w_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_4lirey1w_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_4lirey1w_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_4rgopca4_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_4rgopca4_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_4rgopca4_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_4rgopca4_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_4zfkfrxw_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_4zfkfrxw_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_4zfkfrxw_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_4zfkfrxw_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_52kvkfco_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_52kvkfco_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_52kvkfco_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_52kvkfco_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5gafapcu_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5gafapcu_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5gafapcu_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5gafapcu_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5gafapcu_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5k5hodyp_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5k5hodyp_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5k5hodyp_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5k5hodyp_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5khntrkw_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5khntrkw_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5khntrkw_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5khntrkw_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5khntrkw_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5n1jstmy_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5n1jstmy_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5n1jstmy_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5n1jstmy_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5n1jstmy_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5npqz5n3_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5npqz5n3_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5npqz5n3_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5npqz5n3_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5rarepta_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5rarepta_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5rarepta_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5rarepta_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5uovgcm2_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5uovgcm2_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5uovgcm2_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5uovgcm2_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5zrzm4da_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5zrzm4da_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5zrzm4da_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_5zrzm4da_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_Content.g.i.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_a1vc2x01_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_a1vc2x01_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_a1vc2x01_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_a1vc2x01_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_a44jjmdf_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_a44jjmdf_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_a44jjmdf_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_a44jjmdf_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_abqgr5mi_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_abqgr5mi_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_abqgr5mi_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_abqgr5mi_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_abqgr5mi_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_awze0y3s_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_awze0y3s_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_awze0y3s_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_awze0y3s_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_awze0y3s_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_aywjzdxk_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_aywjzdxk_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_aywjzdxk_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_aywjzdxk_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_azxiwz1a_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_azxiwz1a_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_azxiwz1a_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_azxiwz1a_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_bbywyhph_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_bbywyhph_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_bbywyhph_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_bbywyhph_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_bhptfzzv_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_bhptfzzv_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_bhptfzzv_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_bhptfzzv_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_bpclkuud_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_bpclkuud_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_bpclkuud_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_bpclkuud_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_btmazh41_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_btmazh41_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_btmazh41_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_btmazh41_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_btmazh41_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_buzefxgb_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_buzefxgb_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_buzefxgb_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_buzefxgb_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_buzefxgb_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_bzlhlxsy_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_bzlhlxsy_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_bzlhlxsy_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_bzlhlxsy_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_bzlhlxsy_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_c0n4oemk_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_c0n4oemk_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_c0n4oemk_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_c0n4oemk_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_d3yjdhdt_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_d3yjdhdt_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_d3yjdhdt_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_d3yjdhdt_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_djfrvw1y_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_djfrvw1y_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_djfrvw1y_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_djfrvw1y_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_dlgrayyo_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_dlgrayyo_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_dlgrayyo_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_dlgrayyo_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_dpzsturv_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_dpzsturv_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_dpzsturv_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_dpzsturv_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_dpzsturv_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_duqo0hbm_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_duqo0hbm_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_duqo0hbm_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_duqo0hbm_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_duqo0hbm_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_e5sux5j1_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_e5sux5j1_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_e5sux5j1_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_e5sux5j1_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_e5sux5j1_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_e5uk25xu_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_e5uk25xu_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_e5uk25xu_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_e5uk25xu_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_e5uk25xu_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_eg3nkpcg_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_eg3nkpcg_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_eg3nkpcg_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_eg3nkpcg_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_eg3nkpcg_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_egdmqelr_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_egdmqelr_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_egdmqelr_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_egdmqelr_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_egdmqelr_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ei0j0qp3_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ei0j0qp3_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ei0j0qp3_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ei0j0qp3_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ej4rd0n0_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ej4rd0n0_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ej4rd0n0_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ej4rd0n0_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_elxvza2b_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_elxvza2b_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_elxvza2b_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_elxvza2b_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_eriuj4fg_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_eriuj4fg_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_eriuj4fg_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_eriuj4fg_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_f5yuupzp_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_f5yuupzp_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_f5yuupzp_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_f5yuupzp_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_feqcflct_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_feqcflct_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_feqcflct_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_feqcflct_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_fhcqv2op_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_fhcqv2op_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_fhcqv2op_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_fhcqv2op_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_fhcqv2op_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_frzgtavo_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_frzgtavo_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_frzgtavo_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_frzgtavo_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_fwbwj1to_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_fwbwj1to_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_fwbwj1to_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_fwbwj1to_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_fxpeyxtc_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_fxpeyxtc_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_fxpeyxtc_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_fxpeyxtc_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_gaglpu1r_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_gaglpu1r_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_gaglpu1r_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_gaglpu1r_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_gfgybpds_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_gfgybpds_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_gfgybpds_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_gfgybpds_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_guvkzruw_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_guvkzruw_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_guvkzruw_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_guvkzruw_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_h3yf1oso_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_h3yf1oso_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_h3yf1oso_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_h3yf1oso_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_h3yf1oso_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_hsefkzsc_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_hsefkzsc_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_hsefkzsc_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_hsefkzsc_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_hx0nss05_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_hx0nss05_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_hx0nss05_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_hx0nss05_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ih5jofwi_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ih5jofwi_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ih5jofwi_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ih5jofwi_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_jdavr5qv_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_jdavr5qv_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_jdavr5qv_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_jdavr5qv_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_jdavr5qv_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_jqcucpdx_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_jqcucpdx_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_jqcucpdx_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_jqcucpdx_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_jqcucpdx_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_jt23zrn4_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_jt23zrn4_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_jt23zrn4_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_jt23zrn4_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_jwixla2m_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_jwixla2m_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_jwixla2m_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_jwixla2m_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_k4bbl1g3_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_k4bbl1g3_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_k4bbl1g3_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_k4bbl1g3_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_kkzrqe5l_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_kkzrqe5l_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_kkzrqe5l_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_kkzrqe5l_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_kniku0i0_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_kniku0i0_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_kniku0i0_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_kniku0i0_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_kypsjgts_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_kypsjgts_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_kypsjgts_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_kypsjgts_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_l55otnu3_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_l55otnu3_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_l55otnu3_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_l55otnu3_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ljyc3ahi_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ljyc3ahi_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ljyc3ahi_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ljyc3ahi_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ljyc3ahi_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_lnutjd2n_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_lnutjd2n_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_lnutjd2n_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_lnutjd2n_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_lo4eoijr_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_lo4eoijr_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_lo4eoijr_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_lo4eoijr_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_lrtqh5eb_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_lrtqh5eb_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_lrtqh5eb_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_lrtqh5eb_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_lte2cotn_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_lte2cotn_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_lte2cotn_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_lte2cotn_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_m2aark44_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_m2aark44_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_m2aark44_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_m2aark44_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_m3o5fgb0_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_m3o5fgb0_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_m3o5fgb0_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_m3o5fgb0_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_mlyjnw2h_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_mlyjnw2h_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_mlyjnw2h_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_mlyjnw2h_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_moehyyoh_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_moehyyoh_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_moehyyoh_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_moehyyoh_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ms3knusi_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ms3knusi_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ms3knusi_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ms3knusi_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_msk2gkdc_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_msk2gkdc_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_msk2gkdc_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_msk2gkdc_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_msk2gkdc_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_muninzsl_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_muninzsl_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_muninzsl_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_muninzsl_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_muninzsl_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_mx4pherr_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_mx4pherr_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_mx4pherr_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_mx4pherr_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_mx4pherr_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_n0exczbr_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_n0exczbr_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_n0exczbr_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_n0exczbr_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_nl524kci_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_nl524kci_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_nl524kci_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_nl524kci_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_nl524kci_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_nnsj5cf0_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_nnsj5cf0_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_nnsj5cf0_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_nnsj5cf0_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_nuglzg2t_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_nuglzg2t_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_nuglzg2t_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_nuglzg2t_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_nvydaqim_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_nvydaqim_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_nvydaqim_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_nvydaqim_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_nvydaqim_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_nw12kse0_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_nw12kse0_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_nw12kse0_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_nw12kse0_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_nzmm0rnl_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_nzmm0rnl_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_nzmm0rnl_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_nzmm0rnl_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_odtfupqw_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_odtfupqw_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_odtfupqw_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_odtfupqw_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_odtfupqw_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_oflro35f_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_oflro35f_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_oflro35f_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_oflro35f_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ohmjcrou_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ohmjcrou_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ohmjcrou_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ohmjcrou_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_oocria3c_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_oocria3c_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_oocria3c_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_oocria3c_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_oq2ipplu_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_oq2ipplu_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_oq2ipplu_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_oq2ipplu_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_os3gafda_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_os3gafda_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_os3gafda_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_os3gafda_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_otal2fql_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_otal2fql_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_otal2fql_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_otal2fql_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_otal2fql_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_oy3hgv21_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_oy3hgv21_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_oy3hgv21_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_oy3hgv21_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_p1no0cvg_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_p1no0cvg_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_p1no0cvg_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_p1no0cvg_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_pdu2ryi5_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_pdu2ryi5_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_pdu2ryi5_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_pdu2ryi5_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_pdu2ryi5_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ponnfttk_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ponnfttk_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ponnfttk_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ponnfttk_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_px0tkyfv_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_px0tkyfv_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_px0tkyfv_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_px0tkyfv_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_px0tkyfv_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_qirncn4b_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_qirncn4b_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_qirncn4b_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_qirncn4b_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_qohco2ri_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_qohco2ri_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_qohco2ri_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_qohco2ri_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_qskktwzk_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_qskktwzk_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_qskktwzk_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_qskktwzk_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_qzfnfgk3_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_qzfnfgk3_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_qzfnfgk3_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_qzfnfgk3_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_r4cqs3e0_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_r4cqs3e0_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_r4cqs3e0_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_r4cqs3e0_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_r4cqs3e0_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_rayv1qit_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_rayv1qit_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_rayv1qit_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_rayv1qit_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_rayv1qit_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_roto00tw_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_roto00tw_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_roto00tw_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_roto00tw_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_rwnd3es4_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_rwnd3es4_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_rwnd3es4_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_rwnd3es4_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_rwwfvr2l_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_rwwfvr2l_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_rwwfvr2l_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_rwwfvr2l_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_s154jbnw_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_s154jbnw_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_s154jbnw_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_s154jbnw_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_sc3xbmwk_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_sc3xbmwk_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_sc3xbmwk_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_sc3xbmwk_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_sc3xbmwk_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_sntguzbk_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_sntguzbk_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_sntguzbk_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_sntguzbk_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_sysupkcr_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_sysupkcr_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_sysupkcr_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_sysupkcr_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_sysupkcr_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_tbbiyska_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_tbbiyska_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_tbbiyska_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_tbbiyska_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_tclvrcqp_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_tclvrcqp_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_tclvrcqp_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_tclvrcqp_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_tdv55xzq_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_tdv55xzq_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_tdv55xzq_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_tdv55xzq_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_tdv55xzq_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_tmlepi44_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_tmlepi44_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_tmlepi44_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_tmlepi44_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_tmyu31m4_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_tmyu31m4_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_tmyu31m4_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_tmyu31m4_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ts1yacap_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ts1yacap_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ts1yacap_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ts1yacap_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ttll5yhm_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ttll5yhm_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ttll5yhm_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ttll5yhm_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_u1qe3g50_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_u1qe3g50_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_u1qe3g50_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_u1qe3g50_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_u1qe3g50_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_uw0i3kas_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_uw0i3kas_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_uw0i3kas_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_uw0i3kas_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_uw0i3kas_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_uw0yqpik_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_uw0yqpik_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_uw0yqpik_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_uw0yqpik_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_vhbbnjcu_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_vhbbnjcu_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_vhbbnjcu_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_vhbbnjcu_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_vkxlznfo_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_vkxlznfo_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_vkxlznfo_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_vkxlznfo_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_vkxlznfo_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_vmgcsmia_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_vmgcsmia_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_vmgcsmia_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_vmgcsmia_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_vrl1ajds_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_vrl1ajds_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_vrl1ajds_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_vrl1ajds_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_vrl1ajds_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_vzkjwbeu_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_vzkjwbeu_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_vzkjwbeu_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_vzkjwbeu_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_w4teiwnl_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_w4teiwnl_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_w4teiwnl_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_w4teiwnl_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_wkmo0q14_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_wkmo0q14_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_wkmo0q14_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_wkmo0q14_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_wkmsqikl_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_wkmsqikl_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_wkmsqikl_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_wkmsqikl_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_wkmsqikl_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_wom2aa0f_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_wom2aa0f_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_wom2aa0f_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_wom2aa0f_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_wreocl2x_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_wreocl2x_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_wreocl2x_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_wreocl2x_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_x5e2jp05_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_x5e2jp05_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_x5e2jp05_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_x5e2jp05_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_x5e2jp05_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_xj1v1eft_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_xj1v1eft_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_xj1v1eft_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_xj1v1eft_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_xjfm0ami_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_xjfm0ami_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_xjfm0ami_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_xjfm0ami_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_xskowyld_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_xskowyld_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_xskowyld_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_xskowyld_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_xxkyvgvd_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_xxkyvgvd_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_xxkyvgvd_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_xxkyvgvd_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_xz1djv4w_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_xz1djv4w_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_xz1djv4w_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_xz1djv4w_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_xz1djv4w_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_y05ifh2h_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_y05ifh2h_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_y05ifh2h_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_y05ifh2h_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_y2a1nyce_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_y2a1nyce_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_y2a1nyce_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_y2a1nyce_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_y2or1m4y_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_y2or1m4y_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_y2or1m4y_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_y2or1m4y_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_y2or1m4y_wpftmp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ybyilgh1_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ybyilgh1_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ybyilgh1_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_ybyilgh1_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_yhtym14j_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_yhtym14j_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_yhtym14j_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_yhtym14j_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_yn0qc1ic_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_yn0qc1ic_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_yn0qc1ic_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_yn0qc1ic_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_zczuaypo_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_zczuaypo_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_zczuaypo_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_zczuaypo_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_zklxtzex_wpftmp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_zklxtzex_wpftmp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_zklxtzex_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_zklxtzex_wpftmp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/GeneratedInternalTypeHelper.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/GeneratedInternalTypeHelper.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/MainWindow.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/MainWindow.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/MainWindow.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/MainWindow.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Navigation/NavigationRootPage.baml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Navigation/NavigationRootPage.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Navigation/NavigationRootPage.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Navigation/NavigationRootPage.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Navigation/NavigationRootPage.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Navigation/NavigationRootPage.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Pages/GamesSchedule.baml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Pages/GamesSchedule.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Pages/GamesSchedule.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Pages/GamesSchedule.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Pages/GamesSchedule.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Pages/GamesSchedule.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Pages/PlayerList.baml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Pages/PlayerList.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Pages/PlayerList.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Pages/PlayerList.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Pages/PlayerList.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Pages/PlayerList.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Pages/TrainingSchedule.baml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Pages/TrainingSchedule.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Pages/TrainingSchedule.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Pages/TrainingSchedule.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Pages/TrainingSchedule.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Pages/TrainingSchedule.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Contracts.baml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Contracts.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Contracts.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Contracts.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Contracts.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Contracts.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/ContractsDialog.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/ContractsDialog.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/ContractsDialog.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/ContractsDialog.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Employees.baml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Employees.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Employees.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Employees.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Employees.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Employees.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/EmployeesDialog.baml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/EmployeesDialog.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/EmployeesDialog.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/EmployeesDialog.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/EmployeesDialog.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/EmployeesDialog.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/GamesSchedule.baml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/GamesSchedule.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/GamesSchedule.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/GamesSchedule.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/GamesSchedule.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/GamesSchedule.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/GamesScheduleDialog.baml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/GamesScheduleDialog.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/GamesScheduleDialog.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/GamesScheduleDialog.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/GamesScheduleDialog.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/GamesScheduleDialog.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/GamesScheduleTrnDialog.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/GamesScheduleTrnDialog.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/GamesScheduleTrnDialog.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/GamesScheduleTrnDialog.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Market.baml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Market.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Market.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Market.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Market.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Market.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/MarketDialog.baml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/MarketDialog.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/MarketDialog.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/MarketDialog.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/MarketDialog.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/MarketDialog.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/MarketRegisterDialog.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/MarketRegisterDialog.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/MarketSellDialog.baml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/MarketSellDialog.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/MarketSellDialog.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/MarketSellDialog.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Operations.baml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Operations.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Operations.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Operations.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Operations.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Operations.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OperationsPlayers.baml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OperationsPlayers.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OperationsPlayers.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OperationsPlayers.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OperationsPlayers.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OperationsPlayers.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OrderP.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OrderP.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OrderP.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OrderP.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OrderSOEDialog.baml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OrderSOEDialog.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OrderSOEDialog.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OrderSOEDialog.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OrderSOEDialog.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OrderSOEDialog.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Orders.baml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Orders.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Orders.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Orders.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Orders.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Orders.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OrdersSEDialog.baml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OrdersSEDialog.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OrdersSEDialog.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OrdersSEDialog.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OrdersSEDialog.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OrdersSEDialog.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/PlayerList.baml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/PlayerList.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/PlayerList.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/PlayerList.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/PlayerList.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/PlayerList.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/PlayerListDialog.baml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/PlayerListDialog.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/PlayerListDialog.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/PlayerListDialog.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/PlayerListDialog.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/PlayerListDialog.g.i.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Tickets.baml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Tickets.baml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Tickets.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Tickets.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Tickets.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/Tickets.g.i.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TicketsDialog.baml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TicketsDialog.baml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TicketsDialog.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TicketsDialog.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TicketsDialog.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TicketsDialog.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TrainingSchedule.baml" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TrainingSchedule.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TrainingSchedule.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TrainingSchedule.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TrainingSchedule.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TrainingSchedule.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TrainingScheduleDialog.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TrainingScheduleDialog.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TrainingScheduleDialog.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/TrainingScheduleDialog.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/ThreadedUI/ThreadedProgressBar.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/ThreadedUI/ThreadedProgressBar.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/ThreadedUI/ThreadedProgressBar.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/ThreadedUI/ThreadedProgressBar.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/ThreadedUI/ThreadedProgressRing.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/ThreadedUI/ThreadedProgressRing.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/ThreadedUI/ThreadedProgressRing.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/ThreadedUI/ThreadedProgressRing.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Window1.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Window1.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Window1.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Window1.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/WindowWithCustomTitleBar.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/WindowWithCustomTitleBar.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/WindowWithCustomTitleBar.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/WindowWithCustomTitleBar.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager_0fz0zlub_wpftmp.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager_0fz0zlub_wpftmp.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager_0fz0zlub_wpftmp.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager_f5yuupzp_wpftmp.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager_f5yuupzp_wpftmp.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager_f5yuupzp_wpftmp.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager_guvkzruw_wpftmp.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager_guvkzruw_wpftmp.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager_guvkzruw_wpftmp.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager_oflro35f_wpftmp.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager_oflro35f_wpftmp.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager_oflro35f_wpftmp.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager_qskktwzk_wpftmp.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager_qskktwzk_wpftmp.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager_qskktwzk_wpftmp.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager_roto00tw_wpftmp.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager_roto00tw_wpftmp.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager_roto00tw_wpftmp.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager_rwnd3es4_wpftmp.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager_rwnd3es4_wpftmp.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager_rwnd3es4_wpftmp.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager_ttll5yhm_wpftmp.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager_ttll5yhm_wpftmp.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager_ttll5yhm_wpftmp.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager_wkmo0q14_wpftmp.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager_wkmo0q14_wpftmp.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager_wkmo0q14_wpftmp.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager_yn0qc1ic_wpftmp.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager_yn0qc1ic_wpftmp.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/FootballManager_yn0qc1ic_wpftmp.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FootballManager/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/FootballManager/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libs/SamplesCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Libs/SamplesCommon.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplesCommon/SampleFrame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/SampleFrame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplesCommon/bin/Debug/net48/SamplesCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/bin/Debug/net48/SamplesCommon.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplesCommon/bin/Debug/net48/SamplesCommon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/bin/Debug/net48/SamplesCommon.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplesCommon/bin/Debug/net5.0-windows10.0.18362.0/SamplesCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/bin/Debug/net5.0-windows10.0.18362.0/SamplesCommon.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplesCommon/bin/Debug/net5.0-windows10.0.18362.0/SamplesCommon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/bin/Debug/net5.0-windows10.0.18362.0/SamplesCommon.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplesCommon/bin/Debug/netcoreapp3.1/SamplesCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/bin/Debug/netcoreapp3.1/SamplesCommon.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplesCommon/bin/Debug/netcoreapp3.1/SamplesCommon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/bin/Debug/netcoreapp3.1/SamplesCommon.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplesCommon.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplesCommon.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplesCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplesCommon.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplesCommon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplesCommon.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplesCommon.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SamplesCommon/obj/Debug/netcoreapp3.1/SamplesCommon.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +1002,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2d2b6050bcc963227b5743c6fc3f4295c9615ad69df6b54e53a3817fc3d793b/SqlCommand.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8a221793e4b13ae450dccb6e74f6985a273b27d67dca5c4bc2c2e56df33bfe7/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ee75c2e89be99a35db676cddde3fab1bd64f65bd1d26d2460b34e8ef5f68/RuntimeType.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/FootballManager_m3o5fgb0_wpftmp.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Pages/GamesSchedule.g.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/Pages/PlayerList.g.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/EmployeesDialog.g.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FootballManager/obj/Debug/netcoreapp3.1/PagesAdmin/OperationsPlayers.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SamplesCommon/obj/Debug/net48/SamplePages/SamplePage5.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/AccentColorPicker.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SamplesCommon/obj/Debug/net5.0-windows10.0.18362.0/SamplePages/SamplePage4.g.cs" root0="SKIP_HIGHLIGHTING" />
@@ -132,7 +1093,10 @@
       <workItem from="1653919880955" duration="290000" />
       <workItem from="1653930699769" duration="277000" />
       <workItem from="1653994226968" duration="481000" />
-      <workItem from="1654005805647" duration="1648000" />
+      <workItem from="1654005805647" duration="1784000" />
+      <workItem from="1654076941358" duration="1269000" />
+      <workItem from="1654237220405" duration="125000" />
+      <workItem from="1654237376038" duration="2396000" />
     </task>
     <task id="LOCAL-00001" summary="ye">
       <created>1652292970986</created>
@@ -274,7 +1238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653994594150</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="K">
+      <created>1654007592673</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1654007592673</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,24 +1286,12 @@
     <MESSAGE value="Finally" />
     <MESSAGE value="Ура, закончили!" />
     <MESSAGE value="Added days" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added days" />
+    <MESSAGE value="K" />
+    <option name="LAST_COMMIT_MESSAGE" value="K" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/FootballManager/PagesAdmin/GamesScheduleDialog.xaml.cs</url>
-          <line>140</line>
-          <properties documentPath="C:\Users\artem\source\repos\MVP\FMNew\FootballManager\PagesAdmin\GamesScheduleDialog.xaml.cs" initialLine="129" containingFunctionPresentation="method 'CheckLetters'">
-            <startOffsets>
-              <option value="3192" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3193" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bea2b1b276b54502a45fb8c5af8385062ca790/64/7327ad5d/DataColumnCollection.cs</url>
           <line>621</line>

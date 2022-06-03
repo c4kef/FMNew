@@ -98,7 +98,7 @@
         x:Name="LayoutRoot"
         Margin="{StaticResource ControlPageContentMargin}">
         <sc:ControlExample
-            HeaderText="Учёт проданных билетов"
+            HeaderText="Проданные билеты"
             Style="{StaticResource ControlExampleFullStyle}">
 
             <DataGrid
@@ -120,8 +120,8 @@
                         Width="105"
                         Binding="{Binding ID_game_shedule}" Visibility="Hidden"/>
                     <DataGridTextColumn
-                        Header="Дата"
-                        Width="83"
+                        Header="Дата и время игры"
+                        Width="133"
                         Binding="{Binding date, StringFormat=dd/MM/yyyy HH:mm}" />
                     <DataGridTextColumn
                         Header="Команда соперников"
@@ -140,12 +140,12 @@
                         Width="150"
                         Binding="{Binding result}" Visibility="Hidden"/>
                     <DataGridTextColumn
-                        Header="Доход"
-                        Width="150"
+                        Header="Выручка с проданных билетов (USD)"
+                        Width="240"
                         Binding="{Binding revenue}"/>
                     <DataGridTextColumn
-                        Header="Кол-во билетов"
-                        Width="105"
+                        Header="Количество проданных билетов"
+                        Width="205"
                         Binding="{Binding ticket_count}"/>
                 </DataGrid.Columns>
                 <DataGrid.GroupStyle>
@@ -169,9 +169,9 @@
                                 <Button VerticalAlignment="Top" Content="Удалить" Click="Remove" Margin="10,0,0,0"/>
                                 <Button VerticalAlignment="Top" Content="Изменить" Click="Edit" Margin="10,0,0,0"/>
                             </StackPanel>
-                            <Button HorizontalAlignment="Center" Content="Отчёт" Click="Export" Margin="10,10,0,0"/>
-                            <Label Content="Поиск по дате" HorizontalAlignment="Center" FontSize="20"/>
-                            <Calendar Name="dteSelectedMonth" DisplayMode="Year" SelectionMode="None" DisplayModeChanged="Calendar_OnSelectedDatesChanged" />
+                            <Button HorizontalAlignment="Center" Content="Отчёт" Click="Export" Margin="0,10,0,0" Visibility="Hidden"/>
+                            <Label Content="Поиск по месяцу" HorizontalAlignment="Center" FontSize="18" Margin="0,-25,0,0"/>
+                            <Calendar Name="dteSelectedMonth" DisplayMode="Year" SelectionMode="None" DisplayModeChanged="Calendar_OnSelectedDatesChanged" Margin="10,10,0,0" />
                         </StackPanel>
                     </ui:SimpleStackPanel>
                 </ScrollViewer>

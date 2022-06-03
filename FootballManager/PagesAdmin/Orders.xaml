@@ -38,7 +38,7 @@
         <ScrollViewer>
         <StackPanel Orientation="Vertical">
             <sc:ControlExample
-            HeaderText="Список спортивного инвентаря"
+            HeaderText="Спортивный инвентарь"
             Style="{StaticResource ControlExampleFullStyle}">
                 <ScrollViewer Grid.Column="0">
                 <DataGrid
@@ -61,12 +61,12 @@
                         Width="105"
                         Binding="{Binding id}" Visibility="Hidden"/>
                         <DataGridTextColumn
-                        Header="Наименование"
-                        Width="135"
+                        Header="Название"
+                        Width="140"
                         Binding="{Binding name}" />
                         <DataGridTextColumn
-                        Header="Стоимость (USD)"
-                        Width="135"
+                        Header="Стоимость за единицу (USD)"
+                        Width="185"
                         Binding="{Binding price}" />
                     </DataGrid.Columns>
                     <DataGrid.GroupStyle>
@@ -85,19 +85,19 @@
                         HorizontalAlignment="Center"
                         Orientation="Vertical"
                         Style="{StaticResource OptionsPanelStyle}">
-                            <TextBox x:Name="SearchUISE" ui:ControlHelper.PlaceholderText="Поиск по названию" Height="22" KeyUp="SearchSE" />
+                            <TextBox x:Name="SearchUISE" ui:ControlHelper.PlaceholderText="Поиск по названию товара" Height="22" KeyUp="SearchSE" />
                             <StackPanel Orientation="Horizontal">
                                 <Button VerticalAlignment="Top" Content="Добавить" Click="AddSE" Margin="0,0,0,0"/>
                                 <Button VerticalAlignment="Top" Content="Удалить" Click="RemoveSE" Margin="10,0,0,0"/>
                                 <Button VerticalAlignment="Top" Content="Изменить" Click="EditSE" Margin="10,0,0,0"/>
                             </StackPanel>
-                            <Button HorizontalAlignment="Center" Content="Отчёт" Click="ExportSE" Margin="0,0,0,0"/>
+                            <Button HorizontalAlignment="Center" Content="Отчёт" Click="ExportSE" Margin="-3,0,0,0" Visibility="Hidden"/>
                         </ui:SimpleStackPanel>
                     </ScrollViewer>
                 </sc:ControlExample.Options>
             </sc:ControlExample>
             <sc:ControlExample
-            HeaderText="Список заказов"
+            HeaderText="Покупки"
             Style="{StaticResource ControlExampleFullStyle}">
                 <ScrollViewer Grid.Column="0">
                 <DataGrid
@@ -120,20 +120,20 @@
                         Width="105"
                         Binding="{Binding ID_Order}" Visibility="Hidden"/>
                         <DataGridTextColumn
-                        Header="Дата заказа"
+                        Header="Дата покупки"
                         Width="127"
                         Binding="{Binding date_created, StringFormat=dd/MM/yyyy}" />
                         <DataGridTextColumn
-                        Header="Дата выполнения"
+                        Header="Дата доставки"
                         Width="127"
                         Binding="{Binding date_ended, StringFormat=dd/MM/yyyy}" />
                         <DataGridTextColumn
-                        Header="Статус заказа"
+                        Header="Статус"
                         Width="105"
                         Binding="{Binding status}" />
                         <DataGridTextColumn
-                        Header="Сотрудник"
-                        Width="135"
+                        Header="Фамилия сотрудника"
+                        Width="143"
                         Binding="{Binding surname}" />
                         <DataGridTextColumn
                         Header="Товар"
@@ -160,14 +160,14 @@
                         HorizontalAlignment="Center"
                         Orientation="Vertical"
                         Style="{StaticResource OptionsPanelStyle}">
-                            <TextBox x:Name="SearchUIOE" ui:ControlHelper.PlaceholderText="Поиск по названию" Height="22" KeyUp="SearchOE" />
+                            <TextBox x:Name="SearchUIOE" ui:ControlHelper.PlaceholderText="Поиск по названию товара" Height="22" KeyUp="SearchOE" />
                             <StackPanel Orientation="Horizontal">
-                                <Button VerticalAlignment="Top" Content="Добавить" Click="AddOE" Margin="0,0,0,0"/>
+                                <Button VerticalAlignment="Top" Content="Добавить" Click="AddOE" Margin="10,0,0,0"/>
                                 <Button VerticalAlignment="Top" Content="Удалить" Click="RemoveOE" Margin="10,0,0,0"/>
                                 <Button VerticalAlignment="Top" Content="Изменить" Click="EditOE" Margin="10,0,0,0"/>
                             </StackPanel>
                             <Button HorizontalAlignment="Center" Content="Отчёт" Click="ExportOE" Margin="0,0,0,0"/>
-                            <Label Content="Поиск по дате" HorizontalAlignment="Center" FontSize="20"/>
+                            <Label Content="Поиск по месяцу" HorizontalAlignment="Center" FontSize="18"/>
                             <Calendar Name="dteSelectedMonth" DisplayMode="Year" SelectionMode="None" DisplayModeChanged="Calendar_OnSelectedDatesChanged" />
                         </ui:SimpleStackPanel>
                     </ScrollViewer>

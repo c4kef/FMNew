@@ -76,7 +76,6 @@ namespace FootballManager.PagesAdmin
 
             new SqlDataAdapter(new SqlCommand("SELECT * FROM playerlist", Globals.connection)).Fill(dt_p);
 
-            //Тут заполняем всех игроков по фамилии
             foreach (DataRow row in dt_p.Rows)
                 if (!IsExists(row.ItemArray[1].ToString()))
                     dialog.PList.Add(row.ItemArray[1].ToString());
@@ -131,7 +130,7 @@ namespace FootballManager.PagesAdmin
             if (result == true)
             {
                 wb.SaveAs(saveDialog.FileName);
-                MessageBox.Show("Успех!");
+                MessageBox.Show("Отчет готов");
             }
         }
 

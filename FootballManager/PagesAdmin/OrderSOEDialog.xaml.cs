@@ -131,7 +131,7 @@ namespace FootballManager.PagesAdmin
             if (Count is null)
                 return;
 
-            Balance.Content = $"Траты: {Count * SporteQuipmentValue.price}";
+            Balance.Content = $"Будет списано: {Count * SporteQuipmentValue.price}";
         }
         private void CheckDigits(object sender, System.Windows.Input.TextCompositionEventArgs e)
         {

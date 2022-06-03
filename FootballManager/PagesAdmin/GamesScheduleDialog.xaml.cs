@@ -15,7 +15,7 @@ namespace FootballManager.PagesAdmin
             InitializeComponent();
             this.DataContext = this;
             ListTours = new List<string>();
-            Result = new List<string>() { "Выигран", "Не выигран", "Не играли" };
+            Result = new List<string>() { "Выигрыш", "Проигрыш", "Не состоялся" };
             Check();
             blackListTimes = new List<DateTime>();
         }
@@ -53,7 +53,7 @@ namespace FootballManager.PagesAdmin
 
                 if (blackListTimes.Count(date => date.Date == value.Date) > 0)
                 {
-                    MessageBox.Show("Похоже уже есть другое мероприятие");
+                    MessageBox.Show("На данную дату уже есть игра!", "Ошибка!");
                     return;
                 }
 

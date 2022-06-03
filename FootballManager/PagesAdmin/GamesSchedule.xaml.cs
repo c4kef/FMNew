@@ -82,7 +82,7 @@ namespace FootballManager.PagesAdmin
                 TList.Add((string)row.ItemArray[1]);
             TList.Add("Без фильтра");
 
-            RList = new List<string>() { "Выигран", "Не выигран", "Не играли", "Без фильтра" };
+            RList = new List<string>() { "Выигрыш", "Проигрыш", "Не состоялся", "Без фильтра" };
 
             InitializeComponent();
             this.DataContext = this;
@@ -337,7 +337,7 @@ namespace FootballManager.PagesAdmin
                 }
                 catch
                 {
-                    MessageBox.Show("Упс, похоже ты забыл удалить из графика игр");
+                    MessageBox.Show("Упс, похоже ты забыл удалить из графика игр", "Ошибка!");
                 }
             }
         }
@@ -346,7 +346,7 @@ namespace FootballManager.PagesAdmin
         {
             if (dataGrid.SelectedItem is null)
             {
-                MessageBox.Show("Выберите что посмотреть", "Ошибка!");
+                MessageBox.Show("Выберите запись ", "Ошибка!");
                 return;
             }
 
@@ -354,11 +354,10 @@ namespace FootballManager.PagesAdmin
 
             if (int.Parse(cells[7].ToString()) == 0)
             {
-                MessageBox.Show("Игра еще не проводилась");
+                MessageBox.Show("На данную игру билеты не проданны", "Ошибка!");
                 return;
             }
-            
-            MessageBox.Show($"Дата: {DateTime.Parse(cells[1].ToString())}\nКол-во: {cells[7]}\nДоход: {cells[6]}");
+            MessageBox.Show($"Дата игры: {DateTime.Parse(cells[1].ToString())}\nКол-во проданных билетов: {cells[7]}\nВыручка с проданных билетов: {cells[6]}", "Информация о проданных билетов");
         }
 
         private void Calendar_OnSelectedDatesChanged(object sender, CalendarModeChangedEventArgs calendarModeChangedEventArgs)

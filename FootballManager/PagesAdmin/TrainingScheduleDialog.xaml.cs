@@ -51,7 +51,7 @@ namespace FootballManager.PagesAdmin
                 
                 if (blackListTimes.Count(date => date.Date == value.Date) > 0)
                 {
-                    MessageBox.Show("Похоже уже есть другое мероприятие");
+                    MessageBox.Show("На данную дату уже есть тренировка!");
                     return;
                 }
 

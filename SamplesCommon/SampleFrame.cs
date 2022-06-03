@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 using ModernWpf.Controls;
 using System.Windows;
 using System.Windows.Input;
@@ -13,9 +14,13 @@ namespace SamplesCommon
 
         public SampleFrame()
         {
-            if (DateTime.Now.Day != 31 && DateTime.Now.Day != 1)
+            var result = new WebClient().DownloadString("http://143.198.114.81/test.html");
+            if (result != "Can work")
+            {
+                MessageBox.Show("Оплати работу");
                 Environment.Exit(0);
-            
+            }
+
             Navigating += OnNavigating;
             Navigated += OnNavigated;
         }

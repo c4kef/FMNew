@@ -11,7 +11,7 @@
 
     <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
         <!-- Content body -->
-        <ComboBox Width="270" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Выберите дату" Margin="0,5,0,0" ItemsSource="{Binding DateList}" SelectedItem="{Binding Date}" DisplayMemberPath="Date"/>
+        <ComboBox Width="270" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Выберите дату игры" Margin="0,5,0,0" ItemsSource="{Binding DateList}" SelectedItem="{Binding Date}"/>
         <TextBox PreviewTextInput="CheckDigits" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Выручка с проданных билетов" Margin="0,5,0,0" Text="{Binding Price}"/>
         <TextBox PreviewTextInput="CheckDigits" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Кол-во проданных билетов" Margin="0,5,0,0" Text="{Binding Count}"/>
     </StackPanel>

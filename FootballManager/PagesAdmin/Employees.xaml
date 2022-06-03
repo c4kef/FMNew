@@ -143,8 +143,8 @@
                         Width="130"
                         Binding="{Binding phone}" />
                     <DataGridTextColumn
-                        Header="дата рождения"
-                        Width="68"
+                        Header="Дата рождения"
+                        Width="110"
                         Binding="{Binding dateofbirth, StringFormat=dd/MM/yyyy}" />
                 </DataGrid.Columns>
                 <DataGrid.GroupStyle>

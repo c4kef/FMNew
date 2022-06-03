@@ -56,9 +56,7 @@ namespace FootballManager
             {
                 PagesList.SelectedItem = PagesList.Items.OfType<ControlInfoDataItem>().FirstOrDefault(x => x.PageType == _startPage);
             }
-            
-            //Я удалил его ;)
-            
+
             NavigateToSelectedPage();
             SetApplicationTheme(ApplicationTheme.Dark);
         }
@@ -272,14 +270,14 @@ namespace FootballManager
             {
                 AddPage(typeof(PagesAdmin.Operations), new FontAwesome.WPF.FontAwesome() { Icon = FontAwesome.WPF.FontAwesomeIcon.Money, FontSize = 24 }, "Операции");
                 AddPage(typeof(PagesAdmin.PlayerList), new FontAwesome.WPF.FontAwesome() { Icon = FontAwesome.WPF.FontAwesomeIcon.List, FontSize = 24 }, "Список игроков");
-                AddPage(typeof(PagesAdmin.Market), new FontAwesome.WPF.FontAwesome() { Icon = FontAwesome.WPF.FontAwesomeIcon.Bullseye, FontSize = 24 }, "Покупка игроков");
-                AddPage(typeof(PagesAdmin.OperationsPlayers), new FontAwesome.WPF.FontAwesome() { Icon = FontAwesome.WPF.FontAwesomeIcon.Check, FontSize = 24 }, "Учет покупок\nи продаж игроков");
+                AddPage(typeof(PagesAdmin.Market), new FontAwesome.WPF.FontAwesome() { Icon = FontAwesome.WPF.FontAwesomeIcon.Bullseye, FontSize = 24 }, "Игроки на продаже");
+                AddPage(typeof(PagesAdmin.OperationsPlayers), new FontAwesome.WPF.FontAwesome() { Icon = FontAwesome.WPF.FontAwesomeIcon.Check, FontSize = 24 }, "История покупок\nи продаж игроков");
                 AddPage(typeof(PagesAdmin.GamesSchedule), new FontAwesome.WPF.FontAwesome() { Icon = FontAwesome.WPF.FontAwesomeIcon.Calendar, FontSize = 24 }, "График игр");
                 AddPage(typeof(PagesAdmin.TrainingSchedule), new FontAwesome.WPF.FontAwesome() { Icon = FontAwesome.WPF.FontAwesomeIcon.FutbolOutline, FontSize = 24 }, "График тренировок");
-                AddPage(typeof(PagesAdmin.Tickets), new FontAwesome.WPF.FontAwesome() { Icon = FontAwesome.WPF.FontAwesomeIcon.Ticket, FontSize = 24 }, "Учёт проданных\nбилетов");
-                AddPage(typeof(PagesAdmin.Orders), new FontAwesome.WPF.FontAwesome() { Icon = FontAwesome.WPF.FontAwesomeIcon.ShoppingBag, FontSize = 24 }, "Заказы");
-                AddPage(typeof(PagesAdmin.Employees), new FontAwesome.WPF.FontAwesome() { Icon = FontAwesome.WPF.FontAwesomeIcon.Users, FontSize = 24 }, "Список сотрудников");
-                AddPage(typeof(PagesAdmin.Contracts), new FontAwesome.WPF.FontAwesome() { Icon = FontAwesome.WPF.FontAwesomeIcon.File, FontSize = 24 }, "Список контрактов");
+                AddPage(typeof(PagesAdmin.Tickets), new FontAwesome.WPF.FontAwesome() { Icon = FontAwesome.WPF.FontAwesomeIcon.Ticket, FontSize = 24 }, "Билеты");
+                AddPage(typeof(PagesAdmin.Orders), new FontAwesome.WPF.FontAwesome() { Icon = FontAwesome.WPF.FontAwesomeIcon.ShoppingBag, FontSize = 24 }, "Покупки");
+                AddPage(typeof(PagesAdmin.Employees), new FontAwesome.WPF.FontAwesome() { Icon = FontAwesome.WPF.FontAwesomeIcon.Users, FontSize = 24 }, "Сотрудники");
+                AddPage(typeof(PagesAdmin.Contracts), new FontAwesome.WPF.FontAwesome() { Icon = FontAwesome.WPF.FontAwesomeIcon.File, FontSize = 24 }, "Контракты");
             }
         }
 

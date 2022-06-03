@@ -120,8 +120,8 @@
                         Width="105"
                         Binding="{Binding id}" Visibility="Hidden" />
                     <DataGridTextColumn
-                        Header="Дата"
-                        Width="83"
+                        Header="Дата и время тренировки"
+                        Width="170"
                         Binding="{Binding date, StringFormat=dd/MM/yyyy HH:mm}" />
                     <DataGridTextColumn
                         Header="Место проведения"

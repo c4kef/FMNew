@@ -65,8 +65,8 @@
             </ui:ListView>
             <StackPanel VerticalAlignment="Bottom" Margin="10" Orientation="Vertical">
                 <WrapPanel x:Name="BalancePanel">
-                    <TextBlock Text="Бюджет клуба (USD): " FontSize="18" FontFamily="Bahnschrift Condensed" />
-                    <TextBlock Text="{Binding Path=(fm:Globals.Balance)}" FontSize="18" FontFamily="Bahnschrift Condensed" Height="21" />
+                    <TextBlock Text="Баланс (USD): " FontSize="22" FontFamily="Bahnschrift Condensed" />
+                    <TextBlock Text="{Binding Path=(fm:Globals.Balance)}" FontSize="24" FontFamily="Bahnschrift Condensed" Height="25" />
                 </WrapPanel>
                 <Button Margin="0,10,0,0" Content="Выйти" Width="182" Click="Leave"/>
             </StackPanel>

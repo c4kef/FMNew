@@ -15,7 +15,9 @@ using ClosedXML.Excel;
 using FootballManager.PagesAdmin;
 using Microsoft.Win32;
 using System.Data.SqlClient;
+using System.Globalization;
 using System.IO;
+using System.Threading;
 
 namespace FootballManager
 {
@@ -23,13 +25,24 @@ namespace FootballManager
     {
         public Window1()
         {
-            //DESKTOP-B4OPU5P\SQLEXPRESS
             //C4ke
-            Globals.connection = new SqlConnection(@"Data Source=C4ke;Initial Catalog=footballclub1; Integrated Security = True; MultipleActiveResultSets=True");
+            //DESKTOP-B4OPU5P\SQLEXPRESS
+            if (!File.Exists("serverInfo.txt"))
+            {
+                MessageBox.Show("Отсутствует файл с информацией для подключения serverInfo.txt");
+                Environment.Exit(0);
+            }
+            
+            Globals.connection = new SqlConnection(@$"Data Source={File.ReadAllText("serverInfo.txt")};Initial Catalog=footballclub1; Integrated Security = True; MultipleActiveResultSets=True");
             Globals.connection.Open();
 
             if (File.Exists("money.txt"))
                 Globals.Balance = int.Parse(File.ReadAllText("money.txt"));
+            
+            var culture = (CultureInfo)CultureInfo.CurrentCulture.Clone();
+            culture.DateTimeFormat.ShortDatePattern = "yyyy/MM/dd HH:mm:ss";
+            culture.DateTimeFormat.LongTimePattern = "";
+            Thread.CurrentThread.CurrentCulture = culture;
             
             InitializeComponent();
         }
@@ -58,8 +71,8 @@ namespace FootballManager
               }
               else
                   MessageBox.Show("Неверный логин или пароль!");*/
-
-            var reader = new SqlCommand($"SELECT * FROM manager WHERE login = N'{Login.Text}' AND password = N'{Password.Password}'", Globals.connection).ExecuteReader();
+            //SELECT * FROM manager WHERE login = N'123' AND password = CONVERT(NVARCHAR(MAX), HASHBYTES('md5', N'123'), 2)
+            var reader = new SqlCommand($"SELECT * FROM manager WHERE login = N'{Login.Text}' AND password = CONVERT(NVARCHAR(MAX), HASHBYTES('md5', N'{Password.Password}'), 2)", Globals.connection).ExecuteReader();
             if (reader.HasRows)
             {
                 Auth.Visibility = Visibility.Hidden;
@@ -70,7 +83,7 @@ namespace FootballManager
                 return;
             }
 
-            reader = new SqlCommand($"SELECT * FROM playerList WHERE login = N'{Login.Text}' AND pass = N'{Password.Password}'", Globals.connection).ExecuteReader();
+            reader = new SqlCommand($"SELECT * FROM playerList WHERE login = N'{Login.Text}' AND pass = CONVERT(NVARCHAR(MAX), HASHBYTES('md5', N'{Password.Password}'), 2)", Globals.connection).ExecuteReader();
             if (reader.HasRows)
             {
                 Auth.Visibility = Visibility.Hidden;
@@ -81,7 +94,7 @@ namespace FootballManager
                 return;
             }
 
-            MessageBox.Show("логин или пароль не корректен");
+            MessageBox.Show("Неверный логин или пароль!");
         }
     }
 }

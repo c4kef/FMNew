@@ -104,7 +104,7 @@ namespace FootballManager.PagesAdmin
             
             if ((dataGrid.SelectedItem as DataRowView).Row.ItemArray[6].ToString() == "Игрок клуба")
             {
-                MessageBox.Show("Это игрок из вашего клуба");
+                MessageBox.Show("Данный игрок является игроком вашего клуба", "Ошибка!");
                 return;
             }
             
@@ -129,7 +129,7 @@ namespace FootballManager.PagesAdmin
                         var result = await dialog.ShowAsync();
 
                         if (result == ContentDialogResult.Primary)
-                            await new SqlCommand($"INSERT INTO playerlist(surname, name, patronymic, dateofbirth, position,  nationality,  phone, team, login, pass) VALUES (N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[2]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[3]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[4]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[7]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[9]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[8]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[10]}' , N'Игрок клуба', N'{dialog.Login}', N'{dialog.Pass}')", Globals.connection).ExecuteNonQueryAsync();
+                            await new SqlCommand($"INSERT INTO playerlist(surname, name, patronymic, dateofbirth, position,  nationality,  phone, team, login, pass) VALUES (N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[2]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[3]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[4]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[7]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[9]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[8]}', N'{((DataRowView)selectedPlayers[i]).Row.ItemArray[10]}' , N'Игрок клуба', N'{dialog.Login}', CONVERT(NVARCHAR(MAX), HASHBYTES('md5', N'{dialog.Pass}'), 2))", Globals.connection).ExecuteNonQueryAsync();
                         else 
                             goto again;
 
@@ -143,7 +143,7 @@ namespace FootballManager.PagesAdmin
                     
                     await OperationsPlayers.AddP(name, price);
 
-                    MessageBox.Show("Игрок успешно приобретен!");
+                    MessageBox.Show("Игрок успешно куплен!", "Успех!");
                 }
                 else
                     MessageBox.Show("Не достаточно средств!", "Ошибка!");
@@ -229,7 +229,7 @@ namespace FootballManager.PagesAdmin
             }
             catch
             {
-                MessageBox.Show("Какая печаль, где-то еще есть запись о маркете");
+                MessageBox.Show("Какая печаль, где-то еще есть запись о данном игроке", "Ошибка!");
             }
         }
 
@@ -245,7 +245,7 @@ namespace FootballManager.PagesAdmin
 
             if (items[6].ToString() != "Игрок клуба")
             {
-                MessageBox.Show("Это игрок не вашего клуба");
+                MessageBox.Show("Данный игрок не является игроком вашего клуба", "Ошибка!");
                 return;
             }
             
@@ -258,14 +258,14 @@ namespace FootballManager.PagesAdmin
             Globals.AddOperation(DateTime.Now, "Продажа игрока", Globals.Balance + (decimal)dialog.Price, (decimal)dialog.Price);
             Globals.Balance += (decimal)dialog.Price;
             FillGrid();
-            MessageBox.Show("Игрок продан");
+            MessageBox.Show("Игрок был успешно продан", "Успех!");
         }
 
         private async void OutOrder(object sender, RoutedEventArgs e)
         {
             if (dataGrid.SelectedItem is null)
             {
-                MessageBox.Show("Выберите игрока которого хотите вернуть", "Ошибка!");
+                MessageBox.Show("Выберите игрока которого хотите снять с продажи", "Ошибка!");
                 return;
             }
 
@@ -273,7 +273,7 @@ namespace FootballManager.PagesAdmin
 
             if (items[6].ToString() != "Игрок клуба")
             {
-                MessageBox.Show("Это игрок не вашего клуба");
+                MessageBox.Show("Данный игрок не является игроком вашего клуба", "Ошибка!");
                 return;
             }
             
@@ -282,16 +282,16 @@ namespace FootballManager.PagesAdmin
 
             if (result != ContentDialogResult.Primary)
             {
-                MessageBox.Show("Укажите логин и пароль");
+                MessageBox.Show("Укажите логин и пароль","Ошибка!");
                 return;
             }
                 
             await new SqlCommand(
-                $"INSERT INTO playerlist(surname, name, patronymic, dateofbirth, position,  nationality,  phone, team, login, pass) VALUES (N'{items[2]}', N'{items[3]}', N'{items[4]}', N'{items[7]}', N'{items[9]}', N'{items[8]}', N'{items[10]}' , N'Игрок клуба', N'{dialog.Login}',N'{dialog.Pass}')",
+                $"INSERT INTO playerlist(surname, name, patronymic, dateofbirth, position,  nationality,  phone, team, login, pass) VALUES (N'{items[2]}', N'{items[3]}', N'{items[4]}', N'{items[7]}', N'{items[9]}', N'{items[8]}', N'{items[10]}' , N'Игрок клуба', N'{dialog.Login}',CONVERT(NVARCHAR(MAX), HASHBYTES('md5', N'{dialog.Pass}'), 2))",
                 Globals.connection).ExecuteNonQueryAsync();
             await new SqlCommand($@"DELETE FROM market WHERE ID_Market = '{items[0]}'", Globals.connection).ExecuteNonQueryAsync();
             FillGrid();
-            MessageBox.Show("Игрок снят с продажи");
+            MessageBox.Show("Игрок успешно был снят с продажи", "Успех!");
         }
     }
 }

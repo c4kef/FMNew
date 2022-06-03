@@ -15,15 +15,9 @@ namespace FootballManager.PagesAdmin
             Check();
         }
 
-        public struct DateLists
-        {
-            public string Date{ get; set; }
-            public int Id{ get; set; }
-        }
-
-        public List<DateLists> DateList { get; set; }
-        private DateLists _date;
-        public DateLists Date
+        public List<string> DateList { get; set; }
+        private string _date;
+        public string Date
         {
             get
             {
@@ -78,6 +72,6 @@ namespace FootballManager.PagesAdmin
             }
             catch { }
         }
-        public void Check() => this.IsPrimaryButtonEnabled = !(Count == null || Count == 0 || Price == null || Price == 0|| Date.Equals(default(DateLists)));
+        public void Check() => this.IsPrimaryButtonEnabled = !(Count == null || Count == 0 || Price == null || Price == 0|| string.IsNullOrEmpty(Date));
     }
 }

@@ -132,10 +132,10 @@
                         Binding="{Binding patronymic}" />
                     <DataGridTextColumn
                         Header="Дата рождения"
-                        Width="68"
+                        Width="110"
                         Binding="{Binding dateofbirth, StringFormat=dd/MM/yyyy}" />
                     <DataGridTextColumn
-                        Header="Национальность"
+                        Header="Гражданство"
                         Width="120"
                         Binding="{Binding nationality}"/>
                     <DataGridTextColumn

@@ -101,7 +101,7 @@
         <ScrollViewer>
         <StackPanel Orientation="Vertical">
             <sc:ControlExample
-            HeaderText="Учёт продаж игроков"
+            HeaderText="Проданные игроки"
             Style="{StaticResource ControlExampleFullStyle}">
                 <DataGrid
                     ScrollViewer.CanContentScroll="True"
@@ -127,15 +127,15 @@
                             Width="105"
                             Binding="{Binding ID_Market}" Visibility="Hidden"/>
                         <DataGridTextColumn
-                            Header="Дата"
-                            Width="83"
+                            Header="Дата продажи"
+                            Width="115"
                             Binding="{Binding datesell, StringFormat=dd/MM/yyyy}" />
                         <DataGridTextColumn
                             Header="Стоимость продажи (USD)"
                             Width="170"
                             Binding="{Binding sumsell}" />
                         <DataGridTextColumn
-                            Header="Игрок"
+                            Header="Фамилия игрока"
                             Width="135"
                             Binding="{Binding surname}" />
                     </DataGrid.Columns>
@@ -164,7 +164,7 @@
                 </sc:ControlExample.Options>
             </sc:ControlExample>
             <sc:ControlExample
-            HeaderText="Учёт покупок игроков"
+            HeaderText="Купленные игроки"
             Style="{StaticResource ControlExampleFullStyle}">
                 <DataGrid
                     ScrollViewer.CanContentScroll="True"
@@ -190,15 +190,15 @@
                             Width="105"
                             Binding="{Binding ID_Player}" Visibility="Hidden"/>
                         <DataGridTextColumn
-                            Header="Дата"
-                            Width="83"
+                            Header="Дата покупки"
+                            Width="110"
                             Binding="{Binding datebuy, StringFormat=dd/MM/yyyy}" />
                         <DataGridTextColumn
                             Header="Стоимость покупки (USD)"
                             Width="170"
                             Binding="{Binding sumbuy}" />
                         <DataGridTextColumn
-                            Header="Игрок"
+                            Header="Фамилия игрока"
                             Width="135"
                             Binding="{Binding surname}" />
                     </DataGrid.Columns>

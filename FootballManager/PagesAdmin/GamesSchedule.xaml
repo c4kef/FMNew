@@ -124,8 +124,8 @@
                         Width="105"
                         Binding="{Binding ID_game_shedule}" Visibility="Hidden"/>
                     <DataGridTextColumn
-                        Header="Дата"
-                        Width="83"
+                        Header="Дата и время игры"
+                        Width="130"
                         Binding="{Binding date, StringFormat=dd/MM/yyyy HH:mm}" />
                     <DataGridTextColumn
                         Header="Команда соперников"
@@ -136,7 +136,7 @@
                         Width="155"
                         Binding="{Binding stadium}" />
                     <DataGridTextColumn
-                        Header="Турнир"
+                        Header="Название турнира"
                         Width="150"
                         Binding="{Binding name}" />
                     <DataGridTextColumn
@@ -144,11 +144,11 @@
                         Width="150"
                         Binding="{Binding result}" />
                     <DataGridTextColumn
-                        Header="Доход"
+                        Header="Выручка с проданных билетов (USD)"
                         Width="150"
                         Binding="{Binding revenue}" Visibility="Hidden"/>
                     <DataGridTextColumn
-                        Header="Кол-во билетов"
+                        Header="Количество проданных билетов"
                         Width="105"
                         Binding="{Binding ticket_count}" Visibility="Hidden"/>
                 </DataGrid.Columns>
@@ -174,11 +174,11 @@
                                 <Button VerticalAlignment="Top" Content="Изменить" Click="Edit" Margin="10,0,0,0"/>
                             </StackPanel>
                             <Button HorizontalAlignment="Center" Content="Отчёт" Click="Export" Margin="-5,0,0,0"/>
-                            <Button HorizontalAlignment="Center" Content="Просмотр" Click="See" Margin="-5,0,0,0"/>
+                            <Button HorizontalAlignment="Center" Content="Просмотр проданных билетов на игру" Click="See" Margin="-5,0,0,0"/>
                             <Label Content="Фильтрация" HorizontalAlignment="Center"/>
                             <ComboBox Width="270" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Турнир" Margin="0,5,0,0" ItemsSource="{Binding TList}" SelectedItem="{Binding TVal}"/>
                             <ComboBox Width="270" ui:ControlHelper.CornerRadius="10" ui:ControlHelper.PlaceholderText="Результат игры" Margin="0,5,0,0" ItemsSource="{Binding RList}" SelectedItem="{Binding RVal}"/>
-                            <Label Content="Поиск по дате" HorizontalAlignment="Center" FontSize="20"/>
+                            <Label Content="Поиск по месяцу" HorizontalAlignment="Center" FontSize="18"/>
                             <Calendar Name="dteSelectedMonth" DisplayMode="Year" SelectionMode="None" DisplayModeChanged="Calendar_OnSelectedDatesChanged" />
                         </ui:SimpleStackPanel>
                     </ScrollViewer>
@@ -235,7 +235,7 @@
                                 <Button VerticalAlignment="Top" Content="Удалить" Click="RemoveT" Margin="10,0,0,0"/>
                                 <Button VerticalAlignment="Top" Content="Изменить" Click="EditT" Margin="10,0,0,0"/>
                             </StackPanel>
-                            <Button HorizontalAlignment="Center" Content="Отчёт" Click="ExportT" Margin="10,0,0,0"/>
+                                <Button HorizontalAlignment="Center" Content="Отчёт" Click="ExportT" Margin="10,0,0,0" Visibility="Hidden"/>
                         </ui:SimpleStackPanel>
                     </ScrollViewer>
                 </sc:ControlExample.Options>

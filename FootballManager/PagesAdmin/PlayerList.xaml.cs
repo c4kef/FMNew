@@ -122,11 +122,11 @@ namespace FootballManager.PagesAdmin
         {
             if (dataGrid.SelectedItem is null)
             {
-                MessageBox.Show("Выберите игрока для продажи!", "Ошибка!");
+                MessageBox.Show("Выберите запись!", "Ошибка!");
                 return;
             }
 
-            MessageBoxResult res = MessageBox.Show("Вы действительно хотите продать данного игрока?", "Внимание!", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            MessageBoxResult res = MessageBox.Show("Вы действительно хотите выставить данного игрока на продажу?", "Внимание!", MessageBoxButton.YesNo, MessageBoxImage.Question);
             if (res != MessageBoxResult.No)
             {
                 decimal price = 0;
@@ -160,7 +160,7 @@ namespace FootballManager.PagesAdmin
                     //Globals.Balance += price;
                     FillGrid();
 
-                    MessageBox.Show("Игрок успешно выставлен на продажу!");
+                    MessageBox.Show("Игрок успешно выставлен на продажу!", "Успех!");
                 }
             }
         }
@@ -175,13 +175,13 @@ namespace FootballManager.PagesAdmin
                 try
                 {
                     var r = dialog;
-                  await new SqlCommand($@"INSERT INTO playerlist (surname, name, patronymic, dateofbirth, nationality, position, phone, team, login, pass) VALUES (N'{dialog.Surname}', N'{dialog.MName}', N'{dialog.Patronymic}', N'{dialog.Dateofbirth.Date}', N'{dialog.Nationality}', N'{dialog.Position}', N'{dialog.Phone}', N'Игрок клуба', N'{dialog.Login}', N'{dialog.Pass}')", Globals.connection).ExecuteNonQueryAsync();
+                  await new SqlCommand($@"INSERT INTO playerlist (surname, name, patronymic, dateofbirth, nationality, position, phone, team, login, pass) VALUES (N'{dialog.Surname}', N'{dialog.MName}', N'{dialog.Patronymic}', N'{dialog.Dateofbirth.Date}', N'{dialog.Nationality}', N'{dialog.Position}', N'{dialog.Phone}', N'Игрок клуба', N'{dialog.Login}', CONVERT(NVARCHAR(MAX), HASHBYTES('md5', N'{dialog.Pass}'), 2))", Globals.connection).ExecuteNonQueryAsync();
                     FillGrid();
                     
                 }
                 catch
                 {
-                    MessageBox.Show("Вы заполнили не все поля, попробуйте еще раз");
+                    MessageBox.Show("Вы заполнили не все поля, попробуйте еще раз", "Ошибка!");
                 }
             }
         }
@@ -249,7 +249,7 @@ namespace FootballManager.PagesAdmin
             }
             catch
             {
-                MessageBox.Show("Упс, об этом игроке есть записи в других местах");
+                MessageBox.Show("Упс, об этом игроке есть записи в других местах", "Ошибка!");
             }
         }
         private void CheckDigits(object sender, System.Windows.Input.TextCompositionEventArgs e)

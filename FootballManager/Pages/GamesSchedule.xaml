@@ -120,8 +120,8 @@
                         Width="105"
                         Binding="{Binding ID_game_shedule}" Visibility="Hidden"/>
                     <DataGridTextColumn
-                        Header="Дата"
-                        Width="83"
+                        Header="Дата и время игры"
+                        Width="130"
                         Binding="{Binding date, StringFormat=dd/MM/yyyy HH:mm}" />
                     <DataGridTextColumn
                         Header="Команда соперников"
@@ -132,7 +132,7 @@
                         Width="155"
                         Binding="{Binding stadium}" />
                     <DataGridTextColumn
-                        Header="Турнир"
+                        Header="Название турнира"
                         Width="150"
                         Binding="{Binding name}" />
                     <DataGridTextColumn

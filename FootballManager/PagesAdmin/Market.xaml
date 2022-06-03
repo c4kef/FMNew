@@ -147,11 +147,11 @@
                         Width="140"
                         Binding="{Binding team}" />
                     <DataGridTextColumn
-                        Header="дата рождения"
-                        Width="68"
+                        Header="Дата рождения"
+                        Width="110"
                         Binding="{Binding dateofbirth, StringFormat=dd/MM/yyyy}" />
                     <DataGridTextColumn
-                        Header="Национальность"
+                        Header="Гражданство"
                         Width="120"
                         Binding="{Binding nationality}" />
                     <DataGridTextColumn
@@ -180,16 +180,18 @@
                         Style="{StaticResource OptionsPanelStyle}">
                         <TextBox x:Name="SearchUI" ui:ControlHelper.PlaceholderText="Поиск по ФИО" Height="22" KeyUp="Search" />
                         <StackPanel Orientation="Horizontal">
-                            <Button VerticalAlignment="Top" Content="Добавить" Click="Add" Margin="0,0,0,0"/>
+                            <Button VerticalAlignment="Top" Content="Добавить" Click="Add" Margin="10,0,0,0"/>
                             <Button VerticalAlignment="Top" Content="Удалить" Click="Remove" Margin="10,0,0,0"/>
                             <Button VerticalAlignment="Top" Content="Изменить" Click="Edit" Margin="10,0,0,0"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <Button Content="Приобрести" Click="BuyPlayer" Margin="10,10,0,0"/>
-                            <Button Content="Продать" Click="SellPlayer" Margin="10,10,0,0"/>
-                            <Button Content="Снять" Click="OutOrder" Margin="10,10,0,0"/>
+                            <Button Content="Купить игрока" Click="BuyPlayer" Margin="10,10,0,0"/>
+                            <Button Content="Продать игрока" Click="SellPlayer" Margin="10,10,0,0"/>
                         </StackPanel>
-                        <Button HorizontalAlignment="Center" Content="Отчёт" Click="Export" Margin="5,0,0,0"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                <Button Content="Снять с продажи" Click="OutOrder" Margin="10,5,0,0"/>
+                        </StackPanel>
+                        <Button HorizontalAlignment="Center" Content="Отчёт" Click="Export" Margin="10,0,0,0"/>
                     </ui:SimpleStackPanel>
                 </ScrollViewer>
             </sc:ControlExample.Options>
